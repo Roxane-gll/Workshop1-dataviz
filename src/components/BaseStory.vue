@@ -1,12 +1,11 @@
 <template>
-  <div id="app">
+  <div>
     <button @click="changePage(-1)">←</button>
     <button @click="changePage(1)">→</button>
+
     <component :story="getCurrentStory" :is="getCurrentPage"></component>
 
-    <template v-for="story in allStories">
-      <button :key="story.id" @click="changeStory(story.id)">{{story.name}}</button>
-    </template>
+    <ChangeStoryButton :currentStory="story" @newStory="changeStory"></ChangeStoryButton>
   </div>
 </template>
 
@@ -14,9 +13,11 @@
 import Stories from './pages/Stories.vue'
 import allStories from '../assets/stories.json'
 import Graph from './pages/Graph.vue'
+import ChangeStoryButton from './ChangeStoryButton.vue'
 
 export default {
   name: 'BaseStory',
+  components: {ChangeStoryButton},
   props: {
       story: {
           type:Number
@@ -25,7 +26,6 @@ export default {
   data() {
     return {
       allStories,
-      currentStory: this.story,
       currentPage: 1,
       pages: {
         1: Stories,
@@ -38,13 +38,13 @@ export default {
       return this.pages[this.currentPage]
     },
     getCurrentStory() {
-      return this.allStories.find((story) => story.id === this.currentStory)
+      return this.allStories.find((story) => story.id === this.story)
     }
   },
   methods: {
     changeStory(newStoryId) {
       this.currentPage = 1
-      this.currentStory = newStoryId
+      this.$emit('newStory', newStoryId)
     },
     changePage(newPage) {
       if (!this.pages[this.currentPage + newPage]) {
