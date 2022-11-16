@@ -1,49 +1,61 @@
 [
   {
     "id": 1,
-    "name": "Michael Jackson",
-    "country": "usa",
-    "age": 37,
+    "name": "Olivier",
+    "country": "Mali",
+    "age": 9,
     "gender": "male",
-    "distance": "8km",
-    "time": "3h",
+    "distance": "5km",
+    "time": "1h30",
     "content": {
-      "p1": "Michael Jackson, né le 29 août 1958 à Gary (Indiana) et mort le 25 juin 2009 à Los Angeles (Californie), est un auteur-compositeur-interprète, danseur-chorégraphe et acteur américain.",
-      "p2": "Le 1er décembre 1982, Michael Jackson sort Thriller, deuxième album créé en collaboration avec Quincy Jones, qui remporte un succès immédiat.",
-      "p3": "En mai 1984, il est reconnu par le Livre Guinness des records comme l'album le plus vendu de tous les temps"
+      "p1": "Salut ! moi c’est Olivier, j’ai 9 ans, j’habite au Mali en Afrique et je suis le petit dernier de ma grande famille.",
+      "p2": "Mon rêve à moi ce serait d’avoir mon propre vélo ! Parce que tous les jours pour aller a l’école je dois monter sur le vélo de ma sœur, et c’est pas très confortable, surtout quand elle roule sur des cailloux.",
+      "p3": "Le trajet de 5km jusqu’à l’école dure environ 1h30 si ma soeur pédale vite, et si on ne s’arrête pas pour jouer dans l’eau. Normalement c’est interdit, papa et maman disent qu’on peut attraper des mauvaises maladies, mais c’est vrai que quelque fois on s’amuse avec les flaques, il fait tellement chaud ! Même si c’est long d’aller à l’école mes parents veulent que je m’instruise pour réussir ma vie, et aider ma famille plus tard.",
+      "q4": "À cause de la guerre nous avons dû déménager, et avons perdu beaucoup de choses. Ma soeur n’a pas pu continuer à étudier même si elle le voulait ; donc quand je vais à l’école, je pense à elle, et je veux réussir pour elle, la rendre fière et l’aider plus tard.<br>D’ailleurs, elle m’appelle pour m’amener à l’école, je dois partir !"
+    },
+    "graph": {
+      "g1": "guerre: 2 000 contrainte de fermer dans 3 pays"
     }
  },
 
   {
     "id": 2,
-    "name": "Barack Obama",
-    "country": "usa",
-    "age": 56,
-    "gender": "male",
-    "distance": "3km",
-    "time": "2h",
+    "name": "Devi",
+    "country": "Inde",
+    "age": 13,
+    "gender": "female",
+    "distance": "5km",
+    "time": "2h30",
     "content": {
-      "p1": "Barack Obama, né le 4 août 1961 à Honolulu (Hawaï), est un homme d'État américain.",
-      "p2": "Marié à Michelle Robinson en 1992, Barack Obama entre en politique quatre ans plus tard : il est élu au Sénat de l'Illinois, où il effectue trois mandats, de 1997 à 2004",
-      "p3": "Il obtient 52,9 % des voix et 365 grands électeurs à l'élection présidentielle de 2008 contre le républicain John McCain"
+      "p1": "Salut, moi c’est Devi, j’ai 13 ans et j’habite en Inde.",
+      "p2": "J’ai de la chance d’aller à l’école, mes sœurs ont été mariées à 13 et 14 ans et n’ont malheureusement pas eu ce droit. J’ai un rêve depuis toute petite, j’aimerai devenir médecin et ouvrir un hôpital gratuit dans mon village ! Comme ça plus personne n’aura mal ou ne sera malade, je pourrai soigner tout le monde. C’est pour ça que j’adore aller à l’école même si c’est dur de s’y rendre.",
+      "p3": "Je fais le trajet jusqu’à l’école avec deux amies, car il est dangereux de le faire toute seule. Nous croisons des serpents,  traversons des forêts ou encore des rivières où l’eau nous arrive jusqu’aux bras.",
+      "q4": "Tu te rends compte ! on ne m’a jamais appris à nager et je dois traverser une rivière tous les jours ! J'avoue que ça me fait un peu peur parfois, mais je ne le montre pas devant mes amies.<br>Nous mettons 2h30 pour aller à l’école et marchons 5km. Une fois arrivées nous avons un peu mal aux pieds mais ça vaut le coup ! Nous retrouvons tous nos amis et notre professeur qui nous apprends pleins de choses. Peut-être qu’un jour grâce à lui je deviendrai médecin, mais ça, seul l’avenir me le dira ! Je vous laisse, j’arrive à l’école !"
+    },
+    "graph": {
+      "g1": "marriage forcé",
+      "g2": "nb écoles/élève"
     }
  },
 
   {
     "id": 3,
-    "name": "Yohan Quinquis",
-    "country": "France",
-    "age": 20,
+    "name": "Carlos",
+    "country": "Argentine",
+    "age": 11,
     "gender": "male",
-    "distance": "1km",
-    "time": "20min",
+    "distance": "18km",
+    "time": "1h30",
     "content": {
-      "p1": "Yohan quinquis est un développeur aux Gobelins.",
-      "p2": "Il est actuellement en workshop donc relou mais ça va le sujet à l'air ok.",
-      "p3": "Il est devenu très tres très connu !"
+      "p1": "Salut l'ami ! Je m’appelle Carlos, j'ai 11 ans et j'habite dans une grande plaine en Argentine.",
+      "p2": "Mon père est berger, on vit avec pleins d’animaux, j’adore ça, c’est d’ailleurs mon rêve de devenir vétérinaire plus tard, pour m’en occuper et les soigner. Moi j'adore aller étudier, ça me permet de retrouver mes amis et d’apprendre beaucoup de choses !",
+      "p3": "Ce matin je vais partir à l'école sur notre cheval Chiverito avec ma soeur, et comme tous les jours je prends mon ruban porte bonheur que mon père m’a donné pour nous protéger sur la route. Il faut faire très attention, dès le début il y a une pente très dangereuse, nous avons maintenant l’habitude mais papa et maman disent qu’il faut quand même rester sur nos gardes. Même si 18km c’est long et dur, les paysages sont super beaux et aller à l’école est une vraie chance, surtout sur le dos de Chiverito qui nous permet d’arriver en 1h30.",
+      "q4": "J’adore ma famille et je veux rester près d’eux toute ma vie, mais je souhaite quand même étudier pour changer de mode de vie et avoir une chance d’être vétérinaire, *bruit de Chiverito*<br>Ah ! Je crois que Cheverito est prêt pour partir ! Salut"
+    },
+    "graph": {
+      "g1": "travail: 715 484 enfants d’entre 5 et 15 ans qui travaillent en Argentine / 1 enfant sur 10"
     }
  }
   
   
 ]
-
