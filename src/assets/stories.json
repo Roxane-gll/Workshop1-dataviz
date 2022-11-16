@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Olivier",
+    "name": "olivier",
     "country": "Mali",
     "age": 9,
     "gender": "male",
@@ -15,12 +15,17 @@
     },
     "graph": {
       "g1": "guerre: 2 000 contrainte de fermer dans 3 pays"
+    },
+    "style": {
+      "backgroundChooseChildren": "backgroundOlivier.png",
+      "iconChildren": "iconOlivier.svg",
+      "arrowChildren": "arrowOlivier.svg"
     }
  },
 
   {
     "id": 2,
-    "name": "Devi",
+    "name": "devi",
     "country": "Inde",
     "age": 13,
     "gender": "female",
@@ -35,12 +40,41 @@
     "graph": {
       "g1": "marriage forcé",
       "g2": "nb écoles/élève"
+    },
+    "style": {
+      "backgroundChooseChildren": "backgroundDevi.png",
+      "iconChildren": "iconDevi.svg",
+      "arrowChildren": "arrowDevi.svg"
     }
  },
 
   {
     "id": 3,
-    "name": "Carlos",
+    "name": "frigg",
+    "country": "Islande",
+    "age": 11,
+    "gender": "female",
+    "distance": "1km",
+    "time": "10min",
+    "content": {
+      "p1": "Salut l'ami ! Je m’appelle Frig.",
+      "p2": "Mon père est berger.",
+      "p3": "Ce matin je vais partir à l'école.",
+      "q4": "J’adore ma famille et je veux rester près d’eux toute ma vie."
+    },
+    "graph": {
+
+    },
+    "style": {
+      "backgroundChooseChildren": "backgroundFigg.png",
+      "iconChildren": "iconFigg.svg",
+      "arrowChildren": "arrowFrigg.svg"
+    }
+ },
+
+  {
+    "id": 4,
+    "name": "carlos",
     "country": "Argentine",
     "age": 11,
     "gender": "male",
@@ -54,8 +88,13 @@
     },
     "graph": {
       "g1": "travail: 715 484 enfants d’entre 5 et 15 ans qui travaillent en Argentine / 1 enfant sur 10"
+    },
+    "style": {
+      "backgroundChooseChildren": "backgroundCarlos.png",
+      "iconChildren": "iconCarlos.svg",
+      "arrowChildren": "arrowCarlos.svg"
     }
- }
+  }
   
   
 ]

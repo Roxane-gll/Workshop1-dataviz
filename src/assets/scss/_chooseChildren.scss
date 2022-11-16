@@ -1,0 +1,105 @@
+#choose-children-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .children-wrapper {
+    position: relative;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+
+    .backgroundChooseChildren {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .iconChildren {
+      position: relative;
+      margin: 0 auto;
+      width: 65%;
+    }
+
+    .info-children {
+      position: relative;
+      margin: 0 auto;
+      top: 15%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .history {
+        position: relative;
+        font-family: 'BERNARD WACKER', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 11px;
+        letter-spacing: 0;
+        text-align: left;
+      }
+
+      .name {
+        position: relative;
+        font-family: 'BERNARD WACKER', sans-serif;
+        font-size: 53px;
+        font-weight: 400;
+        line-height: 64px;
+        letter-spacing: 0;
+        text-align: left;
+      }
+
+      .country-wrapper {
+        position: relative;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          position: relative;
+          margin-right: 14px;
+          height: 35px;
+          width: 33px;
+        }
+
+        .country {
+          position: relative;
+          font-family: 'BERNARD WACKER', sans-serif;
+          font-size: 53px;
+          font-weight: 400;
+          line-height: 38px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+
+      }
+
+    }
+
+    &:nth-child(1), &:nth-child(3) {
+      color: #EDE7D2;
+    }
+
+    &:nth-child(2) {
+      color: #A54F00;
+    }
+
+    &:nth-child(4) {
+      color: #ABD2F1;
+    }
+
+  }
+
+}

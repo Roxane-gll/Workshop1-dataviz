@@ -1,0 +1,102 @@
+@import url("https://fonts.cdnfonts.com/css/bernard-wacker");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+#choose-children-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#choose-children-wrapper .children-wrapper {
+  position: relative;
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+#choose-children-wrapper .children-wrapper .backgroundChooseChildren {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+#choose-children-wrapper .children-wrapper .iconChildren {
+  position: relative;
+  margin: 0 auto;
+  width: 65%;
+}
+#choose-children-wrapper .children-wrapper .info-children {
+  position: relative;
+  margin: 0 auto;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#choose-children-wrapper .children-wrapper .info-children .history {
+  position: relative;
+  font-family: "BERNARD WACKER", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 11px;
+  letter-spacing: 0;
+  text-align: left;
+}
+#choose-children-wrapper .children-wrapper .info-children .name {
+  position: relative;
+  font-family: "BERNARD WACKER", sans-serif;
+  font-size: 53px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0;
+  text-align: left;
+}
+#choose-children-wrapper .children-wrapper .info-children .country-wrapper {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#choose-children-wrapper .children-wrapper .info-children .country-wrapper img {
+  position: relative;
+  margin-right: 14px;
+  height: 35px;
+  width: 33px;
+}
+#choose-children-wrapper .children-wrapper .info-children .country-wrapper .country {
+  position: relative;
+  font-family: "BERNARD WACKER", sans-serif;
+  font-size: 53px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#choose-children-wrapper .children-wrapper:nth-child(1), #choose-children-wrapper .children-wrapper:nth-child(3) {
+  color: #EDE7D2;
+}
+#choose-children-wrapper .children-wrapper:nth-child(2) {
+  color: #A54F00;
+}
+#choose-children-wrapper .children-wrapper:nth-child(4) {
+  color: #ABD2F1;
+}
+
+/*# sourceMappingURL=style.css.map */
