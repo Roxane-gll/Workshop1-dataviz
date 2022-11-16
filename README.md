@@ -1,14 +1,21 @@
 # Workshop1-dataviz
 
-## Project setup
+### Thème
+
+Les inégalités d'accès à l'éducation, plus précisement, les déplacements pour aller à l'école
+
+### Techologies utilisés
+
+Vue 2 + scss
+
+## Instalation du projet
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
-### Branch main en ligne
+
+### Site en ligne
 
 [Le site](https://workshop1-dataviz.vercel.app/)
