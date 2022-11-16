@@ -17,10 +17,15 @@ import Graph from './pages/Graph.vue'
 
 export default {
   name: 'BaseStory',
+  props: {
+      story: {
+          type:Number
+      }
+  },
   data() {
     return {
       allStories,
-      currentStory: 1,
+      currentStory: this.story,
       currentPage: 1,
       pages: {
         1: Stories,
