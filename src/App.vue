@@ -1,19 +1,14 @@
 <template>
   <div id="app">
-    <button @click="changePage(-1)">←</button>
-    <button @click="changePage(1)">→</button>
-    <component :story="getCurrentStory" :is="getCurrentPage"></component>
-
-    <template v-for="story in allStories">
-      <button :key="story.id" @click="changeStory(story.id)">{{story.name}}</button>
-    </template>
+    <component :story="currentStory" :is="getCurrentComponent" @newStory="changeStory" @startForm="saveForm"></component>
   </div>
 </template>
 
 <script>
-import Stories from './components/Stories.vue'
 import allStories from './assets/stories.json'
-import Graph from './components/Graph.vue'
+import BaseStory from './components/BaseStory.vue'
+import StorySelector from './components/StorySelector.vue'
+import StartForm from './components/StartQuestion.vue'
 
 export default {
   name: 'App',
@@ -21,36 +16,35 @@ export default {
     return {
       allStories,
       currentStory: 1,
-      currentPage: 1,
-      pages: {
-        1: Stories,
-        2: Graph
-      }
+      currentComponent: 1,
+      components: {
+        1: StartForm,
+        2: StorySelector,
+        3: BaseStory
+      },
+      startForm: {}
     }
   },
   computed: {
-    getCurrentPage() {
-      return this.pages[this.currentPage]
-    },
-    getCurrentStory() {
-      return this.allStories.find((story) => story.id === this.currentStory)
+    getCurrentComponent() {
+      return this.components[this.currentComponent]
     }
   },
   methods: {
     changeStory(newStoryId) {
-      this.currentPage = 1
       this.currentStory = newStoryId
+      this.currentComponent = 3
     },
-    changePage(newPage) {
-      if (!this.pages[this.currentPage + newPage]) {
-        return
-      }
-      this.currentPage += newPage
+    saveForm(model) {
+      this.startForm = model
+      this.currentComponent = 2
     }
   }
 }
 </script>
 
-<style scoped>
+<style lang="css">
+
+@import './assets/scss/style.css';
 
 </style>
