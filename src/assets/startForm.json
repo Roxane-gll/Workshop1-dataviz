@@ -8,5 +8,10 @@
         "type": "input",
         "title": "question 2",
         "model": "q2"
+    },
+    {
+        "type": "input",
+        "title": "question 3",
+        "model": "q3"
     }
 ]

@@ -1,9 +1,9 @@
 <template>
   <div>
       <form>
-          <div v-for="input in inputs" :key="input.name">
-              <label :for="input.name">{{ input.name }}</label>
-              <input :name="input.name" v-model="input.model">
+          <div v-for="input in inputs" :key="input.title">
+              <label :for="input.title">{{ input.title }}</label>
+              <input :name="input.title" v-model="models[input.model]">
           </div>
           <button @click="saveForm">Save</button>
       </form>
@@ -25,7 +25,8 @@ export default {
       inputs,
       models: {
           q1: null,
-          q2: null
+          q2: null,
+          q3: null
       }
     }
   },

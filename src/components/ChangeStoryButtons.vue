@@ -12,7 +12,7 @@
 import allStories from '../assets/stories.json'
 
 export default {
-  name: 'ChangeStoryButton',
+  name: 'ChangeStoryButtons',
   props: {
       currentStory: {
           type:Number

@@ -5,7 +5,7 @@
 
     <component :story="getCurrentStory" :is="getCurrentPage"></component>
 
-    <ChangeStoryButton :currentStory="story" @newStory="changeStory"></ChangeStoryButton>
+    <ChangeStoryButtons :currentStory="story" @newStory="changeStory"></ChangeStoryButtons>
   </div>
 </template>
 
@@ -13,11 +13,11 @@
 import Stories from './pages/Stories.vue'
 import allStories from '../assets/stories.json'
 import Graph from './pages/Graph.vue'
-import ChangeStoryButton from './ChangeStoryButton.vue'
+import ChangeStoryButtons from './ChangeStoryButtons.vue'
 
 export default {
   name: 'BaseStory',
-  components: {ChangeStoryButton},
+  components: {ChangeStoryButtons},
   props: {
       story: {
           type:Number
