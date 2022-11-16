@@ -1,0 +1,12 @@
+[
+    {
+        "type": "input",
+        "title": "question 1",
+        "model": "q1"
+    },
+    {
+        "type": "input",
+        "title": "question 2",
+        "model": "q2"
+    }
+]
