@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <component :story="currentStory" :is="getCurrentComponent" @newStory="changeStory" @startForm="saveForm"></component>
+    <component :story="currentStory" :is="getCurrentComponent" @newStory="changeStory" @startForm="saveForm" @home="homePage"></component>
   </div>
 </template>
 
@@ -37,6 +37,9 @@ export default {
     },
     saveForm(model) {
       this.startForm = model
+      this.currentComponent = 2
+    },
+    homePage() {
       this.currentComponent = 2
     }
   }

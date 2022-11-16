@@ -5,7 +5,7 @@
 
     <component :story="getCurrentStory" :is="getCurrentPage"></component>
 
-    <ChangeStoryButtons :currentStory="story" @newStory="changeStory"></ChangeStoryButtons>
+    <ChangeStoryButtons :currentStory="story" @newStory="changeStory" @home="sendHome"></ChangeStoryButtons>
   </div>
 </template>
 
@@ -51,6 +51,9 @@ export default {
         return
       }
       this.currentPage += newPage
+    },
+    sendHome() {
+      this.$emit('home')
     }
   }
 }

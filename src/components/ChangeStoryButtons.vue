@@ -1,5 +1,7 @@
 <template>
   <div style="display:flex">
+    <div @click="sendHome">Home</div>
+
     <template v-for="story in allStories">
       <div :key="story.id" @click="changeStory(story.id)" >
           <img :src="require(`@/assets/img/${story.style.iconChildren}`)" alt="Icon of the children" :class="story.id === currentStory ?'changeStoryButton selectedStory': 'changeStoryButton'">
@@ -26,6 +28,9 @@ export default {
   methods: {
     changeStory(newStoryId) {
       this.$emit('newStory', newStoryId)
+    },
+    sendHome() {
+      this.$emit('home')
     }
   }
 }
