@@ -11,4 +11,4 @@ npm run serve
 ```
 ### Branch main en ligne
 
-Le site[https://workshop1-dataviz.vercel.app/]
+Le site(https://workshop1-dataviz.vercel.app/)
