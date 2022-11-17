@@ -18,8 +18,8 @@
         "model": "transport",
         "options": [
             {
-                "display": "iconCarlos.svg",
-                "value": "iconCarlos.svg"
+                "display": "Voiture",
+                "value": "voiture"
             }
         ]
     },
@@ -28,8 +28,8 @@
         "model":"time",
         "options": [
             {
-                "display": "iconCarlos.svg",
-                "value": "iconCarlos.svg"
+                "display": "10 minutes",
+                "value": "10"
             }
         ]
     }

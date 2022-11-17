@@ -9,7 +9,7 @@
 
                     <img v-if="input.model === 'personnage'" :src="require(`@/assets/img/${option.display}`)">
                     
-                    <div v-else>{{option.display}}</div>
+                    <div style="border:grey 1px solid" v-else>{{option.display}}</div>
 
                   </div>
                 </div>
