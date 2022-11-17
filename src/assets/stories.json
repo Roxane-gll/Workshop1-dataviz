@@ -77,8 +77,10 @@
       "q4": "Tu te rends compte ! on ne m’a jamais appris à nager et je dois traverser une rivière tous les jours ! J'avoue que ça me fait un peu peur parfois, mais je ne le montre pas devant mes amies.<br>Nous mettons 2h30 pour aller à l’école et marchons 5km. Une fois arrivées nous avons un peu mal aux pieds mais ça vaut le coup ! Nous retrouvons tous nos amis et notre professeur qui nous apprends pleins de choses. Peut-être qu’un jour grâce à lui je deviendrai médecin, mais ça, seul l’avenir me le dira ! Je vous laisse, j’arrive à l’école !"
     },
     "graph": {
-      "g1": "marriage forcé",
-      "g2": "nb écoles/élève"
+      "g1": {
+        "France": ["France (1)", "France (2)", "France (3)", "France (4)", "France (5)", "France (6)", "France (7)", "France (8)", "France (9)", "France (10)", "France (11)", "France (12)", "France (13)" , "France (14)", "France (15)", "France (16)", "France (17)", "France (18)"],
+        "Islande": ["France (10)", "France (9)", "France (8)", "France (7)", "France (6)", "France (5)", "France (4)", "France (3)", "France (2)", "France (1)"]
+      }
     },
     "style": {
       "backgroundChooseChildren": "backgroundDevi.png",
@@ -121,7 +123,10 @@
       "q4": "J’adore ma famille et je veux rester près d’eux toute ma vie."
     },
     "graph": {
-
+      "g1": {
+        "France": ["France (1)", "France (2)", "France (3)", "France (4)", "France (5)", "France (6)", "France (7)", "France (8)", "France (9)", "France (10)", "France (11)", "France (12)", "France (13)" , "France (14)", "France (15)", "France (16)", "France (17)", "France (18)"],
+        "Islande": ["France (10)", "France (9)", "France (8)", "France (7)", "France (6)", "France (5)", "France (4)", "France (3)", "France (2)", "France (1)"]
+      }
     },
     "style": {
       "backgroundChooseChildren": "backgroundFigg.png",
