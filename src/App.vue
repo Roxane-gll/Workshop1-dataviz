@@ -16,11 +16,11 @@ export default {
     return {
       allStories,
       currentStory: 1,
-      currentComponent: 1,
+      currentComponent: "Start",
       components: {
-        1: StartForm,
-        2: StorySelector,
-        3: BaseStory
+        "Start": StartForm,
+        "Home": StorySelector,
+        "Story": BaseStory
       },
       startForm: {}
     }
@@ -33,17 +33,17 @@ export default {
   methods: {
     changeStory(newStoryId) {
       this.currentStory = newStoryId
-      this.currentComponent = 3
+      this.currentComponent = "Story"
     },
     saveForm(model) {
       this.startForm = model
-      this.currentComponent = 2
+      this.currentComponent = "Home"
     },
     homePage() {
-      this.currentComponent = 2
+      this.currentComponent = "Home"
     },
     restart() {
-      this.currentComponent = 1
+      this.currentComponent = "Start"
     }
   }
 }

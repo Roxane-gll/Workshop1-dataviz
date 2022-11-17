@@ -11,8 +11,8 @@ import Stories from './pages/Stories.vue'
 import allStories from '../assets/stories.json'
 import Graph from './pages/Graph.vue'
 import Presentation from './pages/Presentation.vue'
-import Header from './Header.vue'
-import Footer from './Footer.vue'
+import Header from './pages/fixedAssets/Header.vue'
+import Footer from './pages/fixedAssets/Footer.vue'
 
 export default {
   name: 'BaseStory',

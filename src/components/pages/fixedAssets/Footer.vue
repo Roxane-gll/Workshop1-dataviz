@@ -3,11 +3,11 @@
     <footer>
 
       <div v-if="currentPage > 1" class="arrow prev" :style="{ background: story.style.colors.arrow, color: story.style.colors.arrow }"  @click="changePage(-1)">
-        <img src="../assets/img/arrow.svg" alt="arrow">
+        <img src="@/assets/img/arrow.svg" alt="arrow">
       </div>
 
       <div v-if="currentPage < nbPages" class="arrow next" :style="{ background: story.style.colors.arrow, color: story.style.colors.arrow }" @click="changePage(1)">
-        <img src="../assets/img/arrow.svg" alt="arrow">
+        <img src="@/assets/img/arrow.svg" alt="arrow">
       </div>
 
     </footer>
