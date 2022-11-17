@@ -64,19 +64,21 @@
     "time": "2h30",
     "content": {
       "presentation": {
-        "p1": ""
+        "p1": "Moi c’est <span class='olivier'>Devi</span>, j’ai 13 ans,",
+        "p2": "j’habite <span style='background: #EDD500;'>en Inde</span>. J’ai de la chance d’aller à l’école, mes sœurs ont été  <span style='background: #EDD500;'>mariées à 13 et 14 ans</span> et n’ont malheureusement pas eu ce droit.",
+        "p3": "J’ai un rêve depuis toute petite, j’aimerai devenir médecin et ouvrir un  <span style='background: #EDD500;'>hôpital gratuit</span> dans mon village ! Comme ça plus personne n’aura mal ou ne sera malade, je pourrai soigner <span style='background: #EDD500;'>tout le monde</span>. C’est pour ça que j’adore aller à l’école même si c’est  <span style='background: #EDD500;'>dur de s’y rendre</span>."
       },
       "storyOne":{
-        "p1": ""
+        "p1": "Je fais le trajet jusqu’à l’école avec <span style='background: #EDD500;'>deux amies</span>, car il est dangereux de le faire toute seule. Nous croisons <span style='background: #EDD500;'>des serpents</span>, traversons des forêts ou encore des rivières où l’eau nous arrive jusqu’aux bras.",
+        "p2": "Tu te rends compte ! on ne m’a <span style='background: #EDD500;'>jamais appris à nager</span> et je dois traverser une rivière tous les jours ! J'avoue que ça me fait un peu <span style='background: #EDD500;'>peur parfois</span>, mais je ne le montre pas devant mes amies.",
+        "p3": "",
+        "p4": "Nous mettons <span style='background: #EDD500;'>2h30</span> pour aller à l’école et marchons 5km. Une fois arrivées nous avons un peu mal aux pieds mais ça vaut le coup ! Nous retrouvons tous nos amis et notre professeur qui nous apprends pleins de choses.",
+        "p5": "Peut-être qu’un jour grâce à lui <span style='background: #EDD500;'>je deviendrai médecin</span>, mais ça, seul l’avenir me le dira ! "
       },
       "storyTwo":{
-        "title": "",
-        "p1": ""
-      },
-      "p1": "Salut, moi c’est Devi, j’ai 13 ans et j’habite en Inde.",
-      "p2": "J’ai de la chance d’aller à l’école, mes sœurs ont été mariées à 13 et 14 ans et n’ont malheureusement pas eu ce droit. J’ai un rêve depuis toute petite, j’aimerai devenir médecin et ouvrir un hôpital gratuit dans mon village ! Comme ça plus personne n’aura mal ou ne sera malade, je pourrai soigner tout le monde. C’est pour ça que j’adore aller à l’école même si c’est dur de s’y rendre.",
-      "p3": "Je fais le trajet jusqu’à l’école avec deux amies, car il est dangereux de le faire toute seule. Nous croisons des serpents,  traversons des forêts ou encore des rivières où l’eau nous arrive jusqu’aux bras.",
-      "q4": "Tu te rends compte ! on ne m’a jamais appris à nager et je dois traverser une rivière tous les jours ! J'avoue que ça me fait un peu peur parfois, mais je ne le montre pas devant mes amies.<br>Nous mettons 2h30 pour aller à l’école et marchons 5km. Une fois arrivées nous avons un peu mal aux pieds mais ça vaut le coup ! Nous retrouvons tous nos amis et notre professeur qui nous apprends pleins de choses. Peut-être qu’un jour grâce à lui je deviendrai médecin, mais ça, seul l’avenir me le dira ! Je vous laisse, j’arrive à l’école !"
+        "title": "Pourquoi mes soeurs ne vont plus à l'école ?",
+        "p1": "Ici, les filles <span style='background: #EDD500;'>ne choisissent pas</span> toujours avec qui elles se marient et à quel âge ! Lorsqu’on est mariées, <span style='background: #EDD500;'>on ne peut plus aller à l’école</span> parce qu’on s’occupe de la maison et de notre mari."
+      }
     },
     "graph": {
       "g1": {

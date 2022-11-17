@@ -1,4 +1,5 @@
 <template>
+
   <section id="startQuestion">
     <div v-for="input in inputs" :key="input.title" :class="input.model">
 

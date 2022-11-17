@@ -4,6 +4,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -35,6 +37,8 @@ body {
   display: flex;
   flex-direction: column;
   background: #F8F3EE;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 #intro .wrapper p {
   position: relative;
@@ -46,6 +50,8 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: #5F3926;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 #intro .wrapper h3 {
   position: relative;
@@ -57,6 +63,8 @@ body {
   text-align: left;
   text-transform: uppercase;
   color: #5F3926;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 #intro .wrapper div {
   position: relative;
@@ -81,10 +89,14 @@ body {
   text-align: left;
   text-transform: uppercase;
   color: #5F3926;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 #startQuestion {
   position: relative;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;

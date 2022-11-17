@@ -2,7 +2,7 @@
   <div id="app">
     <header>
       <div @click="sendStart" class="goHome-wrapper" style="background: #F8F3EE">
-          <img src="../assets/img/restart.svg" alt="home button">
+          <img src="../assets/img/cross.svg" alt="home button">
       </div>
     </header>
 
@@ -30,6 +30,7 @@
         </div>
       </template>
     </div>
+
   </div>
 </template>
 
