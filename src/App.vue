@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import Intro from './components/Intro.vue'
 import allStories from './assets/stories.json'
 import BaseStory from './components/BaseStory.vue'
 import StorySelector from './components/StorySelector.vue'
@@ -16,8 +17,9 @@ export default {
     return {
       allStories,
       currentStory: 1,
-      currentComponent: "Start",
+      currentComponent: "Intro",
       components: {
+        "Intro": Intro,
         "Start": StartForm,
         "Home": StorySelector,
         "Story": BaseStory
