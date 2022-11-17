@@ -30,7 +30,13 @@
       "q4": "À cause de la guerre nous avons dû déménager, et avons perdu beaucoup de choses. Ma soeur n’a pas pu continuer à étudier même si elle le voulait ; donc quand je vais à l’école, je pense à elle, et je veux réussir pour elle, la rendre fière et l’aider plus tard.<br>D’ailleurs, elle m’appelle pour m’amener à l’école, je dois partir !"
     },
     "graph": {
-      "g1": "guerre: 2 000 contrainte de fermer dans 3 pays"
+      "g1": {
+        "2017": [true, true, true, true, true, true, true, true, true, true, true, true],
+        "2018": [true, false, false, true, true, true, false, true, true, true, true, false],
+        "2019": [false, false, false, false, true, false, false, true, false, false, true, false]
+      },
+      "g1Phrase": "Représentation du nombre d’écoles entre 2017 et 2019",
+      "g1PhraseEnd": "2 écoles sur 3 ont été détruites"
     },
     "style": {
       "backgroundChooseChildren": "backgroundOlivier.png",
@@ -75,8 +81,10 @@
       }
     },
     "graph": {
-      "g1": "marriage forcé",
-      "g2": "nb écoles/élève"
+      "g1": {
+        "France": ["France (1)", "France (2)", "France (3)", "France (4)", "France (5)", "France (6)", "France (7)", "France (8)", "France (9)", "France (10)", "France (11)", "France (12)", "France (13)" , "France (14)", "France (15)", "France (16)", "France (17)", "France (18)"],
+        "Islande": ["France (10)", "France (9)", "France (8)", "France (7)", "France (6)", "France (5)", "France (4)", "France (3)", "France (2)", "France (1)"]
+      }
     },
     "style": {
       "backgroundChooseChildren": "backgroundDevi.png",
@@ -119,7 +127,10 @@
       "q4": "J’adore ma famille et je veux rester près d’eux toute ma vie."
     },
     "graph": {
-
+      "g1": {
+        "France": ["France (1)", "France (2)", "France (3)", "France (4)", "France (5)", "France (6)", "France (7)", "France (8)", "France (9)", "France (10)", "France (11)", "France (12)", "France (13)" , "France (14)", "France (15)", "France (16)", "France (17)", "France (18)"],
+        "Islande": ["France (10)", "France (9)", "France (8)", "France (7)", "France (6)", "France (5)", "France (4)", "France (3)", "France (2)", "France (1)"]
+      }
     },
     "style": {
       "backgroundChooseChildren": "backgroundFigg.png",
