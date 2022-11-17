@@ -12,7 +12,15 @@
       </div>
 
       <div class="right-part">
+        <div style="display:flex;">
+          <div v-for="(values, key) in story.graph.g1" :key="key" @click="switchYear(key)">
+            {{key}}
+          </div>
+        </div>
 
+        <div>
+          <img v-for="(value, index) in story.graph.g1[gaphYear]" :key="index" :src="value ? require('@/assets/img/school.svg') : require('@/assets/img/schoolDestroyed.svg')" class="imgSchool">
+        </div>
       </div>
 
     </div>
@@ -27,10 +35,22 @@ export default {
     story:{
       type: Object
     }
+  },
+  data() {
+    return {
+      gaphYear: "2018"
+    }
+  },
+  methods: {
+    switchYear(year) {
+      this.gaphYear = year
+    }
   }
-
 }
 </script>
 
 <style scoped>
+.imgSchool {
+  width: 20px;
+}
 </style>
