@@ -13,6 +13,8 @@
         <div>
           <img v-for="(value, index) in story.graph.g1[gaphCountry]" :key="index" :src="require(`@/assets/img/schoolImg/${value}.svg`)" class="imgSchool">
         </div>
+
+        <p>En {{gaphCountry}}, un professeur donne cours à {{story.graph.g1[gaphCountry].length}} élèves en moyenne.</p>
   </div>
 </template>
 

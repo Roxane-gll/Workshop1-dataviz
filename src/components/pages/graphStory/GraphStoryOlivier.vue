@@ -9,6 +9,8 @@
         <div>
           <img v-for="(value, index) in story.graph.g1[gaphYear]" :key="index" :src="value ? require('@/assets/img/school.svg') : require('@/assets/img/schoolDestroyed.svg')" class="imgSchool">
         </div>
+        <p>{{story.graph.g1Phrase}}</p>
+        <p v-if="gaphYear === '2019'"> {{story.graph.g1PhraseEnd}}</p>
   </div>
 </template>
 
