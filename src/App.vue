@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <component :story="currentStory" :is="getCurrentComponent" @newStory="changeStory" @startForm="saveForm" @home="homePage"></component>
   </div>
 </template>
