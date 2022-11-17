@@ -6,7 +6,11 @@
               <div style="display:flex;">
                 <div v-for="option in input.options" :key="option.value">
                   <div @click="updateForm(option.value, input.model)">
-                    <img :src="require(`@/assets/img/${option.display}`)">
+
+                    <img v-if="input.model === 'personnage'" :src="require(`@/assets/img/${option.display}`)">
+                    
+                    <div v-else>{{option.display}}</div>
+
                   </div>
                 </div>
               </div>
