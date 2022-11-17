@@ -1,12 +1,8 @@
 <template>
   <div id="app">
-    <button @click="changePage(-1)">←</button>
-    <button @click="changePage(1)">→</button>
+    <Header :page="currentPage" :current-story="currentStory" :story="getCurrentStory" @newPage="changePage"></Header>
     <component :story="getCurrentStory" :is="getCurrentPage"></component>
-
-    <template v-for="story in allStories">
-      <button :key="story.id" @click="changeStory(story.id)">{{story.name}}</button>
-    </template>
+    <Footer :story="getCurrentStory"></Footer>
   </div>
 </template>
 
@@ -14,9 +10,13 @@
 import Stories from './pages/Stories.vue'
 import allStories from '../assets/stories.json'
 import Graph from './pages/Graph.vue'
+import Presentation from './pages/Presentation.vue'
+import Header from './Header.vue'
+import Footer from './Footer.vue'
 
 export default {
   name: 'BaseStory',
+  components: {Header, Footer},
   props: {
       story: {
           type:Number
@@ -28,8 +28,9 @@ export default {
       currentStory: this.story,
       currentPage: 1,
       pages: {
-        1: Stories,
-        2: Graph
+        1: Presentation,
+        2: Stories,
+        3: Graph
       }
     }
   },

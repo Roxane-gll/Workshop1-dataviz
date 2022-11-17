@@ -88,16 +88,24 @@
 
     }
 
-    &:nth-child(1), &:nth-child(3) {
-      color: #EDE7D2;
-    }
-
-    &:nth-child(2) {
-      color: #A54F00;
-    }
-
     &:nth-child(4) {
-      color: #ABD2F1;
+
+      .info-children {
+
+        .country-wrapper {
+
+          .country {
+            font-size: 39px;
+            font-weight: 400;
+            line-height: 48px;
+            letter-spacing: 0;
+            text-align: left;
+          }
+
+        }
+
+      }
+
     }
 
   }

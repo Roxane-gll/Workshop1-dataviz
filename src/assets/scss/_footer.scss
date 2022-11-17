@@ -1,0 +1,66 @@
+footer {
+  position: absolute;
+  right: 23px;
+  bottom: 34px;
+  display: flex;
+  flex-direction: row;
+
+  .arrow {
+    position: relative;
+    padding: 21px 16px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+      position: relative;
+      height: 28px;
+      width: 38px;
+    }
+
+    &.prev {
+      margin-right: 10px;
+
+      img {
+        transform: rotate(180deg);
+      }
+
+      &:after {
+        position: absolute;
+        content: "Retour";
+        bottom: -22px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Lexend', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+
+    }
+
+    &.next {
+
+      &:after {
+        position: absolute;
+        content: "Suivant";
+        bottom: -22px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Lexend', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+
+    }
+
+  }
+
+}

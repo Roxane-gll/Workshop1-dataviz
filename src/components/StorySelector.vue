@@ -11,7 +11,7 @@
 
           <img :src="require(`@/assets/img/${story.style.iconChildren}`)" alt="Icon of the children" class="iconChildren">
 
-          <div class="info-children">
+          <div class="info-children" :style="{ color: story.style.colors.presentation }">
 
             <h5 class="history">L'histoire de</h5>
 
