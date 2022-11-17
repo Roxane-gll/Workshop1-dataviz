@@ -1,35 +1,71 @@
 [
     {
-        "title": "Choisi to personnage",
+        "title": "Choisi ton personnage",
         "model": "personnage",
         "options": [
             {
-                "display": "iconCarlos.svg",
-                "value": "iconCarlos.svg"
+                "display": "basicPerso1.svg",
+                "value": "basicPerso1.svg"
             },
             {
-                "display": "iconCarlos.svg",
-                "value": "iconCarlos.svg"
+                "display": "basicPerso2.svg",
+                "value": "basicPerso2.svg"
+            },
+            {
+                "display": "basicPerso3.svg",
+                "value": "basicPerso3.svg"
+            },
+            {
+                "display": "basicPerso4.svg",
+                "value": "basicPerso4.svg"
+            },
+            {
+                "display": "basicPerso5.svg",
+                "value": "basicPerso5.svg"
             }
         ]
     },
     {
-        "title": "Transport",
+        "title": "Comment vas-tu à l’école ?",
         "model": "transport",
         "options": [
             {
-                "display": "Voiture",
-                "value": "voiture"
+                "display": "car",
+                "value": "car"
+            },
+            {
+                "display": "bike",
+                "value": "bike"
+            },
+            {
+                "display": "bus",
+                "value": "bus"
+            },
+            {
+                "display": "walk",
+                "value": "walk"
             }
         ]
     },
     {
-        "title": "Temps",
+        "title": "Tu Mets combien de temps pour aller à l’école ?",
         "model":"time",
         "options": [
             {
-                "display": "10 minutes",
-                "value": "10"
+                "display": "5 min",
+                "value": "5"
+            },
+            {
+                "display": "15 min",
+                "value": "15"
+            },
+            {
+                "display": "30 min",
+                "value": "30"
+            },
+            {
+                "display": "1 heure",
+                "value": "60"
             }
         ]
     }
