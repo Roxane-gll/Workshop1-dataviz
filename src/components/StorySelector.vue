@@ -1,5 +1,11 @@
 <template>
-  <div>
+  <div id="app">
+    <header>
+      <div @click="sendStart" class="goHome-wrapper" style="background: #F8F3EE">
+          <img src="../assets/img/restart.svg" alt="home button">
+      </div>
+    </header>
+
     <div id="choose-children-wrapper">
       <template v-for="story in allStories">
         <div class="children-wrapper" :key="story.id" @click="chooseStory(story.id)">
@@ -45,6 +51,9 @@ export default {
   methods: {
     chooseStory(newStoryId) {
         this.$emit('newStory', newStoryId)
+    },
+    sendStart() {
+      this.$emit('restart')
     }
   }
 }

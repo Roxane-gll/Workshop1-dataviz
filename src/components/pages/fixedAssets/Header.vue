@@ -3,9 +3,7 @@
     <header>
 
       <div @click="sendHome" class="goHome-wrapper" :style="{ background: story.style.colors.goHome }">
-
-        <img src="../assets/img/home.svg" alt="home button">
-
+        <img src="@/assets/img/home.svg" alt="home button">
       </div>
 
       <div class="children-wrapper">
@@ -23,7 +21,7 @@
 </template>
 
 <script>
-import allStories from '../assets/stories.json'
+import allStories from '@/assets/stories.json'
 
 export default {
   name: 'Header',
