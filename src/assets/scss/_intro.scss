@@ -24,6 +24,8 @@
     display: flex;
     flex-direction: column;
     background: #F8F3EE;
+    user-select: none;
+    -webkit-user-drag: none;
 
     p {
       position: relative;
@@ -35,6 +37,8 @@
       letter-spacing: 0em;
       text-align: left;
       color: #5F3926;
+      user-select: none;
+      -webkit-user-drag: none;
     }
 
     h3 {
@@ -47,6 +51,8 @@
       text-align: left;
       text-transform: uppercase;
       color: #5F3926;
+      user-select: none;
+      -webkit-user-drag: none;
     }
 
     div {
@@ -73,6 +79,8 @@
         text-align: left;
         text-transform: uppercase;
         color: #5F3926;
+        user-select: none;
+        -webkit-user-drag: none;
       }
 
     }
