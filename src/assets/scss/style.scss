@@ -8,6 +8,7 @@ body {
   overflow: hidden;
 }
 
+@import '_intro.scss';
 @import '_startQuestions.scss';
 @import '_chooseChildren.scss';
 @import '_header.scss';
