@@ -1,0 +1,213 @@
+#startQuestion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    position: relative;
+    margin-bottom: 20px;
+    font-family: "BERNARD WACKER", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #5F3926;
+  }
+
+  .personnage {
+    position: relative;
+    margin-bottom: 68px;
+    display: flex;
+    flex-direction: column;
+
+    .container {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+
+      .item {
+        position: relative;
+        margin-right: 37px;
+
+        img {
+          position: relative;
+          height: 110px;
+          width: 110px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+      }
+
+    }
+
+  }
+
+  .transport {
+    position: relative;
+    margin-bottom: 68px;
+    display: flex;
+    flex-direction: column;
+
+    .container {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+
+      .item {
+        position: relative;
+        margin-right: 36px;
+        height: 84px;
+        width: 84px;
+
+        &:nth-child(1) {
+          background: url("../img/transport/car-white.svg") center/cover no-repeat;
+          transition: all 0.35s ease-in-out;
+        }
+
+        &:nth-child(2) {
+          background: url("../img/transport/bike-white.svg") center/cover no-repeat;
+          transition: all 0.35s ease-in-out;
+        }
+
+        &:nth-child(3) {
+          background: url("../img/transport/bus-white.svg") center/cover no-repeat;
+          transition: all 0.35s ease-in-out;
+        }
+
+        &:nth-child(4) {
+          background: url("../img/transport/walk-white.svg") center/cover no-repeat;
+          transition: all 0.35s ease-in-out;
+        }
+
+        &.active {
+
+          &:nth-child(1) {
+            background: url("../img/transport/car-orange.svg") center/cover no-repeat;
+            transition: all 0.35s ease-in-out;
+          }
+
+          &:nth-child(2) {
+            background: url("../img/transport/bike-orange.svg") center/cover no-repeat;
+            transition: all 0.35s ease-in-out;
+          }
+
+          &:nth-child(3) {
+            background: url("../img/transport/bus-orange.svg") center/cover no-repeat;
+            transition: all 0.35s ease-in-out;
+          }
+
+          &:nth-child(4) {
+            background: url("../img/transport/walk-orange.svg") center/cover no-repeat;
+            transition: all 0.35s ease-in-out;
+          }
+
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+      }
+
+    }
+
+  }
+
+  .time {
+    position: relative;
+    margin-bottom: 57px;
+
+    .container {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+
+      .item {
+        position: relative;
+        margin-right: 15px;
+
+        .wrapper {
+          position: relative;
+          padding: 15px 20px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          background: transparent;
+          border-radius: 20px;
+          border: 2px solid #FF6948;
+          transition: all 0.35s ease-in-out;
+
+          .image {
+            position: relative;
+            height: 33px;
+            width: 33px;
+            background: url("../img/clock-orange.svg") center/cover no-repeat;
+            transition: all 0.35s ease-in-out;
+          }
+
+          p {
+            position: relative;
+            margin-left: 14px;
+            font-family: Lexend;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 35px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #FF6948;
+            transition: all 0.35s ease-in-out;
+          }
+
+          &.active {
+            background: #FF6948;
+            transition: all 0.35s ease-in-out;
+
+            .image {
+              background: url("../img/clock-white.svg") center/cover no-repeat;
+              transition: all 0.35s ease-in-out;
+            }
+
+            p {
+              color: white;
+              transition: all 0.35s ease-in-out;
+            }
+
+          }
+
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+      }
+
+    }
+
+  }
+
+  .saveButton {
+    position: relative;
+    padding: 15px 30px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    display: flex;
+    font-family: Lexend;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    background: #5F3926;
+  }
+
+}
