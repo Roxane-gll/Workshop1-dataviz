@@ -1,5 +1,5 @@
 <template>
-  <section id="storyOne" :style="{ background: story.style.colors.background }">
+  <section id="storyOne" :style="{ background: story.style.colors.background }" :class="story.name">
 
     <div class="top-part">
 

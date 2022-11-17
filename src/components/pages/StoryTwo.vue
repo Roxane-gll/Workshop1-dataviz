@@ -12,7 +12,8 @@
       </div>
 
       <div class="right-part">
-
+        <GraphStoryOlivier v-if="story.id === 1" :story="story"></GraphStoryOlivier>
+        <GraphStoryFigg v-else-if="story.id === 3" :story="story"></GraphStoryFigg>
       </div>
 
     </div>
@@ -21,16 +22,22 @@
 </template>
 
 <script>
+import GraphStoryOlivier from './graphStory/GraphStoryOlivier.vue'
+import GraphStoryFigg from './graphStory/GraphStoryFigg.vue'
+
 export default {
   name: 'StoryTwo',
+  components: {GraphStoryOlivier, GraphStoryFigg},
   props: {
     story:{
       type: Object
     }
   }
-
 }
 </script>
 
 <style scoped>
+.imgSchool {
+  width: 20px;
+}
 </style>
