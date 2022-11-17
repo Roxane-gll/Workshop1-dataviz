@@ -113,11 +113,30 @@
       line-height: 33px;
       letter-spacing: 0em;
       text-align: left;
+
+      span {
+        position: relative;
+
+        &.olivier {
+
+          &:after {
+            position: absolute;
+            content: url("../img/nameUnderline.svg");
+            width: 90px;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+        }
+
+      }
+
     }
 
     .country {
       position: absolute;
-      bottom: 17%;
+      bottom: 14%;
       right: 15px;
       height: 375px;
       width: 550px;

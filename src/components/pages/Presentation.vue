@@ -24,15 +24,15 @@
 
         <h6 class="hey" :style="{ color: story.style.colors.arrow }">Salut !</h6>
 
-        <p class="p1">{{ story.content.presentation.p1 }} {{ story.content.presentation.p1 }}</p>
+        <p class="p1" v-html="story.content.presentation.p1"></p>
 
-        <p class="p2">{{ story.content.presentation.p2 }}</p>
+        <p class="p2" v-html="story.content.presentation.p2"></p>
 
       </div>
 
       <div class="bottom-part">
 
-        <p class="p1">{{ story.content.presentation.p3 }}</p>
+        <p class="p1" v-html="story.content.presentation.p3"></p>
 
       </div>
 
