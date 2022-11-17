@@ -1,17 +1,36 @@
 [
     {
-        "type": "input",
-        "title": "question 1",
-        "model": "q1"
+        "title": "Choisi to personnage",
+        "model": "personnage",
+        "options": [
+            {
+                "display": "iconCarlos.svg",
+                "value": "iconCarlos.svg"
+            },
+            {
+                "display": "iconCarlos.svg",
+                "value": "iconCarlos.svg"
+            }
+        ]
     },
     {
-        "type": "input",
-        "title": "question 2",
-        "model": "q2"
+        "title": "Transport",
+        "model": "transport",
+        "options": [
+            {
+                "display": "iconCarlos.svg",
+                "value": "iconCarlos.svg"
+            }
+        ]
     },
     {
-        "type": "input",
-        "title": "question 3",
-        "model": "q3"
+        "title": "Temps",
+        "model":"time",
+        "options": [
+            {
+                "display": "iconCarlos.svg",
+                "value": "iconCarlos.svg"
+            }
+        ]
     }
 ]
