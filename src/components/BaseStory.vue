@@ -9,8 +9,8 @@
 <script>
 
 import allStories from '../assets/stories.json'
-import Header from './Header.vue'
-import Footer from './Footer.vue'
+import Header from './pages/fixedAssets/Header.vue'
+import Footer from './pages/fixedAssets/Footer.vue'
 import Presentation from './pages/Presentation.vue'
 import StoryOne from './pages/StoryOne.vue'
 import StoryTwo from './pages/StoryTwo.vue'
