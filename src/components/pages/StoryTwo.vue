@@ -12,15 +12,7 @@
       </div>
 
       <div class="right-part">
-        <div style="display:flex;">
-          <div v-for="(values, key) in story.graph.g1" :key="key" @click="switchYear(key)">
-            {{key}}
-          </div>
-        </div>
-
-        <div>
-          <img v-for="(value, index) in story.graph.g1[gaphYear]" :key="index" :src="value ? require('@/assets/img/school.svg') : require('@/assets/img/schoolDestroyed.svg')" class="imgSchool">
-        </div>
+        <GraphStoryOlivier v-if="story.id === 1" :story="story"></GraphStoryOlivier>
       </div>
 
     </div>
@@ -29,21 +21,14 @@
 </template>
 
 <script>
+import GraphStoryOlivier from './GraphStoryOlivier.vue'
+
 export default {
   name: 'StoryTwo',
+  components: {GraphStoryOlivier},
   props: {
     story:{
       type: Object
-    }
-  },
-  data() {
-    return {
-      gaphYear: "2018"
-    }
-  },
-  methods: {
-    switchYear(year) {
-      this.gaphYear = year
     }
   }
 }
