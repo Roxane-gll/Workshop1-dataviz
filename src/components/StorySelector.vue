@@ -53,7 +53,7 @@ export default {
         this.$emit('newStory', newStoryId)
     },
     sendStart() {
-      this.$emit('start')
+      this.$emit('restart')
     }
   }
 }
