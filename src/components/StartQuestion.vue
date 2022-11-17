@@ -5,20 +5,17 @@
       <h3 class="title">{{ input.title }}</h3>
 
       <div class="container">
-        <div class="item" v-for="option in input.options" :key="option.value" @click="updateForm(option.value, input.model)">
+        <div :class="models[input.model] === option.value ? 'item active': 'item'" v-for="option in input.options" :key="option.value" @click="updateForm(option.value, input.model)">
 
-            <img v-if="input.model === 'personnage'" :src="require(`@/assets/img/basicPerso/${option.display}`)">
+            <img v-if="input.model === 'personnage'" :src="require(`@/assets/img/basicPerso/${option.display}`)" :style="models[input.model] === option.value || models[input.model] === null ? '' : 'filter: grayscale(1);'">
 
-          <div class="wrapper" v-else-if="input.model === 'transport'"></div>
+            <div class="wrapper" v-else-if="input.model === 'transport'" @click="updateForm(option.value, input.model)"></div>
 
-            <div class="wrapper" v-else>
-
+            <div :class="models[input.model] === option.value ? 'wrapper active': 'wrapper'" v-else @click="updateForm(option.value, input.model)">
               <div class="image"></div>
 
               <p>{{ option.display }}</p>
-
             </div>
-
         </div>
       </div>
 
