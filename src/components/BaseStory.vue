@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Header :page="currentPage" :current-story="currentStory" :story="getCurrentStory" @newPage="changePage"></Header>
+    <Header :page="currentPage" :current-story="story" :story="getCurrentStory" @newPage="changePage"></Header>
     <component :story="getCurrentStory" :is="getCurrentPage"></component>
-    <Footer :story="getCurrentStory"></Footer>
+    <Footer :story="getCurrentStory" :currentPage="currentPage" :nbPages="Object.keys(pages).length" @newPage="changePage"></Footer>
   </div>
 </template>
 

@@ -2,11 +2,11 @@
   <div id="app">
     <footer>
 
-      <div class="arrow prev" :style="{ background: story.style.colors.arrow, color: story.style.colors.arrow }">
+      <div v-if="currentPage > 1" class="arrow prev" :style="{ background: story.style.colors.arrow, color: story.style.colors.arrow }"  @click="changePage(-1)">
         <img src="../assets/img/arrow.svg" alt="arrow">
       </div>
 
-      <div class="arrow next" :style="{ background: story.style.colors.arrow, color: story.style.colors.arrow }">
+      <div v-if="currentPage < nbPages" class="arrow next" :style="{ background: story.style.colors.arrow, color: story.style.colors.arrow }" @click="changePage(1)">
         <img src="../assets/img/arrow.svg" alt="arrow">
       </div>
 
@@ -15,24 +15,24 @@
 </template>
 
 <script>
-import allStories from '../assets/stories.json'
 
 export default {
   name: 'Footer',
   props: {
-    currentStory: {
+    story: {
+      type:Object
+    },
+    currentPage: {
       type:Number
     },
-    story: {
-      type: Object
-    }
-  },
-  data() {
-    return {
-      allStories,
+    nbPages: {
+      type: Number
     }
   },
   methods: {
+    changePage(newPageId) {
+      this.$emit('newPage', newPageId)
+    }
   }
 }
 </script>
