@@ -1,5 +1,5 @@
 <template>
-  <section id="intro">
+  <section id="intro" @click="sendToForm">
 
     <img src="../assets/img/backgroundIntro.svg" alt="background" class="background">
 
@@ -41,7 +41,7 @@ export default {
     chooseStory(newStoryId) {
       this.$emit('newStory', newStoryId)
     },
-    sendStart() {
+    sendToForm() {
       this.$emit('restart')
     }
   }
