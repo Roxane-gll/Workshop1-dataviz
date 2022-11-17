@@ -1,4 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/bernard-wacker");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -89,14 +90,338 @@ body {
   letter-spacing: 0em;
   text-align: left;
 }
-#choose-children-wrapper .children-wrapper:nth-child(1), #choose-children-wrapper .children-wrapper:nth-child(3) {
-  color: #EDE7D2;
+#choose-children-wrapper .children-wrapper:nth-child(4) .info-children .country-wrapper .country {
+  font-size: 39px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0;
+  text-align: left;
 }
-#choose-children-wrapper .children-wrapper:nth-child(2) {
-  color: #A54F00;
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: transparent;
+  z-index: 1;
 }
-#choose-children-wrapper .children-wrapper:nth-child(4) {
-  color: #ABD2F1;
+header .goHome-wrapper {
+  position: relative;
+  border-radius: 0 0 100px 0;
+  cursor: pointer;
+}
+header .goHome-wrapper img {
+  position: relative;
+  margin: 25px 40px 40px 25px;
+  height: 36px;
+  width: 34px;
+}
+header .children-wrapper {
+  position: relative;
+  margin-top: 23px;
+  margin-right: 27px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .children-wrapper .children {
+  position: relative;
+  margin-right: 21px;
+  height: 60px;
+  width: 60px;
+}
+header .children-wrapper .children img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+header .children-wrapper .children:last-child {
+  margin-right: 0;
+}
+header .children-wrapper .children.selectedStory {
+  height: 90px;
+  width: 90px;
+  border-radius: 100px;
+  border: 2px solid red;
+}
+
+footer {
+  position: absolute;
+  right: 23px;
+  bottom: 34px;
+  display: flex;
+  flex-direction: row;
+}
+footer .arrow {
+  position: relative;
+  padding: 21px 16px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+footer .arrow img {
+  position: relative;
+  height: 28px;
+  width: 38px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+footer .arrow.prev img {
+  transform: rotate(180deg);
+}
+footer .arrow.prev:after {
+  position: absolute;
+  content: "Retour";
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Lexend", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+footer .arrow.next {
+  margin-left: 10px;
+}
+footer .arrow.next:after {
+  position: absolute;
+  content: "Suivant";
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Lexend", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+#presentation {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+#presentation .presentation-wrapper {
+  position: relative;
+  height: 100%;
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#presentation .presentation-wrapper .backgroundPresentation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+#presentation .presentation-wrapper .icon {
+  position: relative;
+  width: 50%;
+}
+#presentation .presentation-wrapper .info-presentation {
+  position: relative;
+  top: 6%;
+  display: flex;
+  flex-direction: column;
+}
+#presentation .presentation-wrapper .info-presentation .name {
+  position: relative;
+  font-family: "BERNARD WACKER", sans-serif;
+  font-size: 68px;
+  font-weight: 400;
+  line-height: 83px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#presentation .presentation-wrapper .info-presentation .age {
+  position: relative;
+  font-family: "BERNARD WACKER", sans-serif;
+  font-size: 41px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+}
+#presentation .content-wrapper {
+  position: relative;
+  padding: 108px 0 108px 56px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+#presentation .content-wrapper .top-part {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#presentation .content-wrapper .top-part .hey {
+  position: relative;
+  margin-bottom: 5px;
+  font-family: "BERNARD WACKER", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 61px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+#presentation .content-wrapper .top-part .p1 {
+  margin-bottom: 18px;
+}
+#presentation .content-wrapper .top-part .p2 {
+  max-width: 560px;
+}
+#presentation .content-wrapper .bottom-part {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#presentation .content-wrapper .bottom-part .p1 {
+  max-width: 490px;
+}
+#presentation .content-wrapper p {
+  position: relative;
+  font-family: Lexend;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#presentation .content-wrapper p span {
+  position: relative;
+}
+#presentation .content-wrapper p span.olivier:after {
+  position: absolute;
+  content: url("../img/nameUnderline.svg");
+  width: 90px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#presentation .content-wrapper .country {
+  position: absolute;
+  bottom: 14%;
+  right: 15px;
+  height: 375px;
+  width: 550px;
+}
+
+#storyOne {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 130px 165px 80px 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#storyOne .top-part {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+#storyOne .top-part p {
+  max-width: 780px;
+}
+#storyOne .top-part .p1, #storyOne .top-part .p2 {
+  margin-bottom: 20px;
+}
+#storyOne .bottom-part {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+#storyOne .bottom-part p {
+  max-width: 740px;
+}
+#storyOne .bottom-part .p1 {
+  margin-bottom: 20px;
+}
+#storyOne p {
+  position: relative;
+  font-family: Lexend;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#storyOne .asset {
+  position: absolute;
+  height: 170px;
+  width: 210px;
+  top: 45%;
+  right: 6%;
+  transform: translateY(-50%);
+}
+
+#storyTwo {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 130px 80px 0 75px;
+  display: flex;
+  flex-direction: column;
+}
+#storyTwo .title {
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 570px;
+  font-family: "BERNARD WACKER", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 61px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+#storyTwo .wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#storyTwo .wrapper .left-part {
+  position: relative;
+}
+#storyTwo .wrapper .left-part p {
+  position: relative;
+  max-width: 480px;
+  font-family: Lexend;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#storyTwo .wrapper .right-part {
+  position: relative;
+  height: 300px;
+  width: 420px;
+  background: red;
 }
 
 /*# sourceMappingURL=style.css.map */

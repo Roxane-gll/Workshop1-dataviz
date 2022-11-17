@@ -8,6 +8,22 @@
     "distance": "5km",
     "time": "1h30",
     "content": {
+      "presentation": {
+        "p1": "Moi c’est <span class='olivier'>Olivier</span>, j’ai 9 ans,",
+        "p2": "j’habite au <span style='background: #D8BE85;'>Mali en Afrique</span> et je suis le petit dernier de ma grande famille.",
+        "p3": "Mon rêve à moi ce serait d’avoir mon <span style='background: #D8BE85;'>propre vélo</span> ! Parce que tous les jours pour aller a l’école je dois monter sur le vélo de ma sœur, et c’est <span style='background: #D8BE85;'>pas très confortable</span>, surtout quand elle roule sur des cailloux."
+      },
+      "storyOne":{
+        "p1": "Le trajet de 5km jusqu’à l’école dure <span style='background: #D8BE85;'>environ 1h30</span> si ma soeur pédale vite, et si on ne s’arrête pas pour jouer dans l’eau.",
+        "p2": "Normalement c’est interdit, papa et maman disent qu’on peut attraper des mauvaises maladies, mais c’est vrai que quelque fois on s’amuse avec les flaques, <span style='background: #D8BE85;'>il fait tellement chaud !</span>",
+        "p3": "Même si c’est long d’aller à l’école mes parents veulent que je m’instruise pour <span style='background: #D8BE85;'>réussir ma vie</span>, et aider ma famille plus tard.",
+        "p4": "À cause de <span style='background: #D8BE85;'>la guerre</span> nous avons dû déménager, et avons perdu beaucoup de choses.Ma soeur n’a pas pu continuer à étudier même si elle le voulait.",
+        "p5": "Donc quand je vais à l’école, je pense à elle, et <span style='background: #D8BE85;'>je veux réussir</span> pour elle, la rendre fière et l’aider plus tard."
+      },
+      "storyTwo":{
+        "title": "Pourquoi ma soeur ne vient plus à l'école ?",
+        "p1": "Comme je te racontais tout à l’heure, nous avons dû <span style='background: #D8BE85;'>déménager</span> à cause de <span style='background: #D8BE85;'>la guerre</span>. Pendant cette guerre, 2 000 école dont mon ancienne ont été détruites et beaucoup de mes copains ne vont plus à l’école pour aider leurs parents <span style='background: #D8BE85;'>comme ma soeur !</span>"
+      },
       "p1": "Salut ! moi c’est Olivier, j’ai 9 ans, j’habite au Mali en Afrique et je suis le petit dernier de ma grande famille.",
       "p2": "Mon rêve à moi ce serait d’avoir mon propre vélo ! Parce que tous les jours pour aller a l’école je dois monter sur le vélo de ma sœur, et c’est pas très confortable, surtout quand elle roule sur des cailloux.",
       "p3": "Le trajet de 5km jusqu’à l’école dure environ 1h30 si ma soeur pédale vite, et si on ne s’arrête pas pour jouer dans l’eau. Normalement c’est interdit, papa et maman disent qu’on peut attraper des mauvaises maladies, mais c’est vrai que quelque fois on s’amuse avec les flaques, il fait tellement chaud ! Même si c’est long d’aller à l’école mes parents veulent que je m’instruise pour réussir ma vie, et aider ma famille plus tard.",
@@ -19,7 +35,16 @@
     "style": {
       "backgroundChooseChildren": "backgroundOlivier.png",
       "iconChildren": "iconOlivier.svg",
-      "arrowChildren": "arrowOlivier.svg"
+      "arrowChildren": "arrowOlivier.svg",
+      "country": "mali.svg",
+      "assetStoryOne": "water.svg",
+      "colors": {
+        "presentation": "#EDE7D2",
+        "background": "#ECE7D4",
+        "goHome": "#D8BE85",
+        "arrow": "#CAB385",
+        "text": "#4F4634"
+      }
     }
  },
 
@@ -32,6 +57,16 @@
     "distance": "5km",
     "time": "2h30",
     "content": {
+      "presentation": {
+        "p1": ""
+      },
+      "storyOne":{
+        "p1": ""
+      },
+      "storyTwo":{
+        "title": "",
+        "p1": ""
+      },
       "p1": "Salut, moi c’est Devi, j’ai 13 ans et j’habite en Inde.",
       "p2": "J’ai de la chance d’aller à l’école, mes sœurs ont été mariées à 13 et 14 ans et n’ont malheureusement pas eu ce droit. J’ai un rêve depuis toute petite, j’aimerai devenir médecin et ouvrir un hôpital gratuit dans mon village ! Comme ça plus personne n’aura mal ou ne sera malade, je pourrai soigner tout le monde. C’est pour ça que j’adore aller à l’école même si c’est dur de s’y rendre.",
       "p3": "Je fais le trajet jusqu’à l’école avec deux amies, car il est dangereux de le faire toute seule. Nous croisons des serpents,  traversons des forêts ou encore des rivières où l’eau nous arrive jusqu’aux bras.",
@@ -44,7 +79,16 @@
     "style": {
       "backgroundChooseChildren": "backgroundDevi.png",
       "iconChildren": "iconDevi.svg",
-      "arrowChildren": "arrowDevi.svg"
+      "arrowChildren": "arrowDevi.svg",
+      "country": "mali.svg",
+      "assetStoryOne": "water.svg",
+      "colors": {
+        "presentation": "#A54F00",
+        "background": "#ECE7D4",
+        "goHome": "#D8BE85",
+        "arrow": "#CAB385",
+        "text": "#4F4634"
+      }
     }
  },
 
@@ -57,6 +101,16 @@
     "distance": "1km",
     "time": "10min",
     "content": {
+      "presentation": {
+        "p1": ""
+      },
+      "storyOne":{
+        "p1": ""
+      },
+      "storyTwo":{
+        "title": "",
+        "p1": ""
+      },
       "p1": "Salut l'ami ! Je m’appelle Frig.",
       "p2": "Mon père est berger.",
       "p3": "Ce matin je vais partir à l'école.",
@@ -68,7 +122,16 @@
     "style": {
       "backgroundChooseChildren": "backgroundFigg.png",
       "iconChildren": "iconFigg.svg",
-      "arrowChildren": "arrowFrigg.svg"
+      "arrowChildren": "arrowFrigg.svg",
+      "country": "mali.svg",
+      "assetStoryOne": "water.svg",
+      "colors": {
+        "presentation": "#EDE7D2",
+        "background": "#ECE7D4",
+        "goHome": "#D8BE85",
+        "arrow": "#CAB385",
+        "text": "#4F4634"
+      }
     }
  },
 
@@ -81,6 +144,16 @@
     "distance": "18km",
     "time": "1h30",
     "content": {
+      "presentation": {
+        "p1": ""
+      },
+      "storyOne":{
+        "p1": ""
+      },
+      "storyTwo":{
+        "title": "",
+        "p1": ""
+      },
       "p1": "Salut l'ami ! Je m’appelle Carlos, j'ai 11 ans et j'habite dans une grande plaine en Argentine.",
       "p2": "Mon père est berger, on vit avec pleins d’animaux, j’adore ça, c’est d’ailleurs mon rêve de devenir vétérinaire plus tard, pour m’en occuper et les soigner. Moi j'adore aller étudier, ça me permet de retrouver mes amis et d’apprendre beaucoup de choses !",
       "p3": "Ce matin je vais partir à l'école sur notre cheval Chiverito avec ma soeur, et comme tous les jours je prends mon ruban porte bonheur que mon père m’a donné pour nous protéger sur la route. Il faut faire très attention, dès le début il y a une pente très dangereuse, nous avons maintenant l’habitude mais papa et maman disent qu’il faut quand même rester sur nos gardes. Même si 18km c’est long et dur, les paysages sont super beaux et aller à l’école est une vraie chance, surtout sur le dos de Chiverito qui nous permet d’arriver en 1h30.",
@@ -92,7 +165,16 @@
     "style": {
       "backgroundChooseChildren": "backgroundCarlos.png",
       "iconChildren": "iconCarlos.svg",
-      "arrowChildren": "arrowCarlos.svg"
+      "arrowChildren": "arrowCarlos.svg",
+      "country": "mali.svg",
+      "assetStoryOne": "water.svg",
+      "colors": {
+        "presentation": "#ABD2F1",
+        "background": "#ECE7D4",
+        "goHome": "#D8BE85",
+        "arrow": "#CAB385",
+        "text": "#4F4634"
+      }
     }
   }
   

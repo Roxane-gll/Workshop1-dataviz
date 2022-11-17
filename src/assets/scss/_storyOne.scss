@@ -1,0 +1,61 @@
+#storyOne {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 130px 165px 80px 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .top-part {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    p {
+      max-width: 780px;
+    }
+
+    .p1, .p2 {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  .bottom-part {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    p {
+      max-width: 740px;
+    }
+
+    .p1 {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  p {
+    position: relative;
+    font-family: Lexend;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .asset {
+    position: absolute;
+    height: 170px;
+    width: 210px;
+    top: 45%;
+    right: 6%;
+    transform: translateY(-50%);
+  }
+
+}

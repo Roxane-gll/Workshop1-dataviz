@@ -1,22 +1,24 @@
 <template>
   <div id="app">
-    <button @click="changePage(-1)">←</button>
-    <button @click="changePage(1)">→</button>
+    <Header :current-story="story" :story="getCurrentStory" @newStory="changeStory" @home="sendHome"></Header>
     <component :story="getCurrentStory" :is="getCurrentPage"></component>
-
-    <template v-for="story in allStories">
-      <button :key="story.id" @click="changeStory(story.id)">{{story.name}}</button>
-    </template>
+    <Footer :story="getCurrentStory" :currentPage="currentPage" :nbPages="Object.keys(pages).length" @newPage="changePage"></Footer>
   </div>
 </template>
 
 <script>
-import Stories from './pages/Stories.vue'
+
 import allStories from '../assets/stories.json'
+import Header from './Header.vue'
+import Footer from './Footer.vue'
+import Presentation from './pages/Presentation.vue'
+import StoryOne from './pages/StoryOne.vue'
+import StoryTwo from './pages/StoryTwo.vue'
 import Graph from './pages/Graph.vue'
 
 export default {
   name: 'BaseStory',
+  components: {Header, Footer},
   props: {
       story: {
           type:Number
@@ -25,11 +27,12 @@ export default {
   data() {
     return {
       allStories,
-      currentStory: this.story,
       currentPage: 1,
       pages: {
-        1: Stories,
-        2: Graph
+        1: Presentation,
+        2: StoryOne,
+        3: StoryTwo,
+        4: Graph
       }
     }
   },
@@ -38,19 +41,22 @@ export default {
       return this.pages[this.currentPage]
     },
     getCurrentStory() {
-      return this.allStories.find((story) => story.id === this.currentStory)
+      return this.allStories.find((story) => story.id === this.story)
     }
   },
   methods: {
     changeStory(newStoryId) {
       this.currentPage = 1
-      this.currentStory = newStoryId
+      this.$emit('newStory', newStoryId)
     },
     changePage(newPage) {
       if (!this.pages[this.currentPage + newPage]) {
         return
       }
       this.currentPage += newPage
+    },
+    sendHome() {
+      this.$emit('home')
     }
   }
 }

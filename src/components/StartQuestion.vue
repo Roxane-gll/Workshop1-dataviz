@@ -1,9 +1,19 @@
 <template>
   <div>
       <form>
-          <div v-for="input in inputs" :key="input.name">
-              <label :for="input.name">{{ input.name }}</label>
-              <input :name="input.name" v-model="input.model">
+          <div v-for="input in inputs" :key="input.title">
+              <label :for="input.title">{{ input.title }}</label>
+              <div style="display:flex;">
+                <div v-for="option in input.options" :key="option.value">
+                  <div @click="updateForm(option.value, input.model)">
+
+                    <img v-if="input.model === 'personnage'" :src="require(`@/assets/img/${option.display}`)">
+                    
+                    <div style="border:grey 1px solid" v-else>{{option.display}}</div>
+
+                  </div>
+                </div>
+              </div>
           </div>
           <button @click="saveForm">Save</button>
       </form>
@@ -24,14 +34,18 @@ export default {
     return {
       inputs,
       models: {
-          q1: null,
-          q2: null
+          personnage: null,
+          transport: null,
+          time: null
       }
     }
   },
   methods: {
     saveForm() {
         this.$emit('startForm', this.models)
+    },
+    updateForm(value, model) {
+      this.models[model] = value
     }
   }
 }
