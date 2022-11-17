@@ -7,12 +7,14 @@
 </template>
 
 <script>
-import Stories from './pages/Stories.vue'
+
 import allStories from '../assets/stories.json'
-import Graph from './pages/Graph.vue'
+import Header from './Header.vue'
+import Footer from './Footer.vue'
 import Presentation from './pages/Presentation.vue'
-import Header from './pages/fixedAssets/Header.vue'
-import Footer from './pages/fixedAssets/Footer.vue'
+import StoryOne from './pages/StoryOne.vue'
+import StoryTwo from './pages/StoryTwo.vue'
+import Graph from './pages/Graph.vue'
 
 export default {
   name: 'BaseStory',
@@ -28,8 +30,9 @@ export default {
       currentPage: 1,
       pages: {
         1: Presentation,
-        2: Stories,
-        3: Graph
+        2: StoryOne,
+        3: StoryTwo,
+        4: Graph
       }
     }
   },

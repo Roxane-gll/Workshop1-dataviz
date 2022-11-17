@@ -9,22 +9,20 @@
     "time": "1h30",
     "content": {
       "presentation": {
-        "p1": "Moi c’est Olivier, j’ai 9 ans,",
-        "p2": "j’habite au Mali en Afrique et je suis le petit dernier de ma grande famille.",
-        "p3": "Mon rêve à moi ce serait d’avoir mon propre vélo ! Parce que tous les jours pour aller a l’école je dois monter sur le vélo de ma sœur, et c’est pas très confortable, surtout quand elle roule sur des cailloux."
+        "p1": "Moi c’est <span class='olivier'>Olivier</span>, j’ai 9 ans,",
+        "p2": "j’habite au <span style='background: #D8BE85;'>Mali en Afrique</span> et je suis le petit dernier de ma grande famille.",
+        "p3": "Mon rêve à moi ce serait d’avoir mon <span style='background: #D8BE85;'>propre vélo</span> ! Parce que tous les jours pour aller a l’école je dois monter sur le vélo de ma sœur, et c’est <span style='background: #D8BE85;'>pas très confortable</span>, surtout quand elle roule sur des cailloux."
       },
       "storyOne":{
-        "p1": "Le trajet de 5km jusqu’à l’école dure environ 1h30 si ma soeur pédale vite, et si on ne s’arrête pas pour jouer dans l’eau.",
-        "p2": "Normalement c’est interdit, papa et maman disent qu’on peut attraper des mauvaises maladies, mais c’est vrai que quelque fois on s’amuse avec les flaques, il fait tellement chaud !",
-        "p3": "Même si c’est long d’aller à l’école mes parents veulent que je m’instruise pour réussir ma vie, et aider ma famille plus tard.",
-        "p4": "À cause de la guerre nous avons dû déménager, et avons perdu beaucoup de choses.Ma soeur n’a pas pu continuer à étudier même si elle le voulait.",
-        "p5": "Donc quand je vais à l’école, je pense à elle, et je veux réussir pour elle, la rendre fière et l’aider plus tard."
+        "p1": "Le trajet de 5km jusqu’à l’école dure <span style='background: #D8BE85;'>environ 1h30</span> si ma soeur pédale vite, et si on ne s’arrête pas pour jouer dans l’eau.",
+        "p2": "Normalement c’est interdit, papa et maman disent qu’on peut attraper des mauvaises maladies, mais c’est vrai que quelque fois on s’amuse avec les flaques, <span style='background: #D8BE85;'>il fait tellement chaud !</span>",
+        "p3": "Même si c’est long d’aller à l’école mes parents veulent que je m’instruise pour <span style='background: #D8BE85;'>réussir ma vie</span>, et aider ma famille plus tard.",
+        "p4": "À cause de <span style='background: #D8BE85;'>la guerre</span> nous avons dû déménager, et avons perdu beaucoup de choses.Ma soeur n’a pas pu continuer à étudier même si elle le voulait.",
+        "p5": "Donc quand je vais à l’école, je pense à elle, et <span style='background: #D8BE85;'>je veux réussir</span> pour elle, la rendre fière et l’aider plus tard."
       },
       "storyTwo":{
-        "p1": ""
-      },
-      "storyThree":{
-        "p1": ""
+        "title": "Pourquoi ma soeur ne vient plus à l'école ?",
+        "p1": "Comme je te racontais tout à l’heure, nous avons dû <span style='background: #D8BE85;'>déménager</span> à cause de <span style='background: #D8BE85;'>la guerre</span>. Pendant cette guerre, 2 000 école dont mon ancienne ont été détruites et beaucoup de mes copains ne vont plus à l’école pour aider leurs parents <span style='background: #D8BE85;'>comme ma soeur !</span>"
       },
       "p1": "Salut ! moi c’est Olivier, j’ai 9 ans, j’habite au Mali en Afrique et je suis le petit dernier de ma grande famille.",
       "p2": "Mon rêve à moi ce serait d’avoir mon propre vélo ! Parce que tous les jours pour aller a l’école je dois monter sur le vélo de ma sœur, et c’est pas très confortable, surtout quand elle roule sur des cailloux.",
@@ -39,6 +37,7 @@
       "iconChildren": "iconOlivier.svg",
       "arrowChildren": "arrowOlivier.svg",
       "country": "mali.svg",
+      "assetStoryOne": "water.svg",
       "colors": {
         "presentation": "#EDE7D2",
         "background": "#ECE7D4",
@@ -65,9 +64,7 @@
         "p1": ""
       },
       "storyTwo":{
-        "p1": ""
-      },
-      "storyThree":{
+        "title": "",
         "p1": ""
       },
       "p1": "Salut, moi c’est Devi, j’ai 13 ans et j’habite en Inde.",
@@ -84,6 +81,7 @@
       "iconChildren": "iconDevi.svg",
       "arrowChildren": "arrowDevi.svg",
       "country": "mali.svg",
+      "assetStoryOne": "water.svg",
       "colors": {
         "presentation": "#A54F00",
         "background": "#ECE7D4",
@@ -110,9 +108,7 @@
         "p1": ""
       },
       "storyTwo":{
-        "p1": ""
-      },
-      "storyThree":{
+        "title": "",
         "p1": ""
       },
       "p1": "Salut l'ami ! Je m’appelle Frig.",
@@ -128,6 +124,7 @@
       "iconChildren": "iconFigg.svg",
       "arrowChildren": "arrowFrigg.svg",
       "country": "mali.svg",
+      "assetStoryOne": "water.svg",
       "colors": {
         "presentation": "#EDE7D2",
         "background": "#ECE7D4",
@@ -154,9 +151,7 @@
         "p1": ""
       },
       "storyTwo":{
-        "p1": ""
-      },
-      "storyThree":{
+        "title": "",
         "p1": ""
       },
       "p1": "Salut l'ami ! Je m’appelle Carlos, j'ai 11 ans et j'habite dans une grande plaine en Argentine.",
@@ -172,6 +167,7 @@
       "iconChildren": "iconCarlos.svg",
       "arrowChildren": "arrowCarlos.svg",
       "country": "mali.svg",
+      "assetStoryOne": "water.svg",
       "colors": {
         "presentation": "#ABD2F1",
         "background": "#ECE7D4",

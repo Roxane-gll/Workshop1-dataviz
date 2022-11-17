@@ -13,15 +13,18 @@ footer {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    user-select: none;
+    -webkit-user-drag: none;
 
     img {
       position: relative;
       height: 28px;
       width: 38px;
+      user-select: none;
+      -webkit-user-drag: none;
     }
 
     &.prev {
-      margin-right: 10px;
 
       img {
         transform: rotate(180deg);
@@ -44,6 +47,7 @@ footer {
     }
 
     &.next {
+      margin-left: 10px;
 
       &:after {
         position: absolute;

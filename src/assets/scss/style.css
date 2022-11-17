@@ -164,14 +164,15 @@ footer .arrow {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 footer .arrow img {
   position: relative;
   height: 28px;
   width: 38px;
-}
-footer .arrow.prev {
-  margin-right: 10px;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 footer .arrow.prev img {
   transform: rotate(180deg);
@@ -188,6 +189,9 @@ footer .arrow.prev:after {
   line-height: 18px;
   letter-spacing: 0em;
   text-align: center;
+}
+footer .arrow.next {
+  margin-left: 10px;
 }
 footer .arrow.next:after {
   position: absolute;
@@ -303,12 +307,121 @@ footer .arrow.next:after {
   letter-spacing: 0em;
   text-align: left;
 }
+#presentation .content-wrapper p span {
+  position: relative;
+}
+#presentation .content-wrapper p span.olivier:after {
+  position: absolute;
+  content: url("../img/nameUnderline.svg");
+  width: 90px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 #presentation .content-wrapper .country {
   position: absolute;
-  bottom: 17%;
+  bottom: 14%;
   right: 15px;
   height: 375px;
   width: 550px;
+}
+
+#storyOne {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 130px 165px 80px 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#storyOne .top-part {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+#storyOne .top-part p {
+  max-width: 780px;
+}
+#storyOne .top-part .p1, #storyOne .top-part .p2 {
+  margin-bottom: 20px;
+}
+#storyOne .bottom-part {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+#storyOne .bottom-part p {
+  max-width: 740px;
+}
+#storyOne .bottom-part .p1 {
+  margin-bottom: 20px;
+}
+#storyOne p {
+  position: relative;
+  font-family: Lexend;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#storyOne .asset {
+  position: absolute;
+  height: 170px;
+  width: 210px;
+  top: 45%;
+  right: 6%;
+  transform: translateY(-50%);
+}
+
+#storyTwo {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 130px 80px 0 75px;
+  display: flex;
+  flex-direction: column;
+}
+#storyTwo .title {
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 570px;
+  font-family: "BERNARD WACKER", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 61px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+#storyTwo .wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#storyTwo .wrapper .left-part {
+  position: relative;
+}
+#storyTwo .wrapper .left-part p {
+  position: relative;
+  max-width: 480px;
+  font-family: Lexend;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#storyTwo .wrapper .right-part {
+  position: relative;
+  height: 300px;
+  width: 420px;
+  background: red;
 }
 
 /*# sourceMappingURL=style.css.map */
