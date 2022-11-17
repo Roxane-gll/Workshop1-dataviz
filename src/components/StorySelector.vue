@@ -1,10 +1,7 @@
 <template>
   <div>
-
     <div id="choose-children-wrapper">
-
       <template v-for="story in allStories">
-
         <div class="children-wrapper" :key="story.id" @click="chooseStory(story.id)">
 
           <img :src="require(`@/assets/img/${story.style.backgroundChooseChildren}`)" alt="background Children" class="backgroundChooseChildren">
@@ -18,20 +15,14 @@
             <h2 class="name">{{ story.name }}</h2>
 
             <div class="country-wrapper">
-
               <img :src="require(`@/assets/img/${story.style.arrowChildren}`)" alt="Arrow of the children">
 
               <h3 class="country">{{ story.country }}</h3>
-
             </div>
 
-
           </div>
-
         </div>
-
       </template>
-
     </div>
   </div>
 </template>

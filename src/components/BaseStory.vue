@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Header :page="currentPage" :current-story="currentStory" :story="getCurrentStory" @newPage="changePage"></Header>
+    <Header :page="currentPage" :current-story="story" :story="getCurrentStory" @newPage="changePage"></Header>
     <component :story="getCurrentStory" :is="getCurrentPage"></component>
-    <Footer :story="getCurrentStory"></Footer>
+    <Footer :story="getCurrentStory" :currentPage="currentPage" :nbPages="Object.keys(pages).length" @newPage="changePage"></Footer>
   </div>
 </template>
 
@@ -25,7 +25,6 @@ export default {
   data() {
     return {
       allStories,
-      currentStory: this.story,
       currentPage: 1,
       pages: {
         1: Presentation,
@@ -39,19 +38,22 @@ export default {
       return this.pages[this.currentPage]
     },
     getCurrentStory() {
-      return this.allStories.find((story) => story.id === this.currentStory)
+      return this.allStories.find((story) => story.id === this.story)
     }
   },
   methods: {
     changeStory(newStoryId) {
       this.currentPage = 1
-      this.currentStory = newStoryId
+      this.$emit('newStory', newStoryId)
     },
     changePage(newPage) {
       if (!this.pages[this.currentPage + newPage]) {
         return
       }
       this.currentPage += newPage
+    },
+    sendHome() {
+      this.$emit('home')
     }
   }
 }
