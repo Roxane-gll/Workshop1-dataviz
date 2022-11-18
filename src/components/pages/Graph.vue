@@ -5,13 +5,13 @@
 
     <div class="wrapper">
 
-      <div class="left-part">
-
-        <p v-html="story.time" ></p>
-        {{startForm.time}}
-
+      <div>
+        <div v-for="(title, question) in questionTitle" :key="title" @click="changeGraph(question)">
+          {{title}}
+        </div>
       </div>
-
+      {{startForm[currentGraph]}}
+      {{story[currentGraph]}}
     </div>
 
   </section>
@@ -27,7 +27,20 @@ export default {
     startForm: {
       type: Object
     }
+  },
+  data() {
+    return {
+      questionTitle: {
+        time:"Temps",
+        transport: "Transport"
+      },
+      currentGraph: "time"
+    }
+  },
+  methods: {
+    changeGraph(graph) {
+      this.currentGraph = graph
+    }
   }
-  
 }
 </script>

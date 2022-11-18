@@ -7,6 +7,7 @@
     "gender": "male",
     "distance": "5km",
     "time": "1h30",
+    "transport": "bike",
     "content": {
       "presentation": {
         "p1": "Moi c’est <span class='olivier'>Olivier</span>, j’ai 9 ans,",
@@ -62,6 +63,7 @@
     "gender": "female",
     "distance": "5km",
     "time": "2h30",
+    "transport": "foot",
     "content": {
       "presentation": {
         "p1": "Moi c’est <span class='olivier'>Devi</span>, j’ai 13 ans,",
@@ -110,6 +112,7 @@
     "gender": "female",
     "distance": "1km",
     "time": "10min",
+    "transport": "bus",
     "content": {
       "presentation": {
         "p1": ""
@@ -156,6 +159,7 @@
     "gender": "male",
     "distance": "18km",
     "time": "1h30",
+    "transport": "horse",
     "content": {
       "presentation": {
         "p1": ""
