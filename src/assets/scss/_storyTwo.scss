@@ -56,4 +56,124 @@
 
   }
 
+  &.devi {
+
+    .title {
+      max-width: 770px;
+      margin-bottom: 50px;
+    }
+
+  }
+
+  &.frigg {
+
+  }
+
+  &.carlos {
+
+    .title {
+      max-width: 600px;
+      margin-bottom: 50px;
+    }
+
+    .wrapper {
+      height: fit-content;
+      width: fit-content;
+      background: transparent;
+
+      .left-part {
+
+        p {
+          max-width: 550px;
+        }
+
+      }
+
+      .right-part {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        .data-wrapper {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+
+          .data {
+            position: relative;
+            font-family: BERNARD WACKER;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 61px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #5683C4;
+          }
+
+          .imgGraph {
+            position: relative;
+            width: 177px;
+          }
+
+        }
+
+        .phrase {
+          position: relative;
+          font-family: Lexend;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 19px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: #4F4634;
+        }
+
+        hr {
+          position: relative;
+          margin: 18px auto;
+          height: 1px;
+          width: 350px;
+          border: none;
+          background: #4F4634;
+        }
+
+        .button-wrapper {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+
+          .button {
+            position: relative;
+            padding: 8.5px 26px;
+            font-family: Lexend;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #5683C4;
+            background: transparent;
+            border-radius: 100px;
+            border: 1px solid #5683C4;
+
+            &.active {
+              background: #5683C4;
+              color: white;
+            }
+
+            &:nth-child(1) {
+              margin-right: 16px;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
 }
