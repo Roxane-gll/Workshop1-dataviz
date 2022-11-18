@@ -20,7 +20,7 @@
 
     </div>
 
-    <p class="phase">En {{ gaphCountry }}, un professeur donne cours à {{ story.graph.g1[gaphCountry].length }} élèves
+    <p class="phrase">En {{ gaphCountry }}, un professeur donne cours à {{ story.graph.g1[gaphCountry].length }} élèves
       en moyenne.</p>
 
   </div>

@@ -104,19 +104,22 @@
 
       .data-wrapper {
         position: relative;
-        margin: 26px auto 33px;
+        margin: 26px auto 28px;
         display: flex;
         flex-direction: column;
         width: 470px;
+        justify-content: center;
 
         .teacher {
           position: relative;
+          margin: 0 auto 13px;
           height: 90px;
           width: 90px;
         }
 
         .students-wrapper {
           position: relative;
+          left: 10px;
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
@@ -124,6 +127,8 @@
 
           img {
             position: relative;
+            margin-right: 10px;
+            margin-bottom: 15px;
             height: 60px;
             width: 60px;
           }
