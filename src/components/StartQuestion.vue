@@ -53,12 +53,14 @@ export default {
       models: {
         personnage: null,
         transport: null,
-        time: null
+        time: null,
+        distance: null
       }
     }
   },
   methods: {
     saveForm() {
+      this.getDistance()
       this.$emit('startForm', this.models)
     },
     updateForm(value, model) {
@@ -66,6 +68,29 @@ export default {
     },
     sendIntro() {
       this.$emit('intro')
+    },
+    getDistance() {
+      if (this.models.time === "5") {
+        this.models.distance = "1"
+      } if (this.models.time === "15") {
+        if (["walk", "bike"].includes(this.models.transport)) {
+          this.models.distance = "1"
+        } else {
+          this.models.distance = "3"
+        }
+      } if (this.models.time === "30") {
+        if (["walk", "bike"].includes(this.models.transport)) {
+          this.models.distance = "2"
+        } else {
+          this.models.distance = "4"
+        }
+      } if (this.models.time === "60") {
+        if (["walk", "bike"].includes(this.models.transport)) {
+          this.models.distance = "4"
+        } else {
+          this.models.distance = "6"
+        }
+      }
     }
   }
 }
