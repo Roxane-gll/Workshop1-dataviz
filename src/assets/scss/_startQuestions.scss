@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (max-width: 1150px) {
+    @media screen and (max-width: 1500px) {
       margin-bottom: 50px;
     }
 
@@ -49,7 +49,7 @@
           border: 2px solid transparent;
           transition: all 0.35s ease-in-out;
 
-          @media screen and (max-width: 1150px) {
+          @media screen and (max-width: 1500px) {
             height: 85px;
             width: 85px;
           }
@@ -81,7 +81,7 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (max-width: 1150px) {
+    @media screen and (max-width: 1500px) {
       margin-bottom: 50px;
     }
 
@@ -103,7 +103,7 @@
           height: 84px;
           width: 84px;
 
-          @media screen and (max-width: 1150px) {
+          @media screen and (max-width: 1500px) {
             height: 70px;
             width: 70px;
           }
@@ -111,7 +111,7 @@
           &:nth-child(1) {
             background: url("../img/transport/car-white.svg") center/cover no-repeat;
 
-            @media screen and (max-width: 1150px) {
+            @media screen and (max-width: 1500px) {
               height: 70px;
               width: 70px;
             }
@@ -121,7 +121,7 @@
           &:nth-child(2) {
             background: url("../img/transport/bike-white.svg") center/cover no-repeat;
 
-            @media screen and (max-width: 1150px) {
+            @media screen and (max-width: 1500px) {
               height: 70px;
               width: 70px;
             }
@@ -131,7 +131,7 @@
           &:nth-child(3) {
             background: url("../img/transport/bus-white.svg") center/cover no-repeat;
 
-            @media screen and (max-width: 1150px) {
+            @media screen and (max-width: 1500px) {
               height: 70px;
               width: 70px;
             }
@@ -141,7 +141,7 @@
           &:nth-child(4) {
             background: url("../img/transport/walk-white.svg") center/cover no-repeat;
 
-            @media screen and (max-width: 1150px) {
+            @media screen and (max-width: 1500px) {
               height: 70px;
               width: 70px;
             }
@@ -154,7 +154,7 @@
 
           .wrapper {
 
-            @media screen and (max-width: 1150px) {
+            @media screen and (max-width: 1500px) {
               height: 70px;
               width: 70px;
             }
@@ -162,7 +162,7 @@
             &:nth-child(1) {
               background: url("../img/transport/car-orange.svg") center/cover no-repeat;
 
-              @media screen and (max-width: 1150px) {
+              @media screen and (max-width: 1500px) {
                 height: 70px;
                 width: 70px;
               }
@@ -172,7 +172,7 @@
             &:nth-child(2) {
               background: url("../img/transport/bike-orange.svg") center/cover no-repeat;
 
-              @media screen and (max-width: 1150px) {
+              @media screen and (max-width: 1500px) {
                 height: 70px;
                 width: 70px;
               }
@@ -182,7 +182,7 @@
             &:nth-child(3) {
               background: url("../img/transport/bus-orange.svg") center/cover no-repeat;
 
-              @media screen and (max-width: 1150px) {
+              @media screen and (max-width: 1500px) {
                 height: 70px;
                 width: 70px;
               }
@@ -192,7 +192,7 @@
             &:nth-child(4) {
               background: url("../img/transport/walk-orange.svg") center/cover no-repeat;
 
-              @media screen and (max-width: 1150px) {
+              @media screen and (max-width: 1500px) {
                 height: 70px;
                 width: 70px;
               }
@@ -217,7 +217,7 @@
     position: relative;
     margin-bottom: 57px;
 
-    @media screen and (max-width: 1150px) {
+    @media screen and (max-width: 1500px) {
       margin-bottom: 50px;
     }
 
@@ -242,7 +242,7 @@
           border: 2px solid #FF6948;
           transition: all 0.35s ease-in-out;
 
-          @media screen and (max-width: 1150px) {
+          @media screen and (max-width: 1500px) {
             padding: 7px 13px;
           }
 
@@ -252,7 +252,7 @@
             width: 33px;
             background: url("../img/clock-orange.svg") center/cover no-repeat;
 
-            @media screen and (max-width: 1150px) {
+            @media screen and (max-width: 1500px) {
               height: 25px;
               width: 25px;
             }
@@ -271,7 +271,7 @@
             color: #FF6948;
             transition: all 0.35s ease-in-out;
 
-            @media screen and (max-width: 1150px) {
+            @media screen and (max-width: 1500px) {
               font-size: 24px;
               line-height: 30px;
             }
@@ -285,7 +285,7 @@
             .image {
               background: url("../img/clock-white.svg") center/cover no-repeat;
 
-              @media screen and (max-width: 1150px) {
+              @media screen and (max-width: 1500px) {
                 height: 25px;
                 width: 25px;
               }
@@ -296,7 +296,7 @@
               color: white;
               transition: all 0.35s ease-in-out;
 
-              @media screen and (max-width: 1150px) {
+              @media screen and (max-width: 1500px) {
                 font-size: 24px;
                 line-height: 30px;
               }
@@ -333,7 +333,7 @@
     color: white;
     background: #5F3926;
 
-    @media screen and (max-width: 1150px) {
+    @media screen and (max-width: 1500px) {
       padding: 10px 25px;
       font-size: 26px;
     }
