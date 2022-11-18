@@ -644,10 +644,10 @@ footer .arrow.next:after {
 }
 #presentation.devi .content-wrapper .country {
   position: absolute;
-  bottom: 17%;
+  bottom: 20%;
   right: 0;
-  height: 375px;
-  width: 550px;
+  height: 345px;
+  width: 510px;
 }
 #presentation.frigg .content-wrapper .bottom-part .p1 {
   max-width: 530px;
@@ -658,6 +658,19 @@ footer .arrow.next:after {
   right: 0;
   height: 346px;
   width: 510px;
+}
+#presentation.carlos .content-wrapper .top-part .p2 {
+  max-width: 530px;
+}
+#presentation.carlos .content-wrapper .bottom-part .p1 {
+  max-width: 460px;
+}
+#presentation.carlos .content-wrapper .country {
+  position: absolute;
+  bottom: 24%;
+  right: 0;
+  height: 375px;
+  width: 550px;
 }
 
 #storyOne {

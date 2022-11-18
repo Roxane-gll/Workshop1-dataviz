@@ -221,10 +221,10 @@
 
       .country {
         position: absolute;
-        bottom: 17%;
+        bottom: 20%;
         right: 0;
-        height: 375px;
-        width: 550px;
+        height: 345px;
+        width: 510px;
       }
 
     }
@@ -249,6 +249,38 @@
         right: 0;
         height: 346px;
         width: 510px;
+      }
+
+    }
+
+  }
+
+  &.carlos {
+
+    .content-wrapper {
+
+      .top-part {
+
+        .p2 {
+          max-width: 530px;
+        }
+
+      }
+
+      .bottom-part {
+
+        .p1 {
+          max-width: 460px;
+        }
+
+      }
+
+      .country {
+        position: absolute;
+        bottom: 24%;
+        right: 0;
+        height: 375px;
+        width: 550px;
       }
 
     }
