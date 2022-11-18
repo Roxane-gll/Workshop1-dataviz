@@ -177,7 +177,18 @@
       "q4": "J’adore ma famille et je veux rester près d’eux toute ma vie, mais je souhaite quand même étudier pour changer de mode de vie et avoir une chance d’être vétérinaire, *bruit de Chiverito*<br>Ah ! Je crois que Cheverito est prêt pour partir ! Salut"
     },
     "graph": {
-      "g1": "travail: 715 484 enfants d’entre 5 et 15 ans qui travaillent en Argentine / 1 enfant sur 10"
+      "g1": {
+        "Mali": {
+          "img": "bookMali.svg",
+          "data": "46.18%",
+          "phrase": "AU Mali, 46,18% des individus savent lire et écrire.<br>C’est un petit peu moins de la moitié des personnes ! "
+        },
+        "Argentine": {
+          "img": "bookArgentine.svg",
+          "data": "99.24%",
+          "phrase": "En Argentine, 99,24% des individus savent lire et écrire.<br>C’est presque tout le monde !"
+        }
+      }
     },
     "style": {
       "backgroundChooseChildren": "backgroundCarlos.png",
