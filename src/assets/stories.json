@@ -10,7 +10,7 @@
     "transport": "bike",
     "content": {
       "presentation": {
-        "p1": "Moi c’est <span class='olivier'>Olivier</span>, j’ai 9 ans,",
+        "p1": "moi c’est <span class='olivier'>Olivier</span>, j’ai 9 ans,",
         "p2": "j’habite au <span style='background: #D8BE85;'>Mali en Afrique</span> et je suis le petit dernier de ma grande famille.",
         "p3": "Mon rêve à moi ce serait d’avoir mon <span style='background: #D8BE85;'>propre vélo</span> ! Parce que tous les jours pour aller a l’école je dois monter sur le vélo de ma sœur, et c’est <span style='background: #D8BE85;'>pas très confortable</span>, surtout quand elle roule sur des cailloux."
       },
@@ -23,12 +23,9 @@
       },
       "storyTwo":{
         "title": "Pourquoi ma soeur ne vient plus à l'école ?",
-        "p1": "Comme je te racontais tout à l’heure, nous avons dû <span style='background: #D8BE85;'>déménager</span> à cause de <span style='background: #D8BE85;'>la guerre</span>. Pendant cette guerre, 2 000 école dont mon ancienne ont été détruites et beaucoup de mes copains ne vont plus à l’école pour aider leurs parents <span style='background: #D8BE85;'>comme ma soeur !</span>"
-      },
-      "p1": "Salut ! moi c’est Olivier, j’ai 9 ans, j’habite au Mali en Afrique et je suis le petit dernier de ma grande famille.",
-      "p2": "Mon rêve à moi ce serait d’avoir mon propre vélo ! Parce que tous les jours pour aller a l’école je dois monter sur le vélo de ma sœur, et c’est pas très confortable, surtout quand elle roule sur des cailloux.",
-      "p3": "Le trajet de 5km jusqu’à l’école dure environ 1h30 si ma soeur pédale vite, et si on ne s’arrête pas pour jouer dans l’eau. Normalement c’est interdit, papa et maman disent qu’on peut attraper des mauvaises maladies, mais c’est vrai que quelque fois on s’amuse avec les flaques, il fait tellement chaud ! Même si c’est long d’aller à l’école mes parents veulent que je m’instruise pour réussir ma vie, et aider ma famille plus tard.",
-      "q4": "À cause de la guerre nous avons dû déménager, et avons perdu beaucoup de choses. Ma soeur n’a pas pu continuer à étudier même si elle le voulait ; donc quand je vais à l’école, je pense à elle, et je veux réussir pour elle, la rendre fière et l’aider plus tard.<br>D’ailleurs, elle m’appelle pour m’amener à l’école, je dois partir !"
+        "p1": "Comme je te racontais tout à l’heure, nous avons dû <span style='background: #D8BE85;'>déménager</span> à cause de <span style='background: #D8BE85;'>la guerre</span>. Pendant cette guerre, 2 000 école dont mon ancienne ont été détruites et beaucoup de mes copains ne vont plus à l’école pour aider leurs parents <span style='background: #D8BE85;'>comme ma soeur !</span>",
+        "p2": ""
+      }
     },
     "graph": {
       "g1": {
@@ -58,6 +55,7 @@
       "country": "mali.svg",
       "assetStoryOne": "water.svg",
       "colors": {
+        "hey": "#CAB385",
         "presentation": "#EDE7D2",
         "background": "#ECE7D4",
         "goHome": "#D8BE85",
@@ -78,7 +76,7 @@
     "transport": "foot",
     "content": {
       "presentation": {
-        "p1": "Moi c’est <span class='olivier'>Devi</span>, j’ai 13 ans,",
+        "p1": "moi c’est <span class='devi'>Devi</span>, j’ai 13 ans,",
         "p2": "j’habite <span style='background: #EDD500;'>en Inde</span>. J’ai de la chance d’aller à l’école, mes sœurs ont été  <span style='background: #EDD500;'>mariées à 13 et 14 ans</span> et n’ont malheureusement pas eu ce droit.",
         "p3": "J’ai un rêve depuis toute petite, j’aimerai devenir médecin et ouvrir un  <span style='background: #EDD500;'>hôpital gratuit</span> dans mon village ! Comme ça plus personne n’aura mal ou ne sera malade, je pourrai soigner <span style='background: #EDD500;'>tout le monde</span>. C’est pour ça que j’adore aller à l’école même si c’est  <span style='background: #EDD500;'>dur de s’y rendre</span>."
       },
@@ -91,7 +89,8 @@
       },
       "storyTwo":{
         "title": "Pourquoi mes soeurs ne vont plus à l'école ?",
-        "p1": "Ici, les filles <span style='background: #EDD500;'>ne choisissent pas</span> toujours avec qui elles se marient et à quel âge ! Lorsqu’on est mariées, <span style='background: #EDD500;'>on ne peut plus aller à l’école</span> parce qu’on s’occupe de la maison et de notre mari."
+        "p1": "Ici, les filles <span style='background: #EDD500;'>ne choisissent pas</span> toujours avec qui elles se marient et à quel âge !",
+        "p2": "Lorsqu’on est mariées, <span style='background: #EDD500;'>on ne peut plus aller à l’école</span> parce qu’on s’occupe de la maison et de notre mari."
       }
     },
     "graph": {
@@ -104,13 +103,14 @@
       "backgroundChooseChildren": "backgroundDevi.png",
       "iconChildren": "iconDevi.svg",
       "arrowChildren": "arrowDevi.svg",
-      "country": "mali.svg",
+      "country": "inde.svg",
       "assetStoryOne": "water.svg",
       "colors": {
+        "hey": "#F3E359",
         "presentation": "#A54F00",
-        "background": "#ECE7D4",
-        "goHome": "#D8BE85",
-        "arrow": "#CAB385",
+        "background": "#FDFBEE",
+        "goHome": "#A54F00",
+        "arrow": "#A54F00",
         "text": "#4F4634"
       }
     }
@@ -127,19 +127,22 @@
     "transport": "bus",
     "content": {
       "presentation": {
-        "p1": ""
+        "p1": "moi c’est <span class='frigg'>Frigg</span>, j’ai 10 ans,",
+        "p2": "j’habite <span style='background: #5A8777; color: #FCF9EE'>en Islande</span>. Je vis dans une ferme avec mes parents et mes 2 petits frères.",
+        "p3": "Moi j’aimerai <span style='background: #5A8777; color: #FCF9EE'>devenir guide</span> pour connaître encore mieux tous les recoins de ma région et montrer aux gens le magnifique pays que j’habite. Ici, le <span style='background: #5A8777; color: #FCF9EE'>climat est très froid</span>, il y a de la neige presque toute l’année ! Heureusement qu’il y a <span style='background: #5A8777; color: #FCF9EE'>un bus</span> qui nous emmène à l’école."
       },
       "storyOne":{
-        "p1": ""
+        "p1": "Le matin le bus vient nous récupérer <span style='background: #5A8777; color: #FCF9EE'>à la ferme</span> après être passée dans celles voisines. On retrouve nos quelques camarades et notre directrice <span style='background: #5A8777; color: #FCF9EE'>qui conduit le bus</span>.",
+        "p2": "Nous arrivons en 10 minutes si la route n’est pas glissante à cause du verglas, ou si il n’y a pas de grosse tempête de vent. <span style='background: #5A8777; color: #FCF9EE'>J’adore aller à l’école</span>, nos deux enseignantes et mes 7 camarades de classes sont tous très gentils et j’apprends pleins de choses avec eux <span style='background: #5A8777; color: #FCF9EE'>tout en m’amusant</span>.",
+        "p3": "",
+        "p4": "Parfois il nous arrive de <span style='background: #5A8777; color: #FCF9EE'>travailler de chez nous</span> avec l’aide de nos parent, lorsque le bus ne peut pas passer, mais c’est <span style='background: #5A8777; color: #FCF9EE'>très rare</span> ! La directrice essaie toujours de trouver une solution !",
+        "p5": ""
       },
       "storyTwo":{
-        "title": "",
-        "p1": ""
-      },
-      "p1": "Salut l'ami ! Je m’appelle Frig.",
-      "p2": "Mon père est berger.",
-      "p3": "Ce matin je vais partir à l'école.",
-      "q4": "J’adore ma famille et je veux rester près d’eux toute ma vie."
+        "title": "Pourquoi mes soeurs ne vont plus à l'école ?",
+        "p1": "Nous sommes des toutes <span style='background: #5A8777; color: #FCF9EE'>petites classes</span>, mais on s’entend tous très bien !",
+        "p2": "L’enseignante est <span style='background: #5A8777; color: #FCF9EE'>très attentive</span> à nos exercices et nous pousse à nous améliorer tous les jours."
+      }
     },
     "graph": {
       "g1": {
@@ -151,13 +154,14 @@
       "backgroundChooseChildren": "backgroundFigg.png",
       "iconChildren": "iconFigg.svg",
       "arrowChildren": "arrowFrigg.svg",
-      "country": "mali.svg",
+      "country": "islande.svg",
       "assetStoryOne": "water.svg",
       "colors": {
+        "hey": "#5A8777",
         "presentation": "#EDE7D2",
-        "background": "#ECE7D4",
-        "goHome": "#D8BE85",
-        "arrow": "#CAB385",
+        "background": "#FCF9EE",
+        "goHome": "#EDE7D2",
+        "arrow": "#5A8777",
         "text": "#4F4634"
       }
     }
@@ -174,19 +178,22 @@
     "transport": "horse",
     "content": {
       "presentation": {
-        "p1": ""
+        "p1": "moi c’est <span class='carlos'>Carlos</span>, j’ai 11 ans,",
+        "p2": "j’habite en <span style='background: #5683C4; color: #FCF9EE'>Argentine</span>. Mon père est berger, on vit avec pleins d’animaux, j’adore ça.",
+        "p3": "c’est d’ailleurs mon rêve de devenir <span style='background: #5683C4; color: #FCF9EE'>vétérinaire</span> plus tard, pour m’en occuper et les soigner. Moi j'adore aller étudier, ça me permet de retrouver mes amis et d’apprendre <span style='background: #5683C4; color: #FCF9EE'>beaucoup de choses</span> !"
       },
       "storyOne":{
-        "p1": ""
+        "p1": "",
+        "p2": "",
+        "p3": "Ce matin je vais partir à l'école sur <span style='background: #5683C4; color: #FCF9EE'>notre cheval Chiverito</span> avec ma soeur, et comme tous les jours je prends mon ruban porte bonheur que mon père m’a donné pour nous <span style='background: #5683C4; color: #FCF9EE'>protéger sur la route</span>. Il faut faire très attention, dès le début il y a une pente très dangereuse, nous avons <span style='background: #5683C4; color: #FCF9EE'>maintenant l’habitude</span> mais papa et maman disent qu’il faut quand même rester sur nos gardes.",
+        "p4": "Même si 18km c’est long et dur, les paysages sont super beaux et aller à l’école est <span style='background: #5683C4; color: #FCF9EE'>une vraie chance</span>, surtout sur le dos de Chiverito qui nous permet d’arriver en 1h30. J’adore ma famille et je veux <span style='background: #5683C4; color: #FCF9EE'>rester près d’eux</span> toute ma vie, mais je souhaite quand même étudier pour changer de mode de vie et avoir une chance <span style='background: #5683C4; color: #FCF9EE'>d’être vétérinaire</span>.",
+        "p5": ""
       },
       "storyTwo":{
-        "title": "",
-        "p1": ""
-      },
-      "p1": "Salut l'ami ! Je m’appelle Carlos, j'ai 11 ans et j'habite dans une grande plaine en Argentine.",
-      "p2": "Mon père est berger, on vit avec pleins d’animaux, j’adore ça, c’est d’ailleurs mon rêve de devenir vétérinaire plus tard, pour m’en occuper et les soigner. Moi j'adore aller étudier, ça me permet de retrouver mes amis et d’apprendre beaucoup de choses !",
-      "p3": "Ce matin je vais partir à l'école sur notre cheval Chiverito avec ma soeur, et comme tous les jours je prends mon ruban porte bonheur que mon père m’a donné pour nous protéger sur la route. Il faut faire très attention, dès le début il y a une pente très dangereuse, nous avons maintenant l’habitude mais papa et maman disent qu’il faut quand même rester sur nos gardes. Même si 18km c’est long et dur, les paysages sont super beaux et aller à l’école est une vraie chance, surtout sur le dos de Chiverito qui nous permet d’arriver en 1h30.",
-      "q4": "J’adore ma famille et je veux rester près d’eux toute ma vie, mais je souhaite quand même étudier pour changer de mode de vie et avoir une chance d’être vétérinaire, *bruit de Chiverito*<br>Ah ! Je crois que Cheverito est prêt pour partir ! Salut"
+        "title": "Pourquoi mes soeurs ne vont plus à l'école ?",
+        "p1": "L’école est <span style='background: #5683C4; color: #FCF9EE'>obligatoire et très importante</span> pour nos parents, ils n’ont pas eu la chance d’aller à l’école lorsqu’ils étaient petits.",
+        "p2": "Même si se rendre à l’école est parfois long et <span style='background: #5683C4; color: #FCF9EE'>dangereux</span> apprendre est <span style='background: #5683C4; color: #FCF9EE'>une chance</span> qui n’est pas donnée à tout le monde !"
+      }
     },
     "graph": {
       "g1": {
@@ -206,17 +213,17 @@
       "backgroundChooseChildren": "backgroundCarlos.png",
       "iconChildren": "iconCarlos.svg",
       "arrowChildren": "arrowCarlos.svg",
-      "country": "mali.svg",
+      "country": "argentine.svg",
       "assetStoryOne": "water.svg",
       "colors": {
-        "presentation": "#ABD2F1",
-        "background": "#ECE7D4",
-        "goHome": "#D8BE85",
-        "arrow": "#CAB385",
+        "hey": "#5683C4",
+        "presentation": "#C7E2F6",
+        "background": "#EEF8FF",
+        "goHome": "#EEF8FF",
+        "arrow": "#5683C4",
         "text": "#4F4634"
       }
     }
   }
-  
-  
+
 ]

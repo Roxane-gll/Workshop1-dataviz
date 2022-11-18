@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #F8F3EE;
 
   h3 {
     position: relative;
@@ -22,7 +23,7 @@
 
   .personnage {
     position: relative;
-    margin-bottom: 68px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
 
@@ -34,15 +35,28 @@
       .item {
         position: relative;
         margin-right: 37px;
+        border-radius: 100px;
 
         img {
           position: relative;
-          height: 110px;
-          width: 110px;
+          height: 85px;
+          width: 85px;
+          border-radius: 100px;
+          border: 2px solid transparent;
+          transition: all 0.35s ease-in-out;
         }
 
         &:last-child {
           margin-right: 0;
+        }
+
+        &.active {
+
+          img {
+            border: 2px solid #FF6948;
+            transition: all 0.35s ease-in-out;
+          }
+
         }
 
       }
@@ -53,7 +67,7 @@
 
   .transport {
     position: relative;
-    margin-bottom: 68px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
 
@@ -65,49 +79,41 @@
       .item {
         position: relative;
         margin-right: 36px;
-        height: 84px;
-        width: 84px;
+        height: 70px;
+        width: 70px;
 
         &:nth-child(1) {
           background: url("../img/transport/car-white.svg") center/cover no-repeat;
-          transition: all 0.35s ease-in-out;
         }
 
         &:nth-child(2) {
           background: url("../img/transport/bike-white.svg") center/cover no-repeat;
-          transition: all 0.35s ease-in-out;
         }
 
         &:nth-child(3) {
           background: url("../img/transport/bus-white.svg") center/cover no-repeat;
-          transition: all 0.35s ease-in-out;
         }
 
         &:nth-child(4) {
           background: url("../img/transport/walk-white.svg") center/cover no-repeat;
-          transition: all 0.35s ease-in-out;
         }
 
         &.active {
 
           &:nth-child(1) {
             background: url("../img/transport/car-orange.svg") center/cover no-repeat;
-            transition: all 0.35s ease-in-out;
           }
 
           &:nth-child(2) {
             background: url("../img/transport/bike-orange.svg") center/cover no-repeat;
-            transition: all 0.35s ease-in-out;
           }
 
           &:nth-child(3) {
             background: url("../img/transport/bus-orange.svg") center/cover no-repeat;
-            transition: all 0.35s ease-in-out;
           }
 
           &:nth-child(4) {
             background: url("../img/transport/walk-orange.svg") center/cover no-repeat;
-            transition: all 0.35s ease-in-out;
           }
 
         }
@@ -124,12 +130,13 @@
 
   .time {
     position: relative;
-    margin-bottom: 57px;
+    margin-bottom: 50px;
 
     .container {
       position: relative;
       display: flex;
       flex-direction: row;
+      justify-content: center;
 
       .item {
         position: relative;
@@ -137,7 +144,7 @@
 
         .wrapper {
           position: relative;
-          padding: 15px 20px;
+          padding: 7px 13px;
           display: flex;
           flex-direction: row;
           align-items: center;
@@ -151,16 +158,21 @@
             height: 33px;
             width: 33px;
             background: url("../img/clock-orange.svg") center/cover no-repeat;
-            transition: all 0.35s ease-in-out;
+
+            @media screen and (max-width: 1500px) {
+              height: 25px;
+              width: 25px;
+            }
+
           }
 
           p {
             position: relative;
             margin-left: 14px;
             font-family: Lexend;
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 400;
-            line-height: 35px;
+            line-height: 30px;
             letter-spacing: 0em;
             text-align: left;
             color: #FF6948;
@@ -173,7 +185,6 @@
 
             .image {
               background: url("../img/clock-white.svg") center/cover no-repeat;
-              transition: all 0.35s ease-in-out;
             }
 
             p {
@@ -197,15 +208,15 @@
 
   .saveButton {
     position: relative;
-    padding: 15px 30px;
+    padding: 10px 25px;
     border-radius: 100px;
     border: none;
     outline: none;
     display: flex;
     font-family: Lexend;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 400;
-    line-height: 38px;
+    line-height: 30px;
     letter-spacing: 0em;
     text-align: center;
     color: white;
