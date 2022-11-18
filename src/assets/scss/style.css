@@ -800,10 +800,6 @@ footer .arrow.next:after {
 #storyTwo .wrapper .left-part p.p2 {
   margin-top: 20px;
 }
-#storyTwo .wrapper .right-part {
-  position: relative;
-  background: red;
-}
 #storyTwo.devi .title {
   max-width: 770px;
   margin-bottom: 50px;
@@ -818,18 +814,21 @@ footer .arrow.next:after {
 #storyTwo.carlos .wrapper .left-part p {
   max-width: 550px;
 }
-#storyTwo.carlos .wrapper .right-part {
-  position: relative;
+#storyTwo.carlos .graph-wrapper {
+  position: absolute;
+  right: 50px;
+  bottom: 20%;
   display: flex;
   flex-direction: column;
   background: transparent;
 }
-#storyTwo.carlos .wrapper .right-part .data-wrapper {
+#storyTwo.carlos .graph-wrapper .data-wrapper {
   position: relative;
+  margin-bottom: 21px;
   display: flex;
   flex-direction: row;
 }
-#storyTwo.carlos .wrapper .right-part .data-wrapper .data {
+#storyTwo.carlos .graph-wrapper .data-wrapper .data {
   position: relative;
   font-family: BERNARD WACKER;
   font-size: 50px;
@@ -839,11 +838,11 @@ footer .arrow.next:after {
   text-align: left;
   color: #5683C4;
 }
-#storyTwo.carlos .wrapper .right-part .data-wrapper .imgGraph {
+#storyTwo.carlos .graph-wrapper .data-wrapper .imgGraph {
   position: relative;
   width: 177px;
 }
-#storyTwo.carlos .wrapper .right-part .phrase {
+#storyTwo.carlos .graph-wrapper .phrase {
   position: relative;
   font-family: Lexend;
   font-size: 15px;
@@ -853,7 +852,7 @@ footer .arrow.next:after {
   text-align: center;
   color: #4F4634;
 }
-#storyTwo.carlos .wrapper .right-part hr {
+#storyTwo.carlos .graph-wrapper hr {
   position: relative;
   margin: 18px auto;
   height: 1px;
@@ -861,13 +860,13 @@ footer .arrow.next:after {
   border: none;
   background: #4F4634;
 }
-#storyTwo.carlos .wrapper .right-part .button-wrapper {
+#storyTwo.carlos .graph-wrapper .button-wrapper {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-#storyTwo.carlos .wrapper .right-part .button-wrapper .button {
+#storyTwo.carlos .graph-wrapper .button-wrapper .button {
   position: relative;
   padding: 8.5px 26px;
   font-family: Lexend;
@@ -882,12 +881,12 @@ footer .arrow.next:after {
   border: 1px solid #5683C4;
   transition: all 0.35s ease-in-out;
 }
-#storyTwo.carlos .wrapper .right-part .button-wrapper .button.active {
+#storyTwo.carlos .graph-wrapper .button-wrapper .button.active {
   background: #5683C4;
   color: white;
   transition: all 0.35s ease-in-out;
 }
-#storyTwo.carlos .wrapper .right-part .button-wrapper .button:nth-child(1) {
+#storyTwo.carlos .graph-wrapper .button-wrapper .button:nth-child(1) {
   margin-right: 16px;
 }
 

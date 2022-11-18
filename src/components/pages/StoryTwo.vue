@@ -13,13 +13,13 @@
 
       </div>
 
-      <div class="right-part">
-        <GraphStoryOlivier v-if="story.id === 1" :story="story"></GraphStoryOlivier>
-        <GraphStoryDevi v-else-if="story.id === 2" :story="story"></GraphStoryDevi>
-        <GraphStoryFigg v-else-if="story.id === 3" :story="story"></GraphStoryFigg>
-        <GraphStoryCarlos v-else-if="story.id === 4" :story="story"></GraphStoryCarlos>
-      </div>
+    </div>
 
+    <div class="graph-wrapper">
+      <GraphStoryOlivier v-if="story.id === 1" :story="story"></GraphStoryOlivier>
+      <GraphStoryDevi v-else-if="story.id === 2" :story="story"></GraphStoryDevi>
+      <GraphStoryFigg v-else-if="story.id === 3" :story="story"></GraphStoryFigg>
+      <GraphStoryCarlos v-else-if="story.id === 4" :story="story"></GraphStoryCarlos>
     </div>
 
   </section>
