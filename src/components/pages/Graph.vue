@@ -10,8 +10,15 @@
           {{title}}
         </div>
       </div>
-      {{startForm[currentGraph]}}
-      {{story[currentGraph]}}
+      <div>
+        <img :src="require(`@/assets/img/basicPerso/${startForm.personnage}`)">
+        {{startForm[currentGraph]}}
+      </div>
+
+      <div>
+        <img :src="require(`@/assets/img/${story.style.iconChildren}`)">
+        {{story[currentGraph]}}
+      </div>
     </div>
 
   </section>
@@ -32,7 +39,7 @@ export default {
     return {
       questionTitle: {
         time:"Temps",
-        transport: "Transport"
+        distance: "Distance"
       },
       currentGraph: "time"
     }
