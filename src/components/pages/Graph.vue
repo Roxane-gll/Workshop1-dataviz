@@ -14,7 +14,7 @@
         <div>
           <img :src="require(`@/assets/img/basicPerso/${startForm.personnage}`)">
           {{startForm[currentGraph]}}
-          <div v-for="clock in getClockNumber(getTimeInMinute(startForm[currentGraph]))" :key="clock">
+          <div v-for="clock in getClockNumber(startForm[currentGraph])" :key="clock">
             {{clock}}
           </div>
         </div>
@@ -22,7 +22,7 @@
         <div>
           <img :src="require(`@/assets/img/${story.style.iconChildren}`)">
           {{story[currentGraph]}}
-          <div v-for="clock in getClockNumber(getTimeInMinute(story[currentGraph]))" :key="clock">
+          <div v-for="clock in getClockNumber(story[currentGraph])" :key="clock">
             {{clock}}
           </div>
         </div>
@@ -69,7 +69,8 @@ export default {
       this.currentGraph = graph
     },
     getClockNumber(time) {
-      const timeInHours = time / 60
+      const timeInMinute = this.getTimeInMinute(time)
+      const timeInHours = timeInMinute / 60
       let clockTime = timeInHours
       const arrayClock = []
       for (let i = 1; i < Math.round(timeInHours); i++) {
