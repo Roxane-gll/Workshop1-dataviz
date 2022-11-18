@@ -804,6 +804,84 @@ footer .arrow.next:after {
   max-width: 770px;
   margin-bottom: 50px;
 }
+#storyTwo.frigg .graph-wrapper {
+  position: absolute;
+  right: 50px;
+  top: 22%;
+  display: flex;
+  flex-direction: column;
+}
+#storyTwo.frigg .graph-wrapper .button-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#storyTwo.frigg .graph-wrapper .button-wrapper .button {
+  position: relative;
+  padding: 8.5px 26px;
+  font-family: Lexend;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #5A8777;
+  background: transparent;
+  border-radius: 100px;
+  border: 1px solid #5A8777;
+  transition: all 0.35s ease-in-out;
+}
+#storyTwo.frigg .graph-wrapper .button-wrapper .button.active {
+  background: #5A8777;
+  color: white;
+  transition: all 0.35s ease-in-out;
+}
+#storyTwo.frigg .graph-wrapper .button-wrapper .button:nth-child(1) {
+  margin-right: 16px;
+}
+#storyTwo.frigg .graph-wrapper .data-wrapper {
+  position: relative;
+  margin: 26px auto 33px;
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+}
+#storyTwo.frigg .graph-wrapper .data-wrapper .teacher {
+  position: relative;
+  height: 90px;
+  width: 90px;
+}
+#storyTwo.frigg .graph-wrapper .data-wrapper .students-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#storyTwo.frigg .graph-wrapper .data-wrapper .students-wrapper img {
+  position: relative;
+  height: 60px;
+  width: 60px;
+}
+#storyTwo.frigg .graph-wrapper hr {
+  position: relative;
+  margin: 18px auto;
+  height: 1px;
+  width: 470px;
+  border: none;
+  background: #5A8777;
+}
+#storyTwo.frigg .graph-wrapper .phrase {
+  position: relative;
+  font-family: Lexend;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #4F4634;
+}
 #storyTwo.carlos .title {
   max-width: 600px;
   margin-bottom: 50px;
@@ -817,7 +895,7 @@ footer .arrow.next:after {
 #storyTwo.carlos .graph-wrapper {
   position: absolute;
   right: 50px;
-  bottom: 20%;
+  bottom: 22%;
   display: flex;
   flex-direction: column;
   background: transparent;
@@ -830,6 +908,7 @@ footer .arrow.next:after {
 }
 #storyTwo.carlos .graph-wrapper .data-wrapper .data {
   position: relative;
+  margin-top: 25px;
   font-family: BERNARD WACKER;
   font-size: 50px;
   font-weight: 400;
@@ -844,6 +923,7 @@ footer .arrow.next:after {
 }
 #storyTwo.carlos .graph-wrapper .phrase {
   position: relative;
+  width: 400px;
   font-family: Lexend;
   font-size: 15px;
   font-weight: 400;
@@ -858,7 +938,7 @@ footer .arrow.next:after {
   height: 1px;
   width: 350px;
   border: none;
-  background: #4F4634;
+  background: #5683C4;
 }
 #storyTwo.carlos .graph-wrapper .button-wrapper {
   position: relative;
