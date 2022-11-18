@@ -1,4 +1,5 @@
 <template>
+
   <section id="storyOne" :style="{ background: story.style.colors.background }" :class="story.name">
 
     <div class="top-part">
@@ -22,17 +23,18 @@
     <img :src="require(`@/assets/img/${story.style.assetStoryOne}`)" alt="Country" class="asset">
 
   </section>
+
 </template>
 
 <script>
 export default {
   name: 'StoryOne',
   props: {
-    story:{
+    story: {
       type: Object
     }
   }
-  
+
 }
 </script>
 

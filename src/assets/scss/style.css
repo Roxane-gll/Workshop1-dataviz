@@ -631,10 +631,10 @@ footer .arrow.next:after {
 }
 #presentation.olivier .content-wrapper .country {
   position: absolute;
-  bottom: 18%;
+  bottom: 20%;
   right: 15px;
-  height: 375px;
-  width: 550px;
+  height: 345px;
+  width: 510px;
 }
 #presentation.devi .content-wrapper .top-part .p2 {
   max-width: 570px;
@@ -667,7 +667,7 @@ footer .arrow.next:after {
 }
 #presentation.carlos .content-wrapper .country {
   position: absolute;
-  bottom: 20%;
+  bottom: 25%;
   right: 0;
   height: 345px;
   width: 510px;
@@ -722,6 +722,39 @@ footer .arrow.next:after {
   top: 45%;
   right: 6%;
   transform: translateY(-50%);
+}
+#storyOne.olivier {
+  padding: 110px 165px 130px 95px;
+}
+#storyOne.devi {
+  padding: 130px 165px 120px 95px;
+}
+#storyOne.devi .top-part p {
+  max-width: 790px;
+}
+#storyOne.devi .asset {
+  display: none;
+}
+#storyOne.frigg {
+  padding: 130px 165px 130px 95px;
+}
+#storyOne.frigg .bottom-part p {
+  max-width: 720px;
+}
+#storyOne.frigg .asset {
+  display: none;
+}
+#storyOne.carlos {
+  padding: 130px 165px 115px 95px;
+}
+#storyOne.carlos .top-part p {
+  max-width: 840px;
+}
+#storyOne.carlos .bottom-part p {
+  max-width: 670px;
+}
+#storyOne.carlos .asset {
+  display: none;
 }
 
 #storyTwo {
