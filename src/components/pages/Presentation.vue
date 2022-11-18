@@ -1,5 +1,5 @@
 <template>
-  <section id="presentation">
+  <section id="presentation" :class="story.name">
 
     <div class="presentation-wrapper">
 

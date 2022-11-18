@@ -629,6 +629,36 @@ footer .arrow.next:after {
   height: 375px;
   width: 550px;
 }
+#presentation.olivier .content-wrapper .country {
+  position: absolute;
+  bottom: 18%;
+  right: 15px;
+  height: 375px;
+  width: 550px;
+}
+#presentation.devi .content-wrapper .top-part .p2 {
+  max-width: 570px;
+}
+#presentation.devi .content-wrapper .bottom-part .p1 {
+  max-width: 460px;
+}
+#presentation.devi .content-wrapper .country {
+  position: absolute;
+  bottom: 17%;
+  right: 0;
+  height: 375px;
+  width: 550px;
+}
+#presentation.frigg .content-wrapper .bottom-part .p1 {
+  max-width: 530px;
+}
+#presentation.frigg .content-wrapper .country {
+  position: absolute;
+  bottom: 26%;
+  right: 0;
+  height: 346px;
+  width: 510px;
+}
 
 #storyOne {
   position: relative;

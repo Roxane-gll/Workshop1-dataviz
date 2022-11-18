@@ -183,4 +183,76 @@
 
   }
 
+  &.olivier {
+
+    .content-wrapper {
+
+      .country {
+        position: absolute;
+        bottom: 18%;
+        right: 15px;
+        height: 375px;
+        width: 550px;
+      }
+
+    }
+
+  }
+
+  &.devi {
+
+    .content-wrapper {
+
+      .top-part {
+
+        .p2 {
+          max-width: 570px;
+        }
+
+      }
+
+      .bottom-part {
+
+        .p1 {
+          max-width: 460px;
+        }
+
+      }
+
+      .country {
+        position: absolute;
+        bottom: 17%;
+        right: 0;
+        height: 375px;
+        width: 550px;
+      }
+
+    }
+
+  }
+
+  &.frigg {
+
+    .content-wrapper {
+
+      .bottom-part {
+
+        .p1 {
+          max-width: 530px;
+        }
+
+      }
+
+      .country {
+        position: absolute;
+        bottom: 26%;
+        right: 0;
+        height: 346px;
+        width: 510px;
+      }
+
+    }
+
+  }
+
 }
