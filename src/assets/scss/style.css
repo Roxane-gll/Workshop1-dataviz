@@ -860,7 +860,6 @@ footer .arrow.next:after {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 #storyTwo.frigg .graph-wrapper .data-wrapper .students-wrapper img {
   position: relative;
