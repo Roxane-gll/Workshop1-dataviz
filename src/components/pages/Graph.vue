@@ -5,11 +5,11 @@
 
     <div class="wrapper">
 
-      <div class="left-part">
-
-        <p v-html="story.time" ></p>
-        {{startForm.time}}
-
+      <div>
+        <div v-for="(userValue, question) in startForm" :key="question">
+          {{userValue}}
+          {{question}}
+        </div>
       </div>
 
     </div>
@@ -27,7 +27,7 @@ export default {
     startForm: {
       type: Object
     }
-  }
-  
+  },
+
 }
 </script>
