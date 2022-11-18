@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header :current-story="story" :story="getCurrentStory" @newStory="changeStory" @home="sendHome"></Header>
-    <component :story="getCurrentStory" :is="getCurrentPage"></component>
+    <component :story="getCurrentStory" :startForm="startForm" :is="getCurrentPage"></component>
     <Footer :story="getCurrentStory" :currentPage="currentPage" :nbPages="Object.keys(pages).length" @newPage="changePage"></Footer>
   </div>
 </template>
@@ -22,6 +22,9 @@ export default {
   props: {
       story: {
           type:Number
+      },
+      startForm: {
+        type: Object
       }
   },
   data() {
