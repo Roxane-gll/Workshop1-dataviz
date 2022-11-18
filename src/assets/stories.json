@@ -96,9 +96,11 @@
     },
     "graph": {
       "g1": {
-        "France": ["France (1)", "France (2)", "France (3)", "France (4)", "France (5)", "France (6)", "France (7)", "France (8)", "France (9)", "France (10)", "France (11)", "France (12)", "France (13)" , "France (14)", "France (15)", "France (16)", "France (17)", "France (18)"],
-        "Islande": ["France (10)", "France (9)", "France (8)", "France (7)", "France (6)", "France (5)", "France (4)", "France (3)", "France (2)", "France (1)"]
-      }
+        "fille1": "graphDevi/rings.svg",
+        "fille2": "school.svg",
+        "fille3": "school.svg"
+      },
+      "g1Phrase": "1 jeune fille sur 3 a été marié avant ses 18 ans en Inde."
     },
     "style": {
       "home": "homeWhite.svg",
