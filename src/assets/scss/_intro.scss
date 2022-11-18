@@ -89,11 +89,15 @@
 
   .logo-wrapper {
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: row;
+
+    @media screen and (max-width: 1150px) {
+      bottom: 10%;
+    }
 
     img {
       position: relative;
