@@ -802,8 +802,6 @@ footer .arrow.next:after {
 }
 #storyTwo .wrapper .right-part {
   position: relative;
-  height: 300px;
-  width: 420px;
   background: red;
 }
 #storyTwo.devi .title {
@@ -815,9 +813,7 @@ footer .arrow.next:after {
   margin-bottom: 50px;
 }
 #storyTwo.carlos .wrapper {
-  height: fit-content;
-  width: fit-content;
-  background: transparent;
+  width: 100%;
 }
 #storyTwo.carlos .wrapper .left-part p {
   max-width: 550px;
@@ -826,6 +822,7 @@ footer .arrow.next:after {
   position: relative;
   display: flex;
   flex-direction: column;
+  background: transparent;
 }
 #storyTwo.carlos .wrapper .right-part .data-wrapper {
   position: relative;
@@ -883,10 +880,12 @@ footer .arrow.next:after {
   background: transparent;
   border-radius: 100px;
   border: 1px solid #5683C4;
+  transition: all 0.35s ease-in-out;
 }
 #storyTwo.carlos .wrapper .right-part .button-wrapper .button.active {
   background: #5683C4;
   color: white;
+  transition: all 0.35s ease-in-out;
 }
 #storyTwo.carlos .wrapper .right-part .button-wrapper .button:nth-child(1) {
   margin-right: 16px;

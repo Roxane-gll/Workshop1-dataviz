@@ -49,8 +49,6 @@
 
     .right-part {
       position: relative;
-      height: 300px;
-      width: 420px;
       background: red;
     }
 
@@ -77,9 +75,7 @@
     }
 
     .wrapper {
-      height: fit-content;
-      width: fit-content;
-      background: transparent;
+      width: 100%;
 
       .left-part {
 
@@ -93,6 +89,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
+        background: transparent;
 
         .data-wrapper {
           position: relative;
@@ -156,10 +153,12 @@
             background: transparent;
             border-radius: 100px;
             border: 1px solid #5683C4;
+            transition: all 0.35s ease-in-out;
 
             &.active {
               background: #5683C4;
               color: white;
+              transition: all 0.35s ease-in-out;
             }
 
             &:nth-child(1) {
