@@ -49,6 +49,7 @@
       "g1PhraseEnd": "2 écoles sur 3 ont été détruites"
     },
     "style": {
+      "home": "homeWhite.svg",
       "backgroundChooseChildren": "backgroundOlivier.png",
       "iconChildren": "iconOlivier.svg",
       "arrowChildren": "arrowOlivier.svg",
@@ -88,18 +89,21 @@
         "p5": "Peut-être qu’un jour grâce à lui <span style='background: #EDD500;'>je deviendrai médecin</span>, mais ça, seul l’avenir me le dira ! "
       },
       "storyTwo":{
-        "title": "Pourquoi mes soeurs ne vont plus à l'école ?",
+        "title": "Pourquoi suis-je la seule fille de ma famille à aller à l'école ?",
         "p1": "Ici, les filles <span style='background: #EDD500;'>ne choisissent pas</span> toujours avec qui elles se marient et à quel âge !",
         "p2": "Lorsqu’on est mariées, <span style='background: #EDD500;'>on ne peut plus aller à l’école</span> parce qu’on s’occupe de la maison et de notre mari."
       }
     },
     "graph": {
       "g1": {
-        "France": ["France (1)", "France (2)", "France (3)", "France (4)", "France (5)", "France (6)", "France (7)", "France (8)", "France (9)", "France (10)", "France (11)", "France (12)", "France (13)" , "France (14)", "France (15)", "France (16)", "France (17)", "France (18)"],
-        "Islande": ["France (10)", "France (9)", "France (8)", "France (7)", "France (6)", "France (5)", "France (4)", "France (3)", "France (2)", "France (1)"]
-      }
+        "fille1": "graphDevi/rings.svg",
+        "fille2": "school.svg",
+        "fille3": "school.svg"
+      },
+      "g1Phrase": "1 jeune fille sur 3 a été marié avant ses 18 ans en Inde."
     },
     "style": {
+      "home": "homeWhite.svg",
       "backgroundChooseChildren": "backgroundDevi.png",
       "iconChildren": "iconDevi.svg",
       "arrowChildren": "arrowDevi.svg",
@@ -139,9 +143,9 @@
         "p5": ""
       },
       "storyTwo":{
-        "title": "Pourquoi mes soeurs ne vont plus à l'école ?",
+        "title": "J'ai 7 camarades dans ma classe, et toi ?",
         "p1": "Nous sommes des toutes <span style='background: #5A8777; color: #FCF9EE'>petites classes</span>, mais on s’entend tous très bien !",
-        "p2": "L’enseignante est <span style='background: #5A8777; color: #FCF9EE'>très attentive</span> à nos exercices et nous pousse à nous améliorer tous les jours."
+        "p2": "L’enseignante est <span style='background: #5A8777; color: #FCF9EE'>très attentive</span> à nos exercices et nous pousse à nous améliorer tous les jours.<br>Wahou tu as beaucoup plus de camarade dans ta classe que moi ! <span style='background: #5A8777; color: #FCF9EE'>Regarde sur le graphique !</span> "
       }
     },
     "graph": {
@@ -151,6 +155,7 @@
       }
     },
     "style": {
+      "home": "homeGreen.svg",
       "backgroundChooseChildren": "backgroundFigg.png",
       "iconChildren": "iconFigg.svg",
       "arrowChildren": "arrowFrigg.svg",
@@ -190,7 +195,7 @@
         "p5": ""
       },
       "storyTwo":{
-        "title": "Pourquoi mes soeurs ne vont plus à l'école ?",
+        "title": "Même si c'est dur de s'y rendre, c'est important !",
         "p1": "L’école est <span style='background: #5683C4; color: #FCF9EE'>obligatoire et très importante</span> pour nos parents, ils n’ont pas eu la chance d’aller à l’école lorsqu’ils étaient petits.",
         "p2": "Même si se rendre à l’école est parfois long et <span style='background: #5683C4; color: #FCF9EE'>dangereux</span> apprendre est <span style='background: #5683C4; color: #FCF9EE'>une chance</span> qui n’est pas donnée à tout le monde !"
       }
@@ -200,7 +205,7 @@
         "Mali": {
           "img": "bookMali.svg",
           "data": "46.18%",
-          "phrase": "AU Mali, 46,18% des individus savent lire et écrire.<br>C’est un petit peu moins de la moitié des personnes ! "
+          "phrase": "Au Mali, 46,18% des individus savent lire et écrire.<br>C’est un petit peu moins de la moitié ! "
         },
         "Argentine": {
           "img": "bookArgentine.svg",
@@ -210,6 +215,7 @@
       }
     },
     "style": {
+      "home": "homeWhite.svg",
       "backgroundChooseChildren": "backgroundCarlos.png",
       "iconChildren": "iconCarlos.svg",
       "arrowChildren": "arrowCarlos.svg",
@@ -219,7 +225,7 @@
         "hey": "#5683C4",
         "presentation": "#C7E2F6",
         "background": "#EEF8FF",
-        "goHome": "#EEF8FF",
+        "goHome": "#1E4EA6",
         "arrow": "#5683C4",
         "text": "#4F4634"
       }

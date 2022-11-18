@@ -631,10 +631,10 @@ footer .arrow.next:after {
 }
 #presentation.olivier .content-wrapper .country {
   position: absolute;
-  bottom: 18%;
+  bottom: 20%;
   right: 15px;
-  height: 375px;
-  width: 550px;
+  height: 345px;
+  width: 510px;
 }
 #presentation.devi .content-wrapper .top-part .p2 {
   max-width: 570px;
@@ -667,7 +667,7 @@ footer .arrow.next:after {
 }
 #presentation.carlos .content-wrapper .country {
   position: absolute;
-  bottom: 20%;
+  bottom: 25%;
   right: 0;
   height: 345px;
   width: 510px;
@@ -723,6 +723,39 @@ footer .arrow.next:after {
   right: 6%;
   transform: translateY(-50%);
 }
+#storyOne.olivier {
+  padding: 110px 165px 130px 95px;
+}
+#storyOne.devi {
+  padding: 130px 165px 120px 95px;
+}
+#storyOne.devi .top-part p {
+  max-width: 790px;
+}
+#storyOne.devi .asset {
+  display: none;
+}
+#storyOne.frigg {
+  padding: 130px 165px 130px 95px;
+}
+#storyOne.frigg .bottom-part p {
+  max-width: 720px;
+}
+#storyOne.frigg .asset {
+  display: none;
+}
+#storyOne.carlos {
+  padding: 130px 165px 115px 95px;
+}
+#storyOne.carlos .top-part p {
+  max-width: 840px;
+}
+#storyOne.carlos .bottom-part p {
+  max-width: 670px;
+}
+#storyOne.carlos .asset {
+  display: none;
+}
 
 #storyTwo {
   position: relative;
@@ -767,11 +800,184 @@ footer .arrow.next:after {
 #storyTwo .wrapper .left-part p.p2 {
   margin-top: 20px;
 }
-#storyTwo .wrapper .right-part {
+#storyTwo.devi .title {
+  max-width: 770px;
+  margin-bottom: 50px;
+}
+#storyTwo.frigg .graph-wrapper {
+  position: absolute;
+  right: 50px;
+  top: 22%;
+  display: flex;
+  flex-direction: column;
+}
+#storyTwo.frigg .graph-wrapper .button-wrapper {
   position: relative;
-  height: 300px;
-  width: 420px;
-  background: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#storyTwo.frigg .graph-wrapper .button-wrapper .button {
+  position: relative;
+  padding: 8.5px 26px;
+  font-family: Lexend;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #5A8777;
+  background: transparent;
+  border-radius: 100px;
+  border: 1px solid #5A8777;
+  transition: all 0.35s ease-in-out;
+}
+#storyTwo.frigg .graph-wrapper .button-wrapper .button.active {
+  background: #5A8777;
+  color: white;
+  transition: all 0.35s ease-in-out;
+}
+#storyTwo.frigg .graph-wrapper .button-wrapper .button:nth-child(1) {
+  margin-right: 16px;
+}
+#storyTwo.frigg .graph-wrapper .data-wrapper {
+  position: relative;
+  margin: 26px auto 28px;
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+  justify-content: center;
+}
+#storyTwo.frigg .graph-wrapper .data-wrapper .teacher {
+  position: relative;
+  margin: 0 auto 13px;
+  height: 90px;
+  width: 90px;
+}
+#storyTwo.frigg .graph-wrapper .data-wrapper .students-wrapper {
+  position: relative;
+  left: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#storyTwo.frigg .graph-wrapper .data-wrapper .students-wrapper img {
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  height: 60px;
+  width: 60px;
+}
+#storyTwo.frigg .graph-wrapper hr {
+  position: relative;
+  margin: 18px auto;
+  height: 1px;
+  width: 470px;
+  border: none;
+  background: #5A8777;
+}
+#storyTwo.frigg .graph-wrapper .phrase {
+  position: relative;
+  font-family: Lexend;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #4F4634;
+}
+#storyTwo.carlos .title {
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+#storyTwo.carlos .wrapper {
+  width: 100%;
+}
+#storyTwo.carlos .wrapper .left-part p {
+  max-width: 550px;
+}
+#storyTwo.carlos .graph-wrapper {
+  position: absolute;
+  right: 50px;
+  bottom: 22%;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+#storyTwo.carlos .graph-wrapper .data-wrapper {
+  position: relative;
+  margin-bottom: 21px;
+  display: flex;
+  flex-direction: row;
+}
+#storyTwo.carlos .graph-wrapper .data-wrapper .data {
+  position: relative;
+  margin-top: 25px;
+  font-family: BERNARD WACKER;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 61px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5683C4;
+}
+#storyTwo.carlos .graph-wrapper .data-wrapper .imgGraph {
+  position: relative;
+  width: 177px;
+}
+#storyTwo.carlos .graph-wrapper .phrase {
+  position: relative;
+  width: 400px;
+  font-family: Lexend;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #4F4634;
+}
+#storyTwo.carlos .graph-wrapper hr {
+  position: relative;
+  margin: 18px auto;
+  height: 1px;
+  width: 350px;
+  border: none;
+  background: #5683C4;
+}
+#storyTwo.carlos .graph-wrapper .button-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#storyTwo.carlos .graph-wrapper .button-wrapper .button {
+  position: relative;
+  padding: 8.5px 26px;
+  font-family: Lexend;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #5683C4;
+  background: transparent;
+  border-radius: 100px;
+  border: 1px solid #5683C4;
+  transition: all 0.35s ease-in-out;
+}
+#storyTwo.carlos .graph-wrapper .button-wrapper .button.active {
+  background: #5683C4;
+  color: white;
+  transition: all 0.35s ease-in-out;
+}
+#storyTwo.carlos .graph-wrapper .button-wrapper .button:nth-child(1) {
+  margin-right: 16px;
+}
+
+#graph {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
 
 /*# sourceMappingURL=style.css.map */

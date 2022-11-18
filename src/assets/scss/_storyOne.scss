@@ -58,4 +58,67 @@
     transform: translateY(-50%);
   }
 
+  &.olivier {
+    padding: 110px 165px 130px 95px;
+  }
+
+  &.devi {
+    padding: 130px 165px 120px 95px;
+
+    .top-part {
+
+      p {
+        max-width: 790px;
+      }
+
+    }
+
+    .asset {
+      display: none;
+    }
+
+  }
+
+  &.frigg {
+    padding: 130px 165px 130px 95px;
+
+    .bottom-part {
+
+      p {
+        max-width: 720px;
+      }
+
+    }
+
+    .asset {
+      display: none;
+    }
+
+  }
+
+  &.carlos {
+    padding: 130px 165px 115px 95px;
+
+    .top-part {
+
+      p {
+        max-width: 840px;
+      }
+
+    }
+
+    .bottom-part {
+
+      p {
+        max-width: 670px;
+      }
+
+    }
+
+    .asset {
+      display: none;
+    }
+
+  }
+
 }
