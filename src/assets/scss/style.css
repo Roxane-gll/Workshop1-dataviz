@@ -141,6 +141,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 1150px) {
+  #startQuestion .personnage {
+    margin-bottom: 60px;
+  }
+}
 #startQuestion .personnage .container {
   position: relative;
   display: flex;
@@ -155,6 +160,12 @@ body {
   height: 110px;
   width: 110px;
 }
+@media screen and (max-width: 1150px) {
+  #startQuestion .personnage .container .item img {
+    height: 80px;
+    width: 80px;
+  }
+}
 #startQuestion .personnage .container .item:last-child {
   margin-right: 0;
 }
@@ -163,6 +174,11 @@ body {
   margin-bottom: 68px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 1150px) {
+  #startQuestion .transport {
+    margin-bottom: 60px;
+  }
 }
 #startQuestion .transport .container {
   position: relative;
@@ -174,6 +190,12 @@ body {
   margin-right: 36px;
   height: 84px;
   width: 84px;
+}
+@media screen and (max-width: 1150px) {
+  #startQuestion .transport .container .item {
+    height: 60px;
+    width: 60px;
+  }
 }
 #startQuestion .transport .container .item:nth-child(1) {
   background: url("../img/transport/car-white.svg") center/cover no-repeat;
@@ -214,6 +236,11 @@ body {
   position: relative;
   margin-bottom: 57px;
 }
+@media screen and (max-width: 1150px) {
+  #startQuestion .time {
+    margin-bottom: 50px;
+  }
+}
 #startQuestion .time .container {
   position: relative;
   display: flex;
@@ -234,12 +261,23 @@ body {
   border: 2px solid #FF6948;
   transition: all 0.35s ease-in-out;
 }
+@media screen and (max-width: 1150px) {
+  #startQuestion .time .container .item .wrapper {
+    padding: 12px 17px;
+  }
+}
 #startQuestion .time .container .item .wrapper .image {
   position: relative;
   height: 33px;
   width: 33px;
   background: url("../img/clock-orange.svg") center/cover no-repeat;
   transition: all 0.35s ease-in-out;
+}
+@media screen and (max-width: 1150px) {
+  #startQuestion .time .container .item .wrapper .image {
+    height: 30px;
+    width: 30px;
+  }
 }
 #startQuestion .time .container .item .wrapper p {
   position: relative;
@@ -252,6 +290,11 @@ body {
   text-align: left;
   color: #FF6948;
   transition: all 0.35s ease-in-out;
+}
+@media screen and (max-width: 1150px) {
+  #startQuestion .time .container .item .wrapper p {
+    font-size: 26px;
+  }
 }
 #startQuestion .time .container .item .wrapper.active {
   background: #FF6948;
