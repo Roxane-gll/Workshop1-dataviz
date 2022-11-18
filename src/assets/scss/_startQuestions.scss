@@ -75,7 +75,6 @@
       position: relative;
       display: flex;
       flex-direction: row;
-      justify-content: center;
 
       .item {
         position: relative;
@@ -99,31 +98,30 @@
           background: url("../img/transport/walk-white.svg") center/cover no-repeat;
         }
 
-      }
+        &.active {
 
-      &.active {
+          &:nth-child(1) {
+            background: url("../img/transport/car-orange.svg") center/cover no-repeat;
+          }
 
-        &:nth-child(1) {
-          background: url("../img/transport/car-orange.svg") center/cover no-repeat;
+          &:nth-child(2) {
+            background: url("../img/transport/bike-orange.svg") center/cover no-repeat;
+          }
+
+          &:nth-child(3) {
+            background: url("../img/transport/bus-orange.svg") center/cover no-repeat;
+          }
+
+          &:nth-child(4) {
+            background: url("../img/transport/walk-orange.svg") center/cover no-repeat;
+          }
+
         }
 
-        &:nth-child(2) {
-          background: url("../img/transport/bike-orange.svg") center/cover no-repeat;
+        &:last-child {
+          margin-right: 0;
         }
 
-        &:nth-child(3) {
-          background: url("../img/transport/bus-orange.svg") center/cover no-repeat;
-        }
-
-        &:nth-child(4) {
-          background: url("../img/transport/walk-orange.svg") center/cover no-repeat;
-        }
-
-
-      }
-
-      &:last-child {
-        margin-right: 0;
       }
 
     }

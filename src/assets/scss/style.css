@@ -176,7 +176,6 @@ body {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: center;
 }
 #startQuestion .transport .container .item {
   position: relative;
@@ -196,19 +195,19 @@ body {
 #startQuestion .transport .container .item:nth-child(4) {
   background: url("../img/transport/walk-white.svg") center/cover no-repeat;
 }
-#startQuestion .transport .container.active:nth-child(1) {
+#startQuestion .transport .container .item.active:nth-child(1) {
   background: url("../img/transport/car-orange.svg") center/cover no-repeat;
 }
-#startQuestion .transport .container.active:nth-child(2) {
+#startQuestion .transport .container .item.active:nth-child(2) {
   background: url("../img/transport/bike-orange.svg") center/cover no-repeat;
 }
-#startQuestion .transport .container.active:nth-child(3) {
+#startQuestion .transport .container .item.active:nth-child(3) {
   background: url("../img/transport/bus-orange.svg") center/cover no-repeat;
 }
-#startQuestion .transport .container.active:nth-child(4) {
+#startQuestion .transport .container .item.active:nth-child(4) {
   background: url("../img/transport/walk-orange.svg") center/cover no-repeat;
 }
-#startQuestion .transport .container:last-child {
+#startQuestion .transport .container .item:last-child {
   margin-right: 0;
 }
 #startQuestion .time {
