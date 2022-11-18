@@ -7,6 +7,7 @@
         </div>
 
         <div>
+            {{ story.graph.g1[gaphCountry].data }}
           <img :src="require(`@/assets/img/graphCarlos/${story.graph.g1[gaphCountry].img}`)">
         </div>
 
