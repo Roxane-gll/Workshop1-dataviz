@@ -110,7 +110,6 @@
 
           &:nth-child(1) {
             background: url("../img/transport/car-white.svg") center/cover no-repeat;
-            transition: all 0.35s ease-in-out;
 
             @media screen and (max-width: 1150px) {
               height: 70px;
@@ -121,7 +120,6 @@
 
           &:nth-child(2) {
             background: url("../img/transport/bike-white.svg") center/cover no-repeat;
-            transition: all 0.35s ease-in-out;
 
             @media screen and (max-width: 1150px) {
               height: 70px;
@@ -132,7 +130,6 @@
 
           &:nth-child(3) {
             background: url("../img/transport/bus-white.svg") center/cover no-repeat;
-            transition: all 0.35s ease-in-out;
 
             @media screen and (max-width: 1150px) {
               height: 70px;
@@ -143,7 +140,6 @@
 
           &:nth-child(4) {
             background: url("../img/transport/walk-white.svg") center/cover no-repeat;
-            transition: all 0.35s ease-in-out;
 
             @media screen and (max-width: 1150px) {
               height: 70px;
@@ -165,7 +161,6 @@
 
             &:nth-child(1) {
               background: url("../img/transport/car-orange.svg") center/cover no-repeat;
-              transition: all 0.35s ease-in-out;
 
               @media screen and (max-width: 1150px) {
                 height: 70px;
@@ -176,7 +171,6 @@
 
             &:nth-child(2) {
               background: url("../img/transport/bike-orange.svg") center/cover no-repeat;
-              transition: all 0.35s ease-in-out;
 
               @media screen and (max-width: 1150px) {
                 height: 70px;
@@ -187,7 +181,6 @@
 
             &:nth-child(3) {
               background: url("../img/transport/bus-orange.svg") center/cover no-repeat;
-              transition: all 0.35s ease-in-out;
 
               @media screen and (max-width: 1150px) {
                 height: 70px;
@@ -198,7 +191,6 @@
 
             &:nth-child(4) {
               background: url("../img/transport/walk-orange.svg") center/cover no-repeat;
-              transition: all 0.35s ease-in-out;
 
               @media screen and (max-width: 1150px) {
                 height: 70px;
@@ -259,7 +251,6 @@
             height: 33px;
             width: 33px;
             background: url("../img/clock-orange.svg") center/cover no-repeat;
-            transition: all 0.35s ease-in-out;
 
             @media screen and (max-width: 1150px) {
               height: 25px;
@@ -293,7 +284,6 @@
 
             .image {
               background: url("../img/clock-white.svg") center/cover no-repeat;
-              transition: all 0.35s ease-in-out;
 
               @media screen and (max-width: 1150px) {
                 height: 25px;
