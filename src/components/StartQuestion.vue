@@ -15,7 +15,7 @@
         <div class="container">
           <div :class="models[input.model] === option.value ? 'item active': 'item'" v-for="option in input.options" :key="option.value" @click="updateForm(option.value, input.model)">
 
-            <img v-if="input.model === 'personnage'" :src="require(`@/assets/img/basicPerso/${option.display}`)" :style="models[input.model] === option.value || models[input.model] === null ? '' : 'filter: grayscale(1);'">
+            <img v-if="input.model === 'personnage'" :src="require(`@/assets/img/basicPerso/${option.display}`)" :style="models[input.model] === option.value || models[input.model] === null ? '' : 'border: 2px solid #FF6948; transition: all 0.35s ease-in-out;'">
 
             <div class="wrapper" v-else-if="input.model === 'transport'" @click="updateForm(option.value, input.model)"></div>
 
