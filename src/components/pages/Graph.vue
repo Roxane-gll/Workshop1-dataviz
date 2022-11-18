@@ -10,14 +10,34 @@
           {{title}}
         </div>
       </div>
-      <div>
-        <img :src="require(`@/assets/img/basicPerso/${startForm.personnage}`)">
-        {{startForm[currentGraph]}}
+      <div v-if="currentGraph === 'time'">
+        <div>
+          <img :src="require(`@/assets/img/basicPerso/${startForm.personnage}`)">
+          {{startForm[currentGraph]}}
+          <div v-for="clock in getClockNumber(getTimeInMinute(startForm[currentGraph]))" :key="clock">
+            {{clock}}
+          </div>
+        </div>
+
+        <div>
+          <img :src="require(`@/assets/img/${story.style.iconChildren}`)">
+          {{story[currentGraph]}}
+          <div v-for="clock in getClockNumber(getTimeInMinute(story[currentGraph]))" :key="clock">
+            {{clock}}
+          </div>
+        </div>
       </div>
 
-      <div>
-        <img :src="require(`@/assets/img/${story.style.iconChildren}`)">
-        {{story[currentGraph]}}
+      <div v-if="currentGraph === 'distance'">
+        <div>
+          <img :src="require(`@/assets/img/basicPerso/${startForm.personnage}`)">
+          {{startForm[currentGraph]}} km
+        </div>
+
+        <div>
+          <img :src="require(`@/assets/img/${story.style.iconChildren}`)">
+          {{story[currentGraph]}}
+        </div>
       </div>
     </div>
 
@@ -47,6 +67,26 @@ export default {
   methods: {
     changeGraph(graph) {
       this.currentGraph = graph
+    },
+    getClockNumber(time) {
+      const timeInHours = time / 60
+      let clockTime = timeInHours
+      const arrayClock = []
+      for (let i = 1; i < Math.round(timeInHours); i++) {
+        arrayClock.push(1)
+      }
+      arrayClock.push(clockTime - arrayClock.length)
+      return arrayClock
+    },
+    getTimeInMinute(time) {
+      let fullTimeInMinute = parseInt(time)
+      if (time.includes('h')) {
+        const nbHours = time.split('h')
+        const hoursInMinute = parseInt(nbHours[0]) * 60
+        fullTimeInMinute = parseInt(nbHours[1]) + hoursInMinute
+      }
+      
+      return fullTimeInMinute
     }
   }
 }
