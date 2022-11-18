@@ -121,7 +121,46 @@
 
           &:after {
             position: absolute;
-            content: url("../img/nameUnderline.svg");
+            content: url("../img/nameUnderlineOlivier.svg");
+            width: 90px;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+        }
+
+        &.devi {
+
+          &:after {
+            position: absolute;
+            content: url("../img/nameUnderlineDevi.svg");
+            width: 90px;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+        }
+
+        &.frigg {
+
+          &:after {
+            position: absolute;
+            content: url("../img/nameUnderlineFrigg.svg");
+            width: 90px;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+        }
+
+        &.carlos {
+
+          &:after {
+            position: absolute;
+            content: url("../img/nameUnderlineCarlos.svg");
             width: 90px;
             bottom: -10px;
             left: 50%;

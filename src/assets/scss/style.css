@@ -7,6 +7,11 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
 }
+@media screen and (min-width: 1150px) {
+  * {
+    background: red;
+  }
+}
 
 body {
   overflow: hidden;
@@ -92,6 +97,21 @@ body {
   user-select: none;
   -webkit-user-drag: none;
 }
+#intro .logo-wrapper {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+}
+#intro .logo-wrapper img {
+  position: relative;
+  height: 55px;
+}
+#intro .logo-wrapper img:nth-child(1) {
+  margin-right: 25px;
+}
 
 #startQuestion {
   position: relative;
@@ -101,6 +121,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #F8F3EE;
 }
 #startQuestion h3 {
   position: relative;
@@ -354,7 +375,7 @@ body {
 
 header {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   width: 100vw;
   display: flex;
@@ -566,7 +587,31 @@ footer .arrow.next:after {
 }
 #presentation .content-wrapper p span.olivier:after {
   position: absolute;
-  content: url("../img/nameUnderline.svg");
+  content: url("../img/nameUnderlineOlivier.svg");
+  width: 90px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#presentation .content-wrapper p span.devi:after {
+  position: absolute;
+  content: url("../img/nameUnderlineDevi.svg");
+  width: 90px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#presentation .content-wrapper p span.frigg:after {
+  position: absolute;
+  content: url("../img/nameUnderlineFrigg.svg");
+  width: 90px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#presentation .content-wrapper p span.carlos:after {
+  position: absolute;
+  content: url("../img/nameUnderlineCarlos.svg");
   width: 90px;
   bottom: -10px;
   left: 50%;
@@ -670,6 +715,9 @@ footer .arrow.next:after {
   line-height: 33px;
   letter-spacing: 0em;
   text-align: left;
+}
+#storyTwo .wrapper .left-part p.p2 {
+  margin-top: 20px;
 }
 #storyTwo .wrapper .right-part {
   position: relative;

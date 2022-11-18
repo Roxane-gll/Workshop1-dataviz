@@ -9,6 +9,8 @@
 
         <p v-html="story.content.storyTwo.p1" ></p>
 
+        <p class="p2" v-html="story.content.storyTwo.p2" ></p>
+
       </div>
 
       <div class="right-part">
