@@ -28,7 +28,7 @@
     flex-direction: column;
 
     @media screen and (max-width: 1150px) {
-      margin-bottom: 60px;
+      margin-bottom: 50px;
     }
 
     .container {
@@ -46,8 +46,8 @@
           width: 110px;
 
           @media screen and (max-width: 1150px) {
-            height: 80px;
-            width: 80px;
+            height: 85px;
+            width: 85px;
           }
 
         }
@@ -69,7 +69,7 @@
     flex-direction: column;
 
     @media screen and (max-width: 1150px) {
-      margin-bottom: 60px;
+      margin-bottom: 50px;
     }
 
     .container {
@@ -84,8 +84,8 @@
         width: 84px;
 
         @media screen and (max-width: 1150px) {
-          height: 60px;
-          width: 60px;
+          height: 70px;
+          width: 70px;
         }
 
         &:nth-child(1) {
@@ -154,6 +154,7 @@
       position: relative;
       display: flex;
       flex-direction: row;
+      justify-content: center;
 
       .item {
         position: relative;
@@ -171,7 +172,7 @@
           transition: all 0.35s ease-in-out;
 
           @media screen and (max-width: 1150px) {
-            padding: 12px 17px;
+            padding: 7px 13px;
           }
 
           .image {
@@ -182,8 +183,8 @@
             transition: all 0.35s ease-in-out;
 
             @media screen and (max-width: 1150px) {
-              height: 30px;
-              width: 30px;
+              height: 25px;
+              width: 25px;
             }
 
           }
@@ -201,7 +202,8 @@
             transition: all 0.35s ease-in-out;
 
             @media screen and (max-width: 1150px) {
-              font-size: 26px;
+              font-size: 24px;
+              line-height: 30px;
             }
 
           }
@@ -249,6 +251,12 @@
     text-align: center;
     color: white;
     background: #5F3926;
+
+    @media screen and (max-width: 1150px) {
+      padding: 10px 25px;
+      font-size: 26px;
+    }
+
   }
 
 }
