@@ -39,11 +39,14 @@
       .item {
         position: relative;
         margin-right: 37px;
+        border-radius: 100px;
 
         img {
           position: relative;
           height: 110px;
           width: 110px;
+          border-radius: 100px;
+          border: 2px solid #FF6948;
           transition: all 0.35s ease-in-out;
 
           @media screen and (max-width: 1150px) {
@@ -92,21 +95,45 @@
         &:nth-child(1) {
           background: url("../img/transport/car-white.svg") center/cover no-repeat;
           transition: all 0.35s ease-in-out;
+
+          @media screen and (max-width: 1150px) {
+            height: 70px;
+            width: 70px;
+          }
+
         }
 
         &:nth-child(2) {
           background: url("../img/transport/bike-white.svg") center/cover no-repeat;
           transition: all 0.35s ease-in-out;
+
+          @media screen and (max-width: 1150px) {
+            height: 70px;
+            width: 70px;
+          }
+
         }
 
         &:nth-child(3) {
           background: url("../img/transport/bus-white.svg") center/cover no-repeat;
           transition: all 0.35s ease-in-out;
+
+          @media screen and (max-width: 1150px) {
+            height: 70px;
+            width: 70px;
+          }
+
         }
 
         &:nth-child(4) {
           background: url("../img/transport/walk-white.svg") center/cover no-repeat;
           transition: all 0.35s ease-in-out;
+
+          @media screen and (max-width: 1150px) {
+            height: 70px;
+            width: 70px;
+          }
+
         }
 
         &.active {
@@ -119,21 +146,45 @@
           &:nth-child(1) {
             background: url("../img/transport/car-orange.svg") center/cover no-repeat;
             transition: all 0.35s ease-in-out;
+
+            @media screen and (max-width: 1150px) {
+              height: 70px;
+              width: 70px;
+            }
+
           }
 
           &:nth-child(2) {
             background: url("../img/transport/bike-orange.svg") center/cover no-repeat;
             transition: all 0.35s ease-in-out;
+
+            @media screen and (max-width: 1150px) {
+              height: 70px;
+              width: 70px;
+            }
+
           }
 
           &:nth-child(3) {
             background: url("../img/transport/bus-orange.svg") center/cover no-repeat;
             transition: all 0.35s ease-in-out;
+
+            @media screen and (max-width: 1150px) {
+              height: 70px;
+              width: 70px;
+            }
+
           }
 
           &:nth-child(4) {
             background: url("../img/transport/walk-orange.svg") center/cover no-repeat;
             transition: all 0.35s ease-in-out;
+
+            @media screen and (max-width: 1150px) {
+              height: 70px;
+              width: 70px;
+            }
+
           }
 
         }
