@@ -1,5 +1,5 @@
 <template>
-    <section :style="{ background: story.style.colors.background }">
+    <section id="graph" :style="{ background: story.style.colors.background }">
 
     <h2 class="title" v-html="story.content.storyTwo.title" :style="{ color: story.style.colors.arrow }"></h2>
 
