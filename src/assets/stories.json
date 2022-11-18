@@ -32,9 +32,21 @@
     },
     "graph": {
       "g1": {
-        "2017": [true, true, true, true, true, true, true, true, true, true, true, true],
-        "2018": [true, false, false, true, true, true, false, true, true, true, true, false],
-        "2019": [false, false, false, false, true, false, false, true, false, false, true, false]
+        "Mali": {
+          "2017": [true, true, true, true, true, true, true, true, true, true, true, true],
+          "2018": [true, false, false, true, true, true, false, true, true, true, true, false],
+          "2019": [false, false, false, false, true, false, false, true, false, false, true, false]
+        },
+        "Burkina Faso": {
+          "2017": [true, true, true, true, true, true, true, true, true, true, true, true],
+          "2018": [true, false, false, true, true, true, false, true, true, true, true, false],
+          "2019": [false, false, false, false, true, false, false, true, false, false, true, false]
+        },
+        "Nigeria": {
+          "2017": [true, true, true, true, true, true, true, true, true, true, true, true],
+          "2018": [true, false, false, true, true, true, false, true, true, true, true, false],
+          "2019": [false, false, false, false, true, false, false, true, false, false, true, false]
+        }
       },
       "g1Phrase": "Représentation du nombre d’écoles entre 2017 et 2019",
       "g1PhraseEnd": "2 écoles sur 3 ont été détruites"
