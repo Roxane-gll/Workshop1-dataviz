@@ -19,6 +19,14 @@
 
     </div>
 
+    <div class="logo-wrapper">
+
+      <img src="../assets/img/gobelins.svg" alt="logo gobelins">
+
+      <img src="../assets/img/lecole.svg" alt="logo gobelins">
+
+    </div>
+
   </section>
 </template>
 

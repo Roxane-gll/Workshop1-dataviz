@@ -87,4 +87,28 @@
 
   }
 
+  .logo-wrapper {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: 1150px) {
+      bottom: 10%;
+    }
+
+    img {
+      position: relative;
+      height: 55px;
+
+      &:nth-child(1) {
+        margin-right: 25px;
+      }
+
+    }
+
+  }
+
 }

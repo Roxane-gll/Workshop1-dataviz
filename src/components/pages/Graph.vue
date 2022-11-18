@@ -6,12 +6,12 @@
     <div class="wrapper">
 
       <div>
-        <div v-for="(userValue, question) in startForm" :key="question">
-          {{userValue}}
-          {{question}}
+        <div v-for="(title, question) in questionTitle" :key="title" @click="changeGraph(question)">
+          {{title}}
         </div>
       </div>
-
+      {{startForm[currentGraph]}}
+      {{story[currentGraph]}}
     </div>
 
   </section>
@@ -28,6 +28,19 @@ export default {
       type: Object
     }
   },
-
+  data() {
+    return {
+      questionTitle: {
+        time:"Temps",
+        transport: "Transport"
+      },
+      currentGraph: "time"
+    }
+  },
+  methods: {
+    changeGraph(graph) {
+      this.currentGraph = graph
+    }
+  }
 }
 </script>

@@ -121,7 +121,46 @@
 
           &:after {
             position: absolute;
-            content: url("../img/nameUnderline.svg");
+            content: url("../img/nameUnderlineOlivier.svg");
+            width: 90px;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+        }
+
+        &.devi {
+
+          &:after {
+            position: absolute;
+            content: url("../img/nameUnderlineDevi.svg");
+            width: 90px;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+        }
+
+        &.frigg {
+
+          &:after {
+            position: absolute;
+            content: url("../img/nameUnderlineFrigg.svg");
+            width: 90px;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+        }
+
+        &.carlos {
+
+          &:after {
+            position: absolute;
+            content: url("../img/nameUnderlineCarlos.svg");
             width: 90px;
             bottom: -10px;
             left: 50%;
@@ -140,6 +179,110 @@
       right: 15px;
       height: 375px;
       width: 550px;
+    }
+
+  }
+
+  &.olivier {
+
+    .content-wrapper {
+
+      .country {
+        position: absolute;
+        bottom: 18%;
+        right: 15px;
+        height: 375px;
+        width: 550px;
+      }
+
+    }
+
+  }
+
+  &.devi {
+
+    .content-wrapper {
+
+      .top-part {
+
+        .p2 {
+          max-width: 570px;
+        }
+
+      }
+
+      .bottom-part {
+
+        .p1 {
+          max-width: 460px;
+        }
+
+      }
+
+      .country {
+        position: absolute;
+        bottom: 20%;
+        right: 0;
+        height: 345px;
+        width: 510px;
+      }
+
+    }
+
+  }
+
+  &.frigg {
+
+    .content-wrapper {
+
+      .bottom-part {
+
+        .p1 {
+          max-width: 530px;
+        }
+
+      }
+
+      .country {
+        position: absolute;
+        bottom: 26%;
+        right: 0;
+        height: 346px;
+        width: 510px;
+      }
+
+    }
+
+  }
+
+  &.carlos {
+
+    .content-wrapper {
+
+      .top-part {
+
+        .p2 {
+          max-width: 530px;
+        }
+
+      }
+
+      .bottom-part {
+
+        .p1 {
+          max-width: 460px;
+        }
+
+      }
+
+      .country {
+        position: absolute;
+        bottom: 20%;
+        right: 0;
+        height: 345px;
+        width: 510px;
+      }
+
     }
 
   }

@@ -1,14 +1,21 @@
 <template>
 
-  <section id="startQuestion">
-    <div v-for="input in inputs" :key="input.title" :class="input.model">
+  <div id="app">
+    <header>
+      <div @click="sendIntro" class="goHome-wrapper" style="background: transparent">
+        <img src="../assets/img/restart.svg" alt="home button">
+      </div>
+    </header>
 
-      <h3 class="title">{{ input.title }}</h3>
+    <section id="startQuestion">
+      <div v-for="input in inputs" :key="input.title" :class="input.model">
 
-      <div class="container">
-        <div :class="models[input.model] === option.value ? 'item active': 'item'" v-for="option in input.options" :key="option.value" @click="updateForm(option.value, input.model)">
+        <h3 class="title">{{ input.title }}</h3>
 
-            <img v-if="input.model === 'personnage'" :src="require(`@/assets/img/basicPerso/${option.display}`)" :style="models[input.model] === option.value || models[input.model] === null ? '' : 'filter: grayscale(1);'">
+        <div class="container">
+          <div :class="models[input.model] === option.value ? 'item active': 'item'" v-for="option in input.options" :key="option.value" @click="updateForm(option.value, input.model)">
+
+            <img v-if="input.model === 'personnage'" :src="require(`@/assets/img/basicPerso/${option.display}`)" :style="models[input.model] === option.value || models[input.model] === null ? '' : 'transition: all 0.35s ease-in-out;'">
 
             <div class="wrapper" v-else-if="input.model === 'transport'" @click="updateForm(option.value, input.model)"></div>
 
@@ -17,14 +24,17 @@
 
               <p>{{ option.display }}</p>
             </div>
+          </div>
         </div>
+
       </div>
 
-    </div>
+      <button @click="saveForm" class="saveButton">Valider</button>
 
-    <button @click="saveForm" class="saveButton">Valider</button>
+    </section>
 
-  </section>
+  </div>
+
 </template>
 
 <script>
@@ -53,6 +63,9 @@ export default {
     },
     updateForm(value, model) {
       this.models[model] = value
+    },
+    sendIntro() {
+      this.$emit('intro')
     }
   }
 }

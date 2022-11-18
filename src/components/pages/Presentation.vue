@@ -1,5 +1,5 @@
 <template>
-  <section id="presentation">
+  <section id="presentation" :class="story.name">
 
     <div class="presentation-wrapper">
 
@@ -22,7 +22,7 @@
 
       <div class="top-part">
 
-        <h6 class="hey" :style="{ color: story.style.colors.arrow }">Salut !</h6>
+        <h6 class="hey" :style="{ color: story.style.colors.hey }">Salut !</h6>
 
         <p class="p1" v-html="story.content.presentation.p1"></p>
 
