@@ -161,7 +161,7 @@ body {
   height: 110px;
   width: 110px;
   border-radius: 100px;
-  border: 2px solid #FF6948;
+  border: 2px solid transparent;
   transition: all 0.35s ease-in-out;
 }
 @media screen and (max-width: 1150px) {
@@ -172,6 +172,10 @@ body {
 }
 #startQuestion .personnage .container .item:last-child {
   margin-right: 0;
+}
+#startQuestion .personnage .container .item.active img {
+  border: 2px solid #FF6948;
+  transition: all 0.35s ease-in-out;
 }
 #startQuestion .transport {
   position: relative;
@@ -188,101 +192,108 @@ body {
   position: relative;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 #startQuestion .transport .container .item {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin-right: 36px;
+}
+#startQuestion .transport .container .item .wrapper {
+  position: relative;
   height: 84px;
   width: 84px;
 }
 @media screen and (max-width: 1150px) {
-  #startQuestion .transport .container .item {
+  #startQuestion .transport .container .item .wrapper {
     height: 70px;
     width: 70px;
   }
 }
-#startQuestion .transport .container .item:nth-child(1) {
+#startQuestion .transport .container .item .wrapper:nth-child(1) {
   background: url("../img/transport/car-white.svg") center/cover no-repeat;
   transition: all 0.35s ease-in-out;
 }
 @media screen and (max-width: 1150px) {
-  #startQuestion .transport .container .item:nth-child(1) {
+  #startQuestion .transport .container .item .wrapper:nth-child(1) {
     height: 70px;
     width: 70px;
   }
 }
-#startQuestion .transport .container .item:nth-child(2) {
+#startQuestion .transport .container .item .wrapper:nth-child(2) {
   background: url("../img/transport/bike-white.svg") center/cover no-repeat;
   transition: all 0.35s ease-in-out;
 }
 @media screen and (max-width: 1150px) {
-  #startQuestion .transport .container .item:nth-child(2) {
+  #startQuestion .transport .container .item .wrapper:nth-child(2) {
     height: 70px;
     width: 70px;
   }
 }
-#startQuestion .transport .container .item:nth-child(3) {
+#startQuestion .transport .container .item .wrapper:nth-child(3) {
   background: url("../img/transport/bus-white.svg") center/cover no-repeat;
   transition: all 0.35s ease-in-out;
 }
 @media screen and (max-width: 1150px) {
-  #startQuestion .transport .container .item:nth-child(3) {
+  #startQuestion .transport .container .item .wrapper:nth-child(3) {
     height: 70px;
     width: 70px;
   }
 }
-#startQuestion .transport .container .item:nth-child(4) {
+#startQuestion .transport .container .item .wrapper:nth-child(4) {
   background: url("../img/transport/walk-white.svg") center/cover no-repeat;
   transition: all 0.35s ease-in-out;
 }
 @media screen and (max-width: 1150px) {
-  #startQuestion .transport .container .item:nth-child(4) {
+  #startQuestion .transport .container .item .wrapper:nth-child(4) {
     height: 70px;
     width: 70px;
   }
 }
 @media screen and (max-width: 1150px) {
-  #startQuestion .transport .container .item.active {
+  #startQuestion .transport .container .item.active .wrapper {
     height: 70px;
     width: 70px;
   }
 }
-#startQuestion .transport .container .item.active:nth-child(1) {
+#startQuestion .transport .container .item.active .wrapper:nth-child(1) {
   background: url("../img/transport/car-orange.svg") center/cover no-repeat;
   transition: all 0.35s ease-in-out;
 }
 @media screen and (max-width: 1150px) {
-  #startQuestion .transport .container .item.active:nth-child(1) {
+  #startQuestion .transport .container .item.active .wrapper:nth-child(1) {
     height: 70px;
     width: 70px;
   }
 }
-#startQuestion .transport .container .item.active:nth-child(2) {
+#startQuestion .transport .container .item.active .wrapper:nth-child(2) {
   background: url("../img/transport/bike-orange.svg") center/cover no-repeat;
   transition: all 0.35s ease-in-out;
 }
 @media screen and (max-width: 1150px) {
-  #startQuestion .transport .container .item.active:nth-child(2) {
+  #startQuestion .transport .container .item.active .wrapper:nth-child(2) {
     height: 70px;
     width: 70px;
   }
 }
-#startQuestion .transport .container .item.active:nth-child(3) {
+#startQuestion .transport .container .item.active .wrapper:nth-child(3) {
   background: url("../img/transport/bus-orange.svg") center/cover no-repeat;
   transition: all 0.35s ease-in-out;
 }
 @media screen and (max-width: 1150px) {
-  #startQuestion .transport .container .item.active:nth-child(3) {
+  #startQuestion .transport .container .item.active .wrapper:nth-child(3) {
     height: 70px;
     width: 70px;
   }
 }
-#startQuestion .transport .container .item.active:nth-child(4) {
+#startQuestion .transport .container .item.active .wrapper:nth-child(4) {
   background: url("../img/transport/walk-orange.svg") center/cover no-repeat;
   transition: all 0.35s ease-in-out;
 }
 @media screen and (max-width: 1150px) {
-  #startQuestion .transport .container .item.active:nth-child(4) {
+  #startQuestion .transport .container .item.active .wrapper:nth-child(4) {
     height: 70px;
     width: 70px;
   }

@@ -46,7 +46,7 @@
           height: 110px;
           width: 110px;
           border-radius: 100px;
-          border: 2px solid #FF6948;
+          border: 2px solid transparent;
           transition: all 0.35s ease-in-out;
 
           @media screen and (max-width: 1150px) {
@@ -58,6 +58,15 @@
 
         &:last-child {
           margin-right: 0;
+        }
+
+        &.active {
+
+          img {
+            border: 2px solid #FF6948;
+            transition: all 0.35s ease-in-out;
+          }
+
         }
 
       }
@@ -80,63 +89,19 @@
       position: relative;
       display: flex;
       flex-direction: row;
+      justify-content: center;
 
       .item {
         position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         margin-right: 36px;
-        height: 84px;
-        width: 84px;
 
-        @media screen and (max-width: 1150px) {
-          height: 70px;
-          width: 70px;
-        }
-
-        &:nth-child(1) {
-          background: url("../img/transport/car-white.svg") center/cover no-repeat;
-          transition: all 0.35s ease-in-out;
-
-          @media screen and (max-width: 1150px) {
-            height: 70px;
-            width: 70px;
-          }
-
-        }
-
-        &:nth-child(2) {
-          background: url("../img/transport/bike-white.svg") center/cover no-repeat;
-          transition: all 0.35s ease-in-out;
-
-          @media screen and (max-width: 1150px) {
-            height: 70px;
-            width: 70px;
-          }
-
-        }
-
-        &:nth-child(3) {
-          background: url("../img/transport/bus-white.svg") center/cover no-repeat;
-          transition: all 0.35s ease-in-out;
-
-          @media screen and (max-width: 1150px) {
-            height: 70px;
-            width: 70px;
-          }
-
-        }
-
-        &:nth-child(4) {
-          background: url("../img/transport/walk-white.svg") center/cover no-repeat;
-          transition: all 0.35s ease-in-out;
-
-          @media screen and (max-width: 1150px) {
-            height: 70px;
-            width: 70px;
-          }
-
-        }
-
-        &.active {
+        .wrapper {
+          position: relative;
+          height: 84px;
+          width: 84px;
 
           @media screen and (max-width: 1150px) {
             height: 70px;
@@ -144,7 +109,7 @@
           }
 
           &:nth-child(1) {
-            background: url("../img/transport/car-orange.svg") center/cover no-repeat;
+            background: url("../img/transport/car-white.svg") center/cover no-repeat;
             transition: all 0.35s ease-in-out;
 
             @media screen and (max-width: 1150px) {
@@ -155,7 +120,7 @@
           }
 
           &:nth-child(2) {
-            background: url("../img/transport/bike-orange.svg") center/cover no-repeat;
+            background: url("../img/transport/bike-white.svg") center/cover no-repeat;
             transition: all 0.35s ease-in-out;
 
             @media screen and (max-width: 1150px) {
@@ -166,7 +131,7 @@
           }
 
           &:nth-child(3) {
-            background: url("../img/transport/bus-orange.svg") center/cover no-repeat;
+            background: url("../img/transport/bus-white.svg") center/cover no-repeat;
             transition: all 0.35s ease-in-out;
 
             @media screen and (max-width: 1150px) {
@@ -177,12 +142,69 @@
           }
 
           &:nth-child(4) {
-            background: url("../img/transport/walk-orange.svg") center/cover no-repeat;
+            background: url("../img/transport/walk-white.svg") center/cover no-repeat;
             transition: all 0.35s ease-in-out;
 
             @media screen and (max-width: 1150px) {
               height: 70px;
               width: 70px;
+            }
+
+          }
+
+        }
+
+        &.active {
+
+          .wrapper {
+
+            @media screen and (max-width: 1150px) {
+              height: 70px;
+              width: 70px;
+            }
+
+            &:nth-child(1) {
+              background: url("../img/transport/car-orange.svg") center/cover no-repeat;
+              transition: all 0.35s ease-in-out;
+
+              @media screen and (max-width: 1150px) {
+                height: 70px;
+                width: 70px;
+              }
+
+            }
+
+            &:nth-child(2) {
+              background: url("../img/transport/bike-orange.svg") center/cover no-repeat;
+              transition: all 0.35s ease-in-out;
+
+              @media screen and (max-width: 1150px) {
+                height: 70px;
+                width: 70px;
+              }
+
+            }
+
+            &:nth-child(3) {
+              background: url("../img/transport/bus-orange.svg") center/cover no-repeat;
+              transition: all 0.35s ease-in-out;
+
+              @media screen and (max-width: 1150px) {
+                height: 70px;
+                width: 70px;
+              }
+
+            }
+
+            &:nth-child(4) {
+              background: url("../img/transport/walk-orange.svg") center/cover no-repeat;
+              transition: all 0.35s ease-in-out;
+
+              @media screen and (max-width: 1150px) {
+                height: 70px;
+                width: 70px;
+              }
+
             }
 
           }
