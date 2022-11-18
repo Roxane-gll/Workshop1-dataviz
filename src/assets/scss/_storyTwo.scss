@@ -56,4 +56,42 @@
 
   }
 
+  &.olivier {
+
+  }
+
+  &.devi {
+
+    .title {
+      max-width: 770px;
+      margin-bottom: 50px;
+    }
+
+  }
+
+  &.frigg {
+
+  }
+
+  &.carlos {
+
+    .title {
+      max-width: 600px;
+      margin-bottom: 50px;
+    }
+
+    .wrapper {
+
+      .left-part {
+
+        p {
+          max-width: 550px;
+        }
+
+      }
+
+    }
+
+  }
+
 }

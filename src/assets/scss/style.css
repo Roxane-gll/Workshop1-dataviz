@@ -806,5 +806,16 @@ footer .arrow.next:after {
   width: 420px;
   background: red;
 }
+#storyTwo.devi .title {
+  max-width: 770px;
+  margin-bottom: 50px;
+}
+#storyTwo.carlos .title {
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+#storyTwo.carlos .wrapper .left-part p {
+  max-width: 550px;
+}
 
 /*# sourceMappingURL=style.css.map */

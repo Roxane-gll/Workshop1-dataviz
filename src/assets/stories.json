@@ -145,7 +145,7 @@
       "storyTwo":{
         "title": "J'ai 7 camarades dans ma classe, et toi ?",
         "p1": "Nous sommes des toutes <span style='background: #5A8777; color: #FCF9EE'>petites classes</span>, mais on s’entend tous très bien !",
-        "p2": "L’enseignante est <span style='background: #5A8777; color: #FCF9EE'>très attentive</span> à nos exercices et nous pousse à nous améliorer tous les jours."
+        "p2": "L’enseignante est <span style='background: #5A8777; color: #FCF9EE'>très attentive</span> à nos exercices et nous pousse à nous améliorer tous les jours.<br>Wahou tu as beaucoup plus de camarade dans ta classe que moi ! <span style='background: #5A8777; color: #FCF9EE'>Regarde sur le graphique !</span> "
       }
     },
     "graph": {
