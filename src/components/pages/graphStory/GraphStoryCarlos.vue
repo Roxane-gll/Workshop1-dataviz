@@ -11,7 +11,7 @@
     <hr>
 
     <div class="button-wrapper">
-      <div class="button" v-for="(values, key) in story.graph.g1" :key="key" @click="switchCountry(key)">
+      <div :class="gaphCountry === key ? 'button active' : 'button'" v-for="(values, key) in story.graph.g1" :key="key" @click="switchCountry(key)">
         {{ key }}
       </div>
     </div>
