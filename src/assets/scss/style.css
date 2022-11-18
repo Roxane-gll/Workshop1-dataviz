@@ -411,8 +411,8 @@ header .children-wrapper {
 header .children-wrapper .children {
   position: relative;
   margin-right: 21px;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
 }
 header .children-wrapper .children img {
   position: relative;
@@ -423,8 +423,8 @@ header .children-wrapper .children:last-child {
   margin-right: 0;
 }
 header .children-wrapper .children.selectedStory {
-  height: 90px;
-  width: 90px;
+  height: 75px;
+  width: 75px;
   border-radius: 100px;
   border: 2px solid red;
 }
