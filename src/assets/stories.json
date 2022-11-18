@@ -7,6 +7,7 @@
     "gender": "male",
     "distance": "5km",
     "time": "1h30",
+    "transport": "bike",
     "content": {
       "presentation": {
         "p1": "moi c’est <span class='olivier'>Olivier</span>, j’ai 9 ans,",
@@ -28,9 +29,21 @@
     },
     "graph": {
       "g1": {
-        "2017": [true, true, true, true, true, true, true, true, true, true, true, true],
-        "2018": [true, false, false, true, true, true, false, true, true, true, true, false],
-        "2019": [false, false, false, false, true, false, false, true, false, false, true, false]
+        "Mali": {
+          "2017": [false, true, true, true, true, true, true, true, true, false, true, true],
+          "2018": [false, true, true, true, true, true, false, true, true, false, true, true],
+          "2019": [false, true, true, true, true, true, false, true, true, false, false, true]
+        },
+        "Burkina Faso": {
+          "2017": [false, false, true, true, true, true, false, true, true, false, true, true],
+          "2018": [false, false, true, false, true, false, false, true, true, false, true, true],
+          "2019": [false, false, true, false, true, false, false, true, true, false, false, true]
+        },
+        "Nigeria": {
+          "2017": [false, true, true, true, true, false, true, true, true, true, true, true],
+          "2018": [false, true, true, true, true, false, true, true, true, true, false, true],
+          "2019": [false, true, true, false, true, false, true, true, true, false, false, true]
+        }
       },
       "g1Phrase": "Représentation du nombre d’écoles entre 2017 et 2019",
       "g1PhraseEnd": "2 écoles sur 3 ont été détruites"
@@ -61,6 +74,7 @@
     "gender": "female",
     "distance": "5km",
     "time": "2h30",
+    "transport": "foot",
     "content": {
       "presentation": {
         "p1": "moi c’est <span class='devi'>Devi</span>, j’ai 13 ans,",
@@ -112,6 +126,7 @@
     "gender": "female",
     "distance": "1km",
     "time": "10min",
+    "transport": "bus",
     "content": {
       "presentation": {
         "p1": "moi c’est <span class='frigg'>Frigg</span>, j’ai 10 ans,",
@@ -163,6 +178,7 @@
     "gender": "male",
     "distance": "18km",
     "time": "1h30",
+    "transport": "horse",
     "content": {
       "presentation": {
         "p1": "moi c’est <span class='carlos'>Carlos</span>, j’ai 11 ans,",
@@ -183,7 +199,18 @@
       }
     },
     "graph": {
-      "g1": "travail: 715 484 enfants d’entre 5 et 15 ans qui travaillent en Argentine / 1 enfant sur 10"
+      "g1": {
+        "Mali": {
+          "img": "bookMali.svg",
+          "data": "46.18%",
+          "phrase": "AU Mali, 46,18% des individus savent lire et écrire.<br>C’est un petit peu moins de la moitié des personnes ! "
+        },
+        "Argentine": {
+          "img": "bookArgentine.svg",
+          "data": "99.24%",
+          "phrase": "En Argentine, 99,24% des individus savent lire et écrire.<br>C’est presque tout le monde !"
+        }
+      }
     },
     "style": {
       "home": "homeWhite.svg",

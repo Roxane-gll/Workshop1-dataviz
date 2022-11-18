@@ -16,6 +16,7 @@
       <div class="right-part">
         <GraphStoryOlivier v-if="story.id === 1" :story="story"></GraphStoryOlivier>
         <GraphStoryFigg v-else-if="story.id === 3" :story="story"></GraphStoryFigg>
+        <GraphStoryCarlos v-else-if="story.id === 4" :story="story"></GraphStoryCarlos>
       </div>
 
     </div>
@@ -26,10 +27,11 @@
 <script>
 import GraphStoryOlivier from './graphStory/GraphStoryOlivier.vue'
 import GraphStoryFigg from './graphStory/GraphStoryFigg.vue'
+import GraphStoryCarlos from './graphStory/GraphStoryCarlos.vue'
 
 export default {
   name: 'StoryTwo',
-  components: {GraphStoryOlivier, GraphStoryFigg},
+  components: {GraphStoryOlivier, GraphStoryFigg, GraphStoryCarlos},
   props: {
     story:{
       type: Object

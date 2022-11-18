@@ -1,6 +1,6 @@
 <template>
   <div>
-    <component :story="currentStory" :is="getCurrentComponent" @newStory="changeStory" @startForm="saveForm" @home="homePage" @restart="restart" @intro="intro"></component>
+    <component :story="currentStory" :is="getCurrentComponent" :startForm="startForm" @newStory="changeStory" @startForm="saveForm" @home="homePage" @restart="restart" @intro="intro"></component>
   </div>
 </template>
 
