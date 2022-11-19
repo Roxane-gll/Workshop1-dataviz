@@ -13,17 +13,21 @@
       <div v-if="currentGraph === 'time'">
         <div>
           <img :src="require(`@/assets/img/basicPerso/${startForm.personnage}`)">
-          {{startForm[currentGraph]}}
+
           <div v-for="clock in getClockNumber(startForm[currentGraph])" :key="clock">
-            {{clock}}
+            <!-- le conic gradient est du css: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/conic-gradient -->
+            <div v-if="clock !== 1" :style="`background: conic-gradient(blue 0deg ${360 * clock}deg, transparent ${360 * clock}deg 360deg); width:50px; height:50px;border-radius: 100%`"></div>
+            <div v-else :style="`background: blue; width:50px; height:50px;border-radius: 100%`"></div>
           </div>
         </div>
 
         <div>
           <img :src="require(`@/assets/img/${story.style.iconChildren}`)">
-          {{story[currentGraph]}}
+
           <div v-for="clock in getClockNumber(story[currentGraph])" :key="clock">
-            {{clock}}
+            <!-- le conic gradient est du css: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/conic-gradient -->
+            <div v-if="clock !== 1" :style="`background: conic-gradient(blue 0deg ${360 * clock}deg, transparent ${360 * clock}deg 360deg); width:50px; height:50px;border-radius: 100%`"></div>
+            <div v-else :style="`background: blue; width:50px; height:50px;border-radius: 100%`"></div>
           </div>
         </div>
       </div>
