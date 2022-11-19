@@ -54,6 +54,7 @@
         line-height: 31px;
         letter-spacing: 0em;
         text-align: left;
+        text-transform: uppercase;
       }
 
     }
@@ -64,7 +65,7 @@
 
     .graph-wrapper {
       position: absolute;
-      width: 475px;
+      width: 425px;
       right: 50px;
       top: 22%;
       display: flex;
@@ -72,7 +73,7 @@
 
       .button-wrapper {
         position: relative;
-        margin-bottom: 50px;
+        margin-bottom: 70px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -102,6 +103,68 @@
 
       }
 
+      .date-wrapper {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .date {
+          position: relative;
+          font-family: Lexend;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 23px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: #CAB385;
+
+          &:after {
+            position: absolute;
+            content: "";
+            top: -25px;
+            left: 50%;
+            height: 15px;
+            width: 15px;
+            border-radius: 100px;
+            background: #CAB385;
+            transform: translateX(-50%);
+            transition: all 0.35s ease-in-out;
+          }
+
+          &.active {
+
+            &:after {
+              position: absolute;
+              content: "";
+              top: -29px;
+              left: 50%;
+              height: 22px;
+              width: 22px;
+              border-radius: 100px;
+              background: #EB4E27;
+              transition: all 0.35s ease-in-out;
+              transform: translateX(-50%);
+            }
+
+          }
+
+        }
+
+        &:before {
+          position: absolute;
+          top: -18px;
+          left: 50%;
+          content: "";
+          height: 2px;
+          width: 93%;
+          background: #D4BE8C;
+          transform: translateX(-50%);
+        }
+
+      }
+
       .data-wrapper {
         position: relative;
         width: 100%;
@@ -120,20 +183,11 @@
 
           .imgSchool {
             position: relative;
-            width: 105px;
+            width: 90px;
           }
 
         }
 
-      }
-
-      hr {
-        position: relative;
-        margin: 18px auto;
-        height: 1px;
-        width: 470px;
-        border: none;
-        background: #5A8777;
       }
 
       .phrase {
@@ -173,7 +227,7 @@
     .graph-wrapper {
       position: absolute;
       right: 50px;
-      bottom: 22%;
+      bottom: 26%;
       display: flex;
       flex-direction: column;
       justify-content: center;

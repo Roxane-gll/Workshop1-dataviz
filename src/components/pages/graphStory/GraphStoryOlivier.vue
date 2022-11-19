@@ -10,8 +10,12 @@
 
     </div>
 
-    <div v-for="(values, date) in story.graph.g1[graphCountry]" :key="date" @click="switchYear(date)">
-      {{ date }}
+    <div class="date-wrapper">
+
+      <div v-for="(values, date) in story.graph.g1[graphCountry]" :key="date" @click="switchYear(date)" :class="gaphYear === date ? 'date active' : 'date'">
+        {{ date }}
+      </div>
+
     </div>
 
     <div class="data-wrapper">
