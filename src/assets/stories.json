@@ -45,8 +45,14 @@
           "2019": [false, true, true, false, true, false, true, true, true, false, false, true]
         }
       },
-      "g1Phrase": "Représentation du nombre d’écoles entre 2017 et 2019",
+      "g1Phrase": "Représentation du nombre d’écoles fermées entre 2017 et 2021, sur une base de 4000 écoles.",
       "g1PhraseEnd": "2 écoles sur 3 ont été détruites"
+    },
+    "sounds": {
+      "background": "carlos-music.mp3",
+      "presentation": "carlos-presentation.mp3",
+      "one": "carlos-one.mp3",
+      "two": "carlos-two.mp3"
     },
     "style": {
       "home": "homeWhite.svg",
@@ -102,6 +108,12 @@
       },
       "g1Phrase": "1 jeune fille sur 3 a été marié avant ses 18 ans en Inde."
     },
+    "sounds": {
+      "background": "carlos-music.mp3",
+      "presentation": "carlos-presentation.mp3",
+      "one": "carlos-one.mp3",
+      "two": "carlos-two.mp3"
+    },
     "style": {
       "home": "homeWhite.svg",
       "backgroundChooseChildren": "backgroundDevi.png",
@@ -153,6 +165,12 @@
         "France": ["France (1)", "France (2)", "France (3)", "France (4)", "France (5)", "France (6)", "France (7)", "France (8)", "France (9)", "France (10)", "France (11)", "France (12)", "France (13)" , "France (14)", "France (15)", "France (16)", "France (17)", "France (18)"],
         "Islande": ["France (10)", "France (9)", "France (8)", "France (7)", "France (6)", "France (5)", "France (4)", "France (3)", "France (2)", "France (1)"]
       }
+    },
+    "sounds": {
+      "background": "carlos-music.mp3",
+      "presentation": "carlos-presentation.mp3",
+      "one": "carlos-one.mp3",
+      "two": "carlos-two.mp3"
     },
     "style": {
       "home": "homeGreen.svg",
@@ -214,6 +232,12 @@
         }
       }
     },
+    "sounds": {
+      "background": "carlos-music.mp3",
+      "presentation": "carlos-presentation.mp3",
+      "one": "carlos-one.mp3",
+      "two": "carlos-two.mp3"
+    },
     "style": {
       "home": "homeWhite.svg",
       "backgroundChooseChildren": "backgroundCarlos.png",
@@ -225,7 +249,7 @@
         "hey": "#5683C4",
         "presentation": "#C7E2F6",
         "background": "#EEF8FF",
-        "goHome": "#1E4EA6",
+        "goHome": "#5683C4",
         "arrow": "#5683C4",
         "text": "#4F4634"
       }
