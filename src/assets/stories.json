@@ -31,22 +31,39 @@
       "g1": {
         "Mali": {
           "2017": [false, true, true, true, true, true, true, true, true, false, true, true],
-          "2018": [false, true, true, true, true, true, false, true, true, false, true, true],
-          "2019": [false, true, true, true, true, true, false, true, true, false, false, true]
+          "2019": [false, true, true, true, true, true, false, true, true, false, true, true],
+          "2021": [false, true, true, true, true, true, false, true, true, false, false, true]
         },
         "Burkina Faso": {
           "2017": [false, false, true, true, true, true, false, true, true, false, true, true],
-          "2018": [false, false, true, false, true, false, false, true, true, false, true, true],
-          "2019": [false, false, true, false, true, false, false, true, true, false, false, true]
+          "2019": [false, false, true, false, true, false, false, true, true, false, true, true],
+          "2021": [false, false, true, false, true, false, false, true, true, false, false, true]
         },
         "Nigeria": {
           "2017": [false, true, true, true, true, false, true, true, true, true, true, true],
-          "2018": [false, true, true, true, true, false, true, true, true, true, false, true],
-          "2019": [false, true, true, false, true, false, true, true, true, false, false, true]
+          "2019": [false, true, true, true, true, false, true, true, true, true, false, true],
+          "2021": [false, true, true, false, true, false, true, true, true, false, false, true]
         }
       },
       "g1Phrase": "Représentation du nombre d’écoles fermées entre 2017 et 2021, sur une base de 4000 écoles.",
-      "g1PhraseEnd": "2 écoles sur 3 ont été détruites"
+      "g1PhraseEnd": "2 écoles sur 3 ont été détruites",
+      "g1PhraseNumbers": {
+        "Mali": {
+          "2017": "817",
+          "2019": "920",
+          "2021": "1461"
+        },
+        "Burkina Faso": {
+          "2017": "981",
+          "2019": "2024",
+          "2021": "2244"
+        },
+        "Nigeria": {
+          "2017": "820",
+          "2019": "934",
+          "2021": "1500"
+        }
+      }
     },
     "sounds": {
       "background": "carlos-music.mp3",

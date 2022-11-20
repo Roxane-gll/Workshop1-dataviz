@@ -12,7 +12,7 @@
 
     <div class="date-wrapper">
 
-      <div v-for="(values, date) in story.graph.g1[graphCountry]" :key="date" @click="switchYear(date)" :class="gaphYear === date ? 'date active' : 'date'">
+      <div v-for="(values, date) in story.graph.g1[graphCountry]" :key="date" @click="switchYear(date)" :class="graphYear === date ? 'date active' : 'date'">
         {{ date }}
       </div>
 
@@ -20,7 +20,7 @@
 
     <div class="data-wrapper">
 
-      <div class="data" v-for="(value, index) in story.graph.g1[graphCountry][gaphYear]" :key="index">
+      <div class="data" v-for="(value, index) in story.graph.g1[graphCountry][graphYear]" :key="index">
 
         <img :src="value ? require('@/assets/img/school.svg') : require('@/assets/img/schoolDestroyed.svg')"
              class="imgSchool" alt="school">
@@ -45,16 +45,26 @@ export default {
   },
   data() {
     return {
-      gaphYear: "2017",
+      graphYear: "2017",
       graphCountry: "Mali"
     }
   },
+  computed: {
+    additionalPhrase() {
+      return `Au ${this.graphCountry}, en ${this.graphYear},<br>${this.story.graph.g1PhraseNumbers[this.graphCountry][this.graphYear]} écoles ont été fermées.`
+    }
+  },
+  created() {
+    this.$emit('phrase', this.additionalPhrase)
+  },
   methods: {
     switchYear(year) {
-      this.gaphYear = year
+      this.graphYear = year
+      this.$emit('phrase', this.additionalPhrase)
     },
     switchCountry(country) {
       this.graphCountry = country
+      this.$emit('phrase', this.additionalPhrase)
     }
   }
 
