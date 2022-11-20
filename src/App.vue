@@ -4,6 +4,10 @@
   </div>
 </template>
 
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+<script src="./assets/js/main.js"></script>
+
 <script>
 import Intro from './components/Intro.vue'
 import allStories from './assets/stories.json'
@@ -52,6 +56,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style lang="css">

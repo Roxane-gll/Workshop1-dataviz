@@ -1208,12 +1208,12 @@ footer .arrow.next:after {
   position: relative;
   height: 100vh;
   width: 100vw;
-  padding-top: 150px;
   display: flex;
   justify-content: center;
 }
 #graph .wrapper {
-  position: relative;
+  position: absolute;
+  top: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1354,10 +1354,16 @@ footer .arrow.next:after {
   position: relative;
   height: 93px;
   width: 93px;
+  z-index: 1;
+}
+#graph .wrapper .distance-wrapper .distance .lottieTwo {
+  position: relative;
+  left: -10px;
+  width: 600px;
 }
 #graph .wrapper .distance-wrapper .distance .km {
   position: relative;
-  margin-left: 28px;
+  margin-left: -10px;
   font-family: Lexend;
   font-size: 30px;
   font-weight: 400;

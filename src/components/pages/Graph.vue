@@ -80,8 +80,14 @@
 
         <div class="distance">
           <img :src="require(`@/assets/img/${story.style.iconChildren}`)" alt="personnage" class="personnage">
-          <lottie-player src="./assets/lottie/Olivier.json"  speed="1"  style="width: 300px; height: 300px;" autoplay></lottie-player>
+
+          <lottie-player class="lottieTwo" v-if="story.name === 'olivier'" autoplay mode="normal" src="https://assets9.lottiefiles.com/packages/lf20_TiDTPBoL6W.json"></lottie-player>
+          <lottie-player class="lottieTwo" v-if="story.name === 'devi'" autoplay mode="normal" src="https://assets6.lottiefiles.com/packages/lf20_zydCtDYIVH.json"></lottie-player>
+          <lottie-player class="lottieTwo" v-if="story.name === 'frigg'" autoplay mode="normal" src="https://assets1.lottiefiles.com/packages/lf20_olU1R45lIZ.json"></lottie-player>
+          <lottie-player class="lottieTwo" v-if="story.name === 'carlos'" autoplay mode="normal" src="https://assets6.lottiefiles.com/packages/lf20_JPb7TebJkI.json"></lottie-player>
+
           <p class="km" :style="{ color: story.style.colors.km }">{{story[currentGraph]}}</p>
+
         </div>
 
       </div>
@@ -93,6 +99,9 @@
 </template>
 
 <script>
+
+require("@lottiefiles/lottie-player");
+
 export default {
   name: 'Graph',
   props: {
