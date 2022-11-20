@@ -1362,7 +1362,22 @@ footer .arrow.next:after {
   left: -10px;
   width: 175px;
 }
-#graph .wrapper .distance-wrapper .distance .lottieTwo {
+#graph .wrapper .distance-wrapper .distance .lottieOlivier {
+  position: relative;
+  left: -10px;
+  width: 325px;
+}
+#graph .wrapper .distance-wrapper .distance .lottieDevi {
+  position: relative;
+  left: -10px;
+  width: 350px;
+}
+#graph .wrapper .distance-wrapper .distance .lottieFrigg {
+  position: relative;
+  left: -10px;
+  width: 475px;
+}
+#graph .wrapper .distance-wrapper .distance .lottieCarlos {
   position: relative;
   left: -10px;
   width: 600px;
