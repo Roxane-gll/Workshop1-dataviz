@@ -22,7 +22,9 @@
 
       </div>
 
-      <img :src="require(`@/assets/img/${story.style.assetStoryOne}`)" alt="Country" class="asset">
+      <img :src="require(`@/assets/img/${story.style.firstAssetStoryOne}`)" alt="asset" class="assetOne">
+
+      <img :src="require(`@/assets/img/${story.style.secondAssetStoryOne}`)" alt="asset" class="assetTwo">
 
     </section>
 
