@@ -102,7 +102,7 @@
     "age": 13,
     "gender": "female",
     "distance": "5 km",
-    "time": "1h30",
+    "time": "2h",
     "transport": "foot",
     "content": {
       "presentation": {
@@ -167,7 +167,7 @@
     "country": "Islande",
     "age": 11,
     "gender": "female",
-    "distance": "1 km",
+    "distance": "7 km",
     "time": "10 min",
     "transport": "bus",
     "content": {
