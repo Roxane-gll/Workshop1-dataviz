@@ -69,13 +69,14 @@
 
         img {
           position: relative;
-          margin-right: 14px;
+          transform: rotate(90deg);
           height: 35px;
           width: 33px;
         }
 
         .country {
           position: relative;
+          margin-right: 14px;
           font-family: 'BERNARD WACKER', sans-serif;
           font-size: 53px;
           font-weight: 400;

@@ -73,13 +73,14 @@ body {
 }
 #intro .wrapper div img {
   position: relative;
+  transform: rotate(90deg);
   top: 15px;
-  margin-right: 22px;
   height: 55px;
   width: 52px;
 }
 #intro .wrapper div h3 {
   position: relative;
+  margin-right: 15px;
   margin-top: -28px;
   font-family: "BERNARD WACKER", sans-serif;
   font-size: 83px;
@@ -357,12 +358,13 @@ body {
 }
 #choose-children-wrapper .children-wrapper .info-children .country-wrapper img {
   position: relative;
-  margin-right: 14px;
+  transform: rotate(90deg);
   height: 35px;
   width: 33px;
 }
 #choose-children-wrapper .children-wrapper .info-children .country-wrapper .country {
   position: relative;
+  margin-right: 14px;
   font-family: "BERNARD WACKER", sans-serif;
   font-size: 53px;
   font-weight: 400;

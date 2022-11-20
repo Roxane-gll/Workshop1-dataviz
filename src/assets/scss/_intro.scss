@@ -62,14 +62,15 @@
 
       img {
         position: relative;
+        transform: rotate(90deg);
         top: 15px;
-        margin-right: 22px;
         height: 55px;
         width: 52px;
       }
 
       h3 {
         position: relative;
+        margin-right: 15px;
         margin-top: -28px;
         font-family: 'BERNARD WACKER', sans-serif;
         font-size: 83px;
