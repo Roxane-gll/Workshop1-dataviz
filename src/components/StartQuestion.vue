@@ -60,6 +60,9 @@ export default {
   },
   methods: {
     saveForm() {
+      if(!this.models.personnage || !this.models.transport|| !this.models.time) {
+        return
+      }
       this.getDistance()
       this.$emit('startForm', this.models)
     },
