@@ -1356,6 +1356,12 @@ footer .arrow.next:after {
   width: 93px;
   z-index: 1;
 }
+#graph .wrapper .distance-wrapper .distance .lottie {
+  position: relative;
+  margin-right: 20px;
+  left: -10px;
+  width: 175px;
+}
 #graph .wrapper .distance-wrapper .distance .lottieTwo {
   position: relative;
   left: -10px;
