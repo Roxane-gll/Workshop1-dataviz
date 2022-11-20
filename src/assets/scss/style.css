@@ -715,7 +715,18 @@ footer .arrow.next:after {
   letter-spacing: 0em;
   text-align: left;
 }
-#storyOne .asset {
+#storyOne.olivier {
+  padding: 110px 165px 130px 95px;
+}
+#storyOne.olivier .assetOne {
+  position: absolute;
+  height: 190px;
+  width: 59px;
+  bottom: -3%;
+  left: 12%;
+  transform: translateY(-50%);
+}
+#storyOne.olivier .assetTwo {
   position: absolute;
   height: 170px;
   width: 210px;
@@ -723,17 +734,27 @@ footer .arrow.next:after {
   right: 6%;
   transform: translateY(-50%);
 }
-#storyOne.olivier {
-  padding: 110px 165px 130px 95px;
-}
 #storyOne.devi {
   padding: 130px 165px 120px 95px;
 }
 #storyOne.devi .top-part p {
   max-width: 790px;
 }
-#storyOne.devi .asset {
-  display: none;
+#storyOne.devi .assetOne {
+  position: absolute;
+  height: 315px;
+  width: 120px;
+  bottom: -23%;
+  left: 9%;
+  transform: translateY(-50%);
+}
+#storyOne.devi .assetTwo {
+  position: absolute;
+  height: 180px;
+  width: 185px;
+  top: 38%;
+  right: 6%;
+  transform: translateY(-50%);
 }
 #storyOne.frigg {
   padding: 130px 165px 130px 95px;
@@ -741,8 +762,21 @@ footer .arrow.next:after {
 #storyOne.frigg .bottom-part p {
   max-width: 720px;
 }
-#storyOne.frigg .asset {
-  display: none;
+#storyOne.frigg .assetOne {
+  position: absolute;
+  height: 136px;
+  width: 155px;
+  bottom: 7%;
+  left: 8%;
+  transform: translateY(-50%);
+}
+#storyOne.frigg .assetTwo {
+  position: absolute;
+  height: 105px;
+  width: 225px;
+  top: 40%;
+  right: 0;
+  transform: translateY(-50%);
 }
 #storyOne.carlos {
   padding: 130px 165px 115px 95px;
@@ -753,8 +787,21 @@ footer .arrow.next:after {
 #storyOne.carlos .bottom-part p {
   max-width: 670px;
 }
-#storyOne.carlos .asset {
-  display: none;
+#storyOne.carlos .assetOne {
+  position: absolute;
+  height: 85px;
+  width: 207px;
+  bottom: 18%;
+  left: 7%;
+  transform: translateY(-50%);
+}
+#storyOne.carlos .assetTwo {
+  position: absolute;
+  height: 150px;
+  width: 155px;
+  top: 38%;
+  right: 6%;
+  transform: translateY(-50%);
 }
 
 #storyTwo {
@@ -800,9 +847,192 @@ footer .arrow.next:after {
 #storyTwo .wrapper .left-part p.p2 {
   margin-top: 20px;
 }
+#storyTwo .wrapper .left-part .additionalPhrase {
+  position: relative;
+  margin-top: 20px;
+  font-family: "BERNARD WACKER", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+#storyTwo.olivier .wrapper .left-part .additionalPhrase {
+  color: #EB4E27;
+}
+#storyTwo.olivier .graph-wrapper {
+  position: absolute;
+  width: 425px;
+  right: 50px;
+  top: 19%;
+  display: flex;
+  flex-direction: column;
+}
+#storyTwo.olivier .graph-wrapper .button-wrapper {
+  position: relative;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#storyTwo.olivier .graph-wrapper .button-wrapper .button {
+  position: relative;
+  padding: 8.5px 26px;
+  font-family: Lexend;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #CAB385;
+  background: transparent;
+  border-radius: 100px;
+  border: 1px solid #CAB385;
+  transition: all 0.35s ease-in-out;
+}
+#storyTwo.olivier .graph-wrapper .button-wrapper .button.active {
+  background: #CAB385;
+  color: white;
+  transition: all 0.35s ease-in-out;
+}
+#storyTwo.olivier .graph-wrapper .date-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#storyTwo.olivier .graph-wrapper .date-wrapper .date {
+  position: relative;
+  font-family: Lexend;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #CAB385;
+}
+#storyTwo.olivier .graph-wrapper .date-wrapper .date:after {
+  position: absolute;
+  content: "";
+  top: -25px;
+  left: 50%;
+  height: 15px;
+  width: 15px;
+  border-radius: 100px;
+  background: #CAB385;
+  transform: translateX(-50%);
+  transition: all 0.35s ease-in-out;
+}
+#storyTwo.olivier .graph-wrapper .date-wrapper .date.active:after {
+  position: absolute;
+  content: "";
+  top: -29px;
+  left: 50%;
+  height: 22px;
+  width: 22px;
+  border-radius: 100px;
+  background: #EB4E27;
+  transition: all 0.35s ease-in-out;
+  transform: translateX(-50%);
+}
+#storyTwo.olivier .graph-wrapper .date-wrapper:before {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  content: "";
+  height: 2px;
+  width: 93%;
+  background: #D4BE8C;
+  transform: translateX(-50%);
+}
+#storyTwo.olivier .graph-wrapper .data-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 35px auto 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#storyTwo.olivier .graph-wrapper .data-wrapper .data {
+  position: relative;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#storyTwo.olivier .graph-wrapper .data-wrapper .data .imgSchool {
+  position: relative;
+  width: 90px;
+}
+#storyTwo.olivier .graph-wrapper .phrase {
+  position: relative;
+  font-family: Lexend;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #CAB385;
+}
 #storyTwo.devi .title {
   max-width: 770px;
   margin-bottom: 50px;
+}
+#storyTwo.devi .wrapper .left-part .additionalPhrase {
+  color: #A54F00;
+}
+#storyTwo.devi .graph-wrapper {
+  position: absolute;
+  right: 50px;
+  bottom: 26%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#storyTwo.devi .graph-wrapper .data-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#storyTwo.devi .graph-wrapper .data-wrapper .data {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+}
+#storyTwo.devi .graph-wrapper .data-wrapper .data:last-child {
+  margin-right: 0;
+}
+#storyTwo.devi .graph-wrapper .data-wrapper .data .situation {
+  position: relative;
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+}
+#storyTwo.devi .graph-wrapper .data-wrapper .data .situation img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#storyTwo.devi .graph-wrapper .data-wrapper .data .girl {
+  position: relative;
+  height: 130px;
+  width: 130px;
+}
+#storyTwo.devi .graph-wrapper .phrase {
+  position: relative;
+  margin-top: 36px;
+  font-family: Lexend;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #4F4634;
 }
 #storyTwo.frigg .graph-wrapper {
   position: absolute;
@@ -978,6 +1208,232 @@ footer .arrow.next:after {
   position: relative;
   height: 100vh;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+#graph .wrapper {
+  position: absolute;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+}
+#graph .wrapper .button-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+#graph .wrapper .button-wrapper .button {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 8.5px 26px;
+  font-family: Lexend;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #CAB385;
+  background: transparent;
+  border-radius: 100px;
+  border: 2px solid #CAB385;
+  transition: all 0.35s ease-in-out;
+}
+#graph .wrapper .button-wrapper .button .image {
+  position: relative;
+  margin-right: 10px;
+  height: 23px;
+  width: 23px;
+}
+#graph .wrapper .button-wrapper .button .image.Temps {
+  background: url("../img/timeGraph-olivier.svg") center/cover no-repeat;
+  transition: all 0.35s ease-in-out;
+}
+#graph .wrapper .button-wrapper .button .image.Distance {
+  background: url("../img/distanceGraph-olivier.svg") center/cover no-repeat;
+  transition: all 0.35s ease-in-out;
+}
+#graph .wrapper .button-wrapper .button.active {
+  background: #CAB385;
+  color: white;
+  transition: all 0.35s ease-in-out;
+}
+#graph .wrapper .button-wrapper .button.active .image.Temps {
+  background: url("../img/timeGraph-white.svg") center/cover no-repeat;
+  transition: all 0.35s ease-in-out;
+}
+#graph .wrapper .button-wrapper .button.active .image.Distance {
+  background: url("../img/distanceGraph-white.svg") center/cover no-repeat;
+  transition: all 0.35s ease-in-out;
+}
+#graph .wrapper .button-wrapper .button:nth-child(1) {
+  margin-right: 16px;
+}
+#graph .wrapper hr {
+  position: relative;
+  margin: 42px auto 70px;
+  height: 2px;
+  width: 65vw;
+  border: none;
+}
+#graph .wrapper .time-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#graph .wrapper .time-wrapper .time {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#graph .wrapper .time-wrapper .time .clock-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+#graph .wrapper .time-wrapper .time .clock-wrapper .clock {
+  position: relative;
+  margin-right: 16px;
+  height: 123px;
+  width: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#graph .wrapper .time-wrapper .time .clock-wrapper .clock:last-child {
+  margin-right: 0;
+}
+#graph .wrapper .time-wrapper .time .clock-wrapper .clock .clock-image {
+  position: absolute;
+  top: -5px;
+  left: -0.5px;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+#graph .wrapper .time-wrapper .time .perso-wrapper {
+  position: relative;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#graph .wrapper .time-wrapper .time .perso-wrapper img {
+  position: relative;
+  margin-right: 13px;
+  height: 93px;
+  width: 93px;
+}
+#graph .wrapper .time-wrapper .time .perso-wrapper p {
+  position: relative;
+  font-family: Lexend;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#graph .wrapper .distance-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#graph .wrapper .distance-wrapper .distance {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#graph .wrapper .distance-wrapper .distance .personnage {
+  position: relative;
+  height: 93px;
+  width: 93px;
+  z-index: 1;
+}
+#graph .wrapper .distance-wrapper .distance .lottieTwo {
+  position: relative;
+  left: -10px;
+  width: 600px;
+}
+#graph .wrapper .distance-wrapper .distance .km {
+  position: relative;
+  margin-left: -10px;
+  font-family: Lexend;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#graph .wrapper .distance-wrapper .distance:nth-child(1) {
+  margin-bottom: 15px;
+}
+#graph.devi .wrapper .button-wrapper .button {
+  color: #A54F00;
+  border: 2px solid #A54F00;
+}
+#graph.devi .wrapper .button-wrapper .button .image.Temps {
+  background: url("../img/timeGraph-devi.svg") center/cover no-repeat;
+}
+#graph.devi .wrapper .button-wrapper .button .image.Distance {
+  background: url("../img/distanceGraph-devi.svg") center/cover no-repeat;
+}
+#graph.devi .wrapper .button-wrapper .button.active {
+  background: #A54F00;
+  color: white;
+}
+#graph.devi .wrapper .button-wrapper .button.active .image.Temps {
+  background: url("../img/timeGraph-white.svg") center/cover no-repeat;
+}
+#graph.devi .wrapper .button-wrapper .button.active .image.Distance {
+  background: url("../img/distanceGraph-white.svg") center/cover no-repeat;
+}
+#graph.frigg .wrapper .button-wrapper .button {
+  color: #5A8777;
+  border: 2px solid #5A8777;
+}
+#graph.frigg .wrapper .button-wrapper .button .image.Temps {
+  background: url("../img/timeGraph-frigg.svg") center/cover no-repeat;
+}
+#graph.frigg .wrapper .button-wrapper .button .image.Distance {
+  background: url("../img/distanceGraph-frigg.svg") center/cover no-repeat;
+}
+#graph.frigg .wrapper .button-wrapper .button.active {
+  background: #5A8777;
+  color: white;
+}
+#graph.frigg .wrapper .button-wrapper .button.active .image.Temps {
+  background: url("../img/timeGraph-white.svg") center/cover no-repeat;
+}
+#graph.frigg .wrapper .button-wrapper .button.active .image.Distance {
+  background: url("../img/distanceGraph-white.svg") center/cover no-repeat;
+}
+#graph.carlos .wrapper .button-wrapper .button {
+  color: #1E4EA6;
+  border: 2px solid #1E4EA6;
+}
+#graph.carlos .wrapper .button-wrapper .button .image.Temps {
+  background: url("../img/timeGraph-carlos.svg") center/cover no-repeat;
+}
+#graph.carlos .wrapper .button-wrapper .button .image.Distance {
+  background: url("../img/distanceGraph-carlos.svg") center/cover no-repeat;
+}
+#graph.carlos .wrapper .button-wrapper .button.active {
+  background: #5683C4;
+  color: white;
+  border: 2px solid #5683C4;
+}
+#graph.carlos .wrapper .button-wrapper .button.active .image.Temps {
+  background: url("../img/timeGraph-white.svg") center/cover no-repeat;
+}
+#graph.carlos .wrapper .button-wrapper .button.active .image.Distance {
+  background: url("../img/distanceGraph-white.svg") center/cover no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */

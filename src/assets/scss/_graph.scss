@@ -2,4 +2,357 @@
   position: relative;
   height: 100vh;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  .wrapper {
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+
+    .button-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+
+      .button {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding: 8.5px 26px;
+        font-family: Lexend;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #CAB385;
+        background: transparent;
+        border-radius: 100px;
+        border: 2px solid #CAB385;
+        transition: all 0.35s ease-in-out;
+
+        .image {
+          position: relative;
+          margin-right: 10px;
+          height: 23px;
+          width: 23px;
+
+          &.Temps {
+            background: url("../img/timeGraph-olivier.svg") center/cover no-repeat;
+            transition: all 0.35s ease-in-out;
+          }
+
+          &.Distance {
+            background: url("../img/distanceGraph-olivier.svg") center/cover no-repeat;
+            transition: all 0.35s ease-in-out;
+          }
+
+        }
+
+        &.active {
+          background: #CAB385;
+          color: white;
+          transition: all 0.35s ease-in-out;
+
+          .image {
+
+            &.Temps {
+              background: url("../img/timeGraph-white.svg") center/cover no-repeat;
+              transition: all 0.35s ease-in-out;
+            }
+
+            &.Distance {
+              background: url("../img/distanceGraph-white.svg") center/cover no-repeat;
+              transition: all 0.35s ease-in-out;
+            }
+
+          }
+
+        }
+
+        &:nth-child(1) {
+          margin-right: 16px;
+        }
+
+      }
+
+    }
+
+    hr {
+      position: relative;
+      margin: 42px auto 70px;
+      height: 2px;
+      width: 65vw;
+      border: none;
+    }
+
+    .time-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .time {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .clock-wrapper {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          margin: 0 auto;
+
+          .clock {
+            position: relative;
+            margin-right: 16px;
+            height: 123px;
+            width: 112px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            .clock-image {
+              position: absolute;
+              top: -5px;
+              left: -0.5px;
+              height: 100%;
+              width: 100%;
+              z-index: 0;
+            }
+
+          }
+
+        }
+
+        .perso-wrapper {
+          position: relative;
+          margin-top: 15px ;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            position: relative;
+            margin-right: 13px;
+            height: 93px;
+            width: 93px;
+          }
+
+          p {
+            position: relative;
+            font-family: Lexend;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 38px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+
+        }
+
+      }
+
+    }
+
+    .distance-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      .distance {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .personnage {
+          position: relative;
+          height: 93px;
+          width: 93px;
+          z-index: 1;
+        }
+
+        .lottieTwo {
+          position: relative;
+          left: -10px;
+          width: 600px;
+        }
+
+        .km {
+          position: relative;
+          margin-left: -10px;
+          font-family: Lexend;
+          font-size: 30px;
+          font-weight: 400;
+          line-height: 38px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+
+        &:nth-child(1) {
+          margin-bottom: 15px;
+        }
+
+      }
+
+    }
+
+  }
+
+  &.devi {
+
+    .wrapper {
+
+      .button-wrapper {
+
+        .button {
+          color: #A54F00;
+          border: 2px solid #A54F00;
+
+          .image {
+
+            &.Temps {
+              background: url("../img/timeGraph-devi.svg") center/cover no-repeat;
+            }
+
+            &.Distance {
+              background: url("../img/distanceGraph-devi.svg") center/cover no-repeat;
+            }
+
+          }
+
+          &.active {
+            background: #A54F00;
+            color: white;
+
+            .image {
+
+              &.Temps {
+                background: url("../img/timeGraph-white.svg") center/cover no-repeat;
+              }
+
+              &.Distance {
+                background: url("../img/distanceGraph-white.svg") center/cover no-repeat;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &.frigg {
+
+    .wrapper {
+
+      .button-wrapper {
+
+        .button {
+          color: #5A8777;
+          border: 2px solid #5A8777;
+
+          .image {
+
+            &.Temps {
+              background: url("../img/timeGraph-frigg.svg") center/cover no-repeat;
+            }
+
+            &.Distance {
+              background: url("../img/distanceGraph-frigg.svg") center/cover no-repeat;
+            }
+
+          }
+
+          &.active {
+            background: #5A8777;
+            color: white;
+
+            .image {
+
+              &.Temps {
+                background: url("../img/timeGraph-white.svg") center/cover no-repeat;
+              }
+
+              &.Distance {
+                background: url("../img/distanceGraph-white.svg") center/cover no-repeat;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &.carlos {
+
+    .wrapper {
+
+      .button-wrapper {
+
+        .button {
+          color: #1E4EA6;
+          border: 2px solid #1E4EA6;
+
+          .image {
+
+            &.Temps {
+              background: url("../img/timeGraph-carlos.svg") center/cover no-repeat;
+            }
+
+            &.Distance {
+              background: url("../img/distanceGraph-carlos.svg") center/cover no-repeat;
+            }
+
+          }
+
+          &.active {
+            background: #5683C4;
+            color: white;
+            border: 2px solid #5683C4;
+
+            .image {
+
+              &.Temps {
+                background: url("../img/timeGraph-white.svg") center/cover no-repeat;
+              }
+
+              &.Distance {
+                background: url("../img/distanceGraph-white.svg") center/cover no-repeat;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
 }

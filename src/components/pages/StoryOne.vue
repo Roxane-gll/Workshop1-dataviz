@@ -1,28 +1,36 @@
 <template>
 
-  <section id="storyOne" :style="{ background: story.style.colors.background }" :class="story.name">
+  <div>
 
-    <div class="top-part">
+    <section id="storyOne" :style="{ background: story.style.colors.background }" :class="story.name">
 
-      <p class="p1" v-html="story.content.storyOne.p1"></p>
+      <div class="top-part">
 
-      <p class="p2" v-html="story.content.storyOne.p2"></p>
+        <p class="p1" v-html="story.content.storyOne.p1"></p>
 
-      <p class="p3" v-html="story.content.storyOne.p3"></p>
+        <p class="p2" v-html="story.content.storyOne.p2"></p>
 
-    </div>
+        <p class="p3" v-html="story.content.storyOne.p3"></p>
 
-    <div class="bottom-part">
+      </div>
 
-      <p class="p1" v-html="story.content.storyOne.p4"></p>
+      <div class="bottom-part">
 
-      <p class="p2" v-html="story.content.storyOne.p5"></p>
+        <p class="p1" v-html="story.content.storyOne.p4"></p>
 
-    </div>
+        <p class="p2" v-html="story.content.storyOne.p5"></p>
 
-    <img :src="require(`@/assets/img/${story.style.assetStoryOne}`)" alt="Country" class="asset">
+      </div>
 
-  </section>
+      <img :src="require(`@/assets/img/${story.style.firstAssetStoryOne}`)" alt="asset" class="assetOne">
+
+      <img :src="require(`@/assets/img/${story.style.secondAssetStoryOne}`)" alt="asset" class="assetTwo">
+
+    </section>
+
+    <audio :src="require(`@/assets/sounds/${story.sounds.one}`)" autoplay></audio>
+
+  </div>
 
 </template>
 

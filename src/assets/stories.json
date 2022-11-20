@@ -5,7 +5,7 @@
     "country": "Mali",
     "age": 9,
     "gender": "male",
-    "distance": "5km",
+    "distance": "5 km",
     "time": "1h30",
     "transport": "bike",
     "content": {
@@ -31,22 +31,45 @@
       "g1": {
         "Mali": {
           "2017": [false, true, true, true, true, true, true, true, true, false, true, true],
-          "2018": [false, true, true, true, true, true, false, true, true, false, true, true],
-          "2019": [false, true, true, true, true, true, false, true, true, false, false, true]
+          "2019": [false, true, true, true, true, true, false, true, true, false, true, true],
+          "2021": [false, true, true, true, true, true, false, true, true, false, false, true]
         },
         "Burkina Faso": {
           "2017": [false, false, true, true, true, true, false, true, true, false, true, true],
-          "2018": [false, false, true, false, true, false, false, true, true, false, true, true],
-          "2019": [false, false, true, false, true, false, false, true, true, false, false, true]
+          "2019": [false, false, true, false, true, false, false, true, true, false, true, true],
+          "2021": [false, false, true, false, true, false, false, true, true, false, false, true]
         },
         "Nigeria": {
           "2017": [false, true, true, true, true, false, true, true, true, true, true, true],
-          "2018": [false, true, true, true, true, false, true, true, true, true, false, true],
-          "2019": [false, true, true, false, true, false, true, true, true, false, false, true]
+          "2019": [false, true, true, true, true, false, true, true, true, true, false, true],
+          "2021": [false, true, true, false, true, false, true, true, true, false, false, true]
         }
       },
-      "g1Phrase": "Représentation du nombre d’écoles entre 2017 et 2019",
-      "g1PhraseEnd": "2 écoles sur 3 ont été détruites"
+      "g1Phrase": "Représentation du nombre d’écoles fermées entre 2017 et 2021, sur une base de 4000 écoles.",
+      "g1PhraseEnd": "2 écoles sur 3 ont été détruites",
+      "g1PhraseNumbers": {
+        "Mali": {
+          "2017": "817",
+          "2019": "920",
+          "2021": "1461"
+        },
+        "Burkina Faso": {
+          "2017": "981",
+          "2019": "2024",
+          "2021": "2244"
+        },
+        "Nigeria": {
+          "2017": "820",
+          "2019": "934",
+          "2021": "1500"
+        }
+      }
+    },
+    "sounds": {
+      "background": "olivier-music.mp3",
+      "presentation": "olivier-presentation.mp3",
+      "one": "olivier-one.mp3",
+      "two": "olivier-two.mp3"
     },
     "style": {
       "home": "homeWhite.svg",
@@ -54,14 +77,20 @@
       "iconChildren": "iconOlivier.svg",
       "arrowChildren": "arrowOlivier.svg",
       "country": "mali.svg",
-      "assetStoryOne": "water.svg",
+      "firstAssetStoryOne": "pen.svg",
+      "secondAssetStoryOne": "water.svg",
+      "clock": "clock-olivier.svg",
       "colors": {
         "hey": "#CAB385",
         "presentation": "#EDE7D2",
         "background": "#ECE7D4",
         "goHome": "#D8BE85",
         "arrow": "#CAB385",
-        "text": "#4F4634"
+        "text": "#4F4634",
+        "hr": "#D8BE85",
+        "km": "#CB8F00",
+        "time": "#FE3D00",
+        "textTime": "#C5953B"
       }
     }
  },
@@ -72,8 +101,8 @@
     "country": "Inde",
     "age": 13,
     "gender": "female",
-    "distance": "5km",
-    "time": "2h30",
+    "distance": "5 km",
+    "time": "1h30",
     "transport": "foot",
     "content": {
       "presentation": {
@@ -102,20 +131,32 @@
       },
       "g1Phrase": "1 jeune fille sur 3 a été marié avant ses 18 ans en Inde."
     },
+    "sounds": {
+      "background": "devi-music.mp3",
+      "presentation": "devi-presentation.mp3",
+      "one": "devi-one.mp3",
+      "two": "devi-two.mp3"
+    },
     "style": {
       "home": "homeWhite.svg",
       "backgroundChooseChildren": "backgroundDevi.png",
       "iconChildren": "iconDevi.svg",
       "arrowChildren": "arrowDevi.svg",
       "country": "inde.svg",
-      "assetStoryOne": "water.svg",
+      "firstAssetStoryOne": "foot.svg",
+      "secondAssetStoryOne": "river.svg",
+      "clock": "clock-devi.svg",
       "colors": {
         "hey": "#F3E359",
         "presentation": "#A54F00",
         "background": "#FDFBEE",
         "goHome": "#A54F00",
         "arrow": "#A54F00",
-        "text": "#4F4634"
+        "text": "#4F4634",
+        "hr": "#A54F00",
+        "km": "#EDD500",
+        "time": "#EDD500",
+        "textTime": "#A54F00"
       }
     }
  },
@@ -126,8 +167,8 @@
     "country": "Islande",
     "age": 11,
     "gender": "female",
-    "distance": "1km",
-    "time": "10min",
+    "distance": "1 km",
+    "time": "10 min",
     "transport": "bus",
     "content": {
       "presentation": {
@@ -154,20 +195,32 @@
         "Islande": ["France (10)", "France (9)", "France (8)", "France (7)", "France (6)", "France (5)", "France (4)", "France (3)", "France (2)", "France (1)"]
       }
     },
+    "sounds": {
+      "background": "frigg-music.mp3",
+      "presentation": "frigg-presentation.mp3",
+      "one": "frigg-one.mp3",
+      "two": "frigg-two.mp3"
+    },
     "style": {
       "home": "homeGreen.svg",
       "backgroundChooseChildren": "backgroundFigg.png",
       "iconChildren": "iconFigg.svg",
       "arrowChildren": "arrowFrigg.svg",
       "country": "islande.svg",
-      "assetStoryOne": "water.svg",
+      "firstAssetStoryOne": "book.svg",
+      "secondAssetStoryOne": "bus.svg",
+      "clock": "clock-frigg.svg",
       "colors": {
         "hey": "#5A8777",
         "presentation": "#EDE7D2",
         "background": "#FCF9EE",
         "goHome": "#EDE7D2",
         "arrow": "#5A8777",
-        "text": "#4F4634"
+        "text": "#4F4634",
+        "hr": "#5A8777",
+        "km": "#5A8777",
+        "time": "#5A8777",
+        "textTime": "#5A8777"
       }
     }
  },
@@ -178,7 +231,7 @@
     "country": "Argentine",
     "age": 11,
     "gender": "male",
-    "distance": "18km",
+    "distance": "18 km",
     "time": "1h30",
     "transport": "horse",
     "content": {
@@ -214,20 +267,32 @@
         }
       }
     },
+    "sounds": {
+      "background": "carlos-music.mp3",
+      "presentation": "carlos-presentation.mp3",
+      "one": "carlos-one.mp3",
+      "two": "carlos-two.mp3"
+    },
     "style": {
       "home": "homeWhite.svg",
       "backgroundChooseChildren": "backgroundCarlos.png",
       "iconChildren": "iconCarlos.svg",
       "arrowChildren": "arrowCarlos.svg",
       "country": "argentine.svg",
-      "assetStoryOne": "water.svg",
+      "firstAssetStoryOne": "mountain.svg",
+      "secondAssetStoryOne": "ruban.svg",
+      "clock": "clock-carlos.svg",
       "colors": {
         "hey": "#5683C4",
         "presentation": "#C7E2F6",
         "background": "#EEF8FF",
-        "goHome": "#1E4EA6",
+        "goHome": "#5683C4",
         "arrow": "#5683C4",
-        "text": "#4F4634"
+        "text": "#4F4634",
+        "km": "#1E4EA6",
+        "hr": "#1E4EA6",
+        "time": "#1E4EA6",
+        "textTime": "#1E4EA6"
       }
     }
   }

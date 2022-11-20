@@ -1,8 +1,14 @@
 <template>
   <div>
-    <component :story="currentStory" :is="getCurrentComponent" :startForm="startForm" @newStory="changeStory" @startForm="saveForm" @home="homePage" @restart="restart" @intro="intro"></component>
+    <Transition mode="out-in">
+      <component :story="currentStory" :is="getCurrentComponent" :startForm="startForm" @newStory="changeStory" @startForm="saveForm" @home="homePage" @restart="restart" @intro="intro"></component>
+    </Transition>
   </div>
 </template>
+
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+<script src="./assets/js/main.js"></script>
 
 <script>
 import Intro from './components/Intro.vue'
@@ -52,10 +58,24 @@ export default {
     }
   }
 }
+
 </script>
 
 <style lang="css">
 
 @import './assets/scss/style.css';
-
+.v-enter-active {
+  animation: bounce-in 0.35s;
+}
+.v-leave-active {
+  animation: bounce-in 0.35s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 </style>

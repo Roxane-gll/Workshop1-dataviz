@@ -1,4 +1,5 @@
 <template>
+  <div>
     <section id="presentation" :class="story.name">
 
       <div class="presentation-wrapper">
@@ -41,6 +42,11 @@
       </div>
 
     </section>
+
+    <audio :src="require(`@/assets/sounds/${getAudio}`)" autoplay></audio>
+
+  </div>
+
 </template>
 
 <script>
@@ -50,8 +56,12 @@ export default {
     story:{
       type: Object
     }
+  },
+  computed: {
+    getAudio() {
+      return this.story.sounds.presentation
+    }
   }
-
 }
 </script>
 
