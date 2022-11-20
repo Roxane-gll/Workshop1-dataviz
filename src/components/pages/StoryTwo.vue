@@ -1,28 +1,40 @@
 <template>
-  <section id="storyTwo" :style="{ background: story.style.colors.background }" :class="story.name">
 
-    <h2 class="title" v-html="story.content.storyTwo.title" :style="{ color: story.style.colors.arrow }"></h2>
+  <div>
 
-    <div class="wrapper">
+    <section id="storyTwo" :style="{ background: story.style.colors.background }" :class="story.name">
 
-      <div class="left-part">
+      <h2 class="title" v-html="story.content.storyTwo.title" :style="{ color: story.style.colors.arrow }"></h2>
 
-        <p v-html="story.content.storyTwo.p1" ></p>
+      <div class="wrapper">
 
-        <p class="p2" v-html="story.content.storyTwo.p2" ></p>
+        <div class="left-part">
+
+          <p v-html="story.content.storyTwo.p1" ></p>
+
+          <p class="p2" v-html="story.content.storyTwo.p2" ></p>
+
+          <p class="additionalPhrase" v-if="story.id === 2">Clique sur les jeunes filles pour<br>découvrir qui se rend à l’école ! </p>
+
+          <p class="additionalPhrase" v-if="story.id === 1">Au Mali, en 2017,<br>817 écoles ont été fermées.</p>
+
+        </div>
 
       </div>
 
-    </div>
+      <div class="graph-wrapper">
+        <GraphStoryOlivier v-if="story.id === 1" :story="story"></GraphStoryOlivier>
+        <GraphStoryDevi v-else-if="story.id === 2" :story="story"></GraphStoryDevi>
+        <GraphStoryFigg v-else-if="story.id === 3" :story="story"></GraphStoryFigg>
+        <GraphStoryCarlos v-else-if="story.id === 4" :story="story"></GraphStoryCarlos>
+      </div>
 
-    <div class="graph-wrapper">
-      <GraphStoryOlivier v-if="story.id === 1" :story="story"></GraphStoryOlivier>
-      <GraphStoryDevi v-else-if="story.id === 2" :story="story"></GraphStoryDevi>
-      <GraphStoryFigg v-else-if="story.id === 3" :story="story"></GraphStoryFigg>
-      <GraphStoryCarlos v-else-if="story.id === 4" :story="story"></GraphStoryCarlos>
-    </div>
+    </section>
 
-  </section>
+    <!--<audio :src="require(`@/assets/sounds/${story.sounds.two}`)" autoplay></audio>-->
+
+  </div>
+
 </template>
 
 <script>
