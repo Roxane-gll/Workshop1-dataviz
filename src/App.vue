@@ -65,10 +65,10 @@ export default {
 
 @import './assets/scss/style.css';
 .v-enter-active {
-  animation: bounce-in 0.5s;
+  animation: bounce-in 0.35s;
 }
 .v-leave-active {
-  animation: bounce-in 0.5s reverse;
+  animation: bounce-in 0.35s reverse;
 }
 @keyframes bounce-in {
   0% {
