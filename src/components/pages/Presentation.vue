@@ -59,7 +59,7 @@ export default {
   },
   computed: {
     getAudio() {
-      return this.story.sounds.background
+      return this.story.sounds.presentation
     }
   }
 }

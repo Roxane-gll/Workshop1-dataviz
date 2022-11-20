@@ -48,7 +48,7 @@ export default {
       return this.allStories.find((story) => story.id === this.story)
     },
     getAudio() {
-      return this.getCurrentStory.sounds.presentation
+      return this.getCurrentStory.sounds.background
     }
   },
   methods: {
