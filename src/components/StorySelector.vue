@@ -21,9 +21,8 @@
             <h2 class="name">{{ story.name }}</h2>
 
             <div class="country-wrapper">
-              <img :src="require(`@/assets/img/${story.style.arrowChildren}`)" alt="Arrow of the children">
-
               <h3 class="country">{{ story.country }}</h3>
+              <img :src="require(`@/assets/img/${story.style.arrowChildren}`)" alt="Arrow of the children">
             </div>
 
           </div>

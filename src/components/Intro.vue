@@ -11,9 +11,9 @@
 
       <div>
 
-        <img src="../assets/img/arrowIntro.svg" alt="arrow">
-
         <h3>l'experience</h3>
+
+        <img src="../assets/img/arrowIntro.svg" alt="arrow">
 
       </div>
 
