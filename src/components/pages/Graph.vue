@@ -1,51 +1,94 @@
 <template>
-    <section id="graph" :style="{ background: story.style.colors.background }">
 
-    <h2 class="title" v-html="story.content.storyTwo.title" :style="{ color: story.style.colors.arrow }"></h2>
+    <section id="graph" :style="{ background: story.style.colors.background }" :class="story.name">
 
     <div class="wrapper">
 
-      <div>
-        <div v-for="(title, question) in questionTitle" :key="title" @click="changeGraph(question)">
+      <div class="button-wrapper">
+        <div :class="currentGraph === question ? 'button active' : 'button'" v-for="(title, question) in questionTitle" :key="title" @click="changeGraph(question)">
+
+          <div :class="`image ${title}`"></div>
+
           {{title}}
+
         </div>
       </div>
-      <div v-if="currentGraph === 'time'">
-        <div>
-          <img :src="require(`@/assets/img/basicPerso/${startForm.personnage}`)">
 
-          <div v-for="clock in getClockNumber(startForm[currentGraph])" :key="clock">
-            <!-- le conic gradient est du css: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/conic-gradient -->
-            <div v-if="clock !== 1" :style="`background: conic-gradient(blue 0deg ${360 * clock}deg, transparent ${360 * clock}deg 360deg); width:50px; height:50px;border-radius: 100%`"></div>
-            <div v-else :style="`background: blue; width:50px; height:50px;border-radius: 100%`"></div>
+      <hr :style="{ background: story.style.colors.hr }">
+
+      <div v-if="currentGraph === 'time'" class="time-wrapper">
+
+        <div class="time">
+
+          <div class="clock-wrapper">
+
+            <div class="clock" v-for="clock in getClockNumber(startForm[currentGraph])" :key="clock">
+
+              <img :src="require(`@/assets/img/${story.style.clock}`)" alt="clock" class="clock-image">
+
+              <div v-if="clock !== 1" :style="`background: conic-gradient(${story.style.colors.time} 0deg ${360 * clock}deg, transparent ${360 * clock}deg 360deg); width:75px; height:75px;border-radius: 100%; z-index: 1;`"></div>
+              <div v-else :style="`background: ${story.style.colors.time}; width:75px; height:75px;border-radius: 100%; z-index: 1;`"></div>
+
+            </div>
+
           </div>
-        </div>
 
-        <div>
-          <img :src="require(`@/assets/img/${story.style.iconChildren}`)">
+          <div class="perso-wrapper">
 
-          <div v-for="clock in getClockNumber(story[currentGraph])" :key="clock">
-            <!-- le conic gradient est du css: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/conic-gradient -->
-            <div v-if="clock !== 1" :style="`background: conic-gradient(blue 0deg ${360 * clock}deg, transparent ${360 * clock}deg 360deg); width:50px; height:50px;border-radius: 100%`"></div>
-            <div v-else :style="`background: blue; width:50px; height:50px;border-radius: 100%`"></div>
+            <img :src="require(`@/assets/img/basicPerso/${startForm.personnage}`)">
+
+            <p :style="{ color: story.style.colors.textTime }">{{startForm[currentGraph]}} min</p>
+
           </div>
-        </div>
-      </div>
 
-      <div v-if="currentGraph === 'distance'">
-        <div>
-          <img :src="require(`@/assets/img/basicPerso/${startForm.personnage}`)">
-          {{startForm[currentGraph]}} km
         </div>
 
-        <div>
-          <img :src="require(`@/assets/img/${story.style.iconChildren}`)">
-          {{story[currentGraph]}}
+        <div class="time">
+
+          <div class="clock-wrapper">
+
+            <div class="clock" v-for="clock in getClockNumber(story[currentGraph])" :key="clock">
+
+              <img :src="require(`@/assets/img/${story.style.clock}`)" alt="clock" class="clock-image">
+
+              <div v-if="clock !== 1" :style="`background: conic-gradient(${story.style.colors.time} 0deg ${360 * clock}deg, transparent ${360 * clock}deg 360deg); width:75px; height:75px;border-radius: 100%; z-index: 1;`"></div>
+              <div v-else :style="`background: ${story.style.colors.time}; width:75px; height:75px;border-radius: 100%; z-index: 1;`"></div>
+
+            </div>
+
+          </div>
+
+          <div class="perso-wrapper">
+
+            <img :src="require(`@/assets/img/${story.style.iconChildren}`)">
+
+            <p :style="{ color: story.style.colors.textTime }">{{story[currentGraph]}}</p>
+
+          </div>
+
         </div>
+
       </div>
+
+      <div v-if="currentGraph === 'distance'" class="distance-wrapper">
+
+        <div class="distance">
+          <img :src="require(`@/assets/img/basicPerso/${startForm.personnage}`)" alt="personnage" class="personnage">
+          <p class="km" :style="{ color: story.style.colors.km }">{{startForm[currentGraph]}} km</p>
+
+        </div>
+
+        <div class="distance">
+          <img :src="require(`@/assets/img/${story.style.iconChildren}`)" alt="personnage" class="personnage">
+          <p class="km" :style="{ color: story.style.colors.km }">{{story[currentGraph]}}</p>
+        </div>
+
+      </div>
+
     </div>
 
   </section>
+
 </template>
 
 <script>

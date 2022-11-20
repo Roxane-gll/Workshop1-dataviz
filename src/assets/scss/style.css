@@ -772,8 +772,8 @@ footer .arrow.next:after {
 }
 #storyOne.frigg .assetTwo {
   position: absolute;
-  height: 145px;
-  width: 315px;
+  height: 105px;
+  width: 225px;
   top: 40%;
   right: 0;
   transform: translateY(-50%);
@@ -1208,6 +1208,226 @@ footer .arrow.next:after {
   position: relative;
   height: 100vh;
   width: 100vw;
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+#graph .wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+}
+#graph .wrapper .button-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+#graph .wrapper .button-wrapper .button {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 8.5px 26px;
+  font-family: Lexend;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #CAB385;
+  background: transparent;
+  border-radius: 100px;
+  border: 2px solid #CAB385;
+  transition: all 0.35s ease-in-out;
+}
+#graph .wrapper .button-wrapper .button .image {
+  position: relative;
+  margin-right: 10px;
+  height: 23px;
+  width: 23px;
+}
+#graph .wrapper .button-wrapper .button .image.Temps {
+  background: url("../img/timeGraph-olivier.svg") center/cover no-repeat;
+  transition: all 0.35s ease-in-out;
+}
+#graph .wrapper .button-wrapper .button .image.Distance {
+  background: url("../img/distanceGraph-olivier.svg") center/cover no-repeat;
+  transition: all 0.35s ease-in-out;
+}
+#graph .wrapper .button-wrapper .button.active {
+  background: #CAB385;
+  color: white;
+  transition: all 0.35s ease-in-out;
+}
+#graph .wrapper .button-wrapper .button.active .image.Temps {
+  background: url("../img/timeGraph-white.svg") center/cover no-repeat;
+  transition: all 0.35s ease-in-out;
+}
+#graph .wrapper .button-wrapper .button.active .image.Distance {
+  background: url("../img/distanceGraph-white.svg") center/cover no-repeat;
+  transition: all 0.35s ease-in-out;
+}
+#graph .wrapper .button-wrapper .button:nth-child(1) {
+  margin-right: 16px;
+}
+#graph .wrapper hr {
+  position: relative;
+  margin: 42px auto 70px;
+  height: 2px;
+  width: 65vw;
+  border: none;
+}
+#graph .wrapper .time-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#graph .wrapper .time-wrapper .time {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#graph .wrapper .time-wrapper .time .clock-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+#graph .wrapper .time-wrapper .time .clock-wrapper .clock {
+  position: relative;
+  margin-right: 16px;
+  height: 123px;
+  width: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#graph .wrapper .time-wrapper .time .clock-wrapper .clock:last-child {
+  margin-right: 0;
+}
+#graph .wrapper .time-wrapper .time .clock-wrapper .clock .clock-image {
+  position: absolute;
+  top: -5px;
+  left: -0.5px;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+#graph .wrapper .time-wrapper .time .perso-wrapper {
+  position: relative;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#graph .wrapper .time-wrapper .time .perso-wrapper img {
+  position: relative;
+  margin-right: 13px;
+  height: 93px;
+  width: 93px;
+}
+#graph .wrapper .time-wrapper .time .perso-wrapper p {
+  position: relative;
+  font-family: Lexend;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#graph .wrapper .distance-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#graph .wrapper .distance-wrapper .distance {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#graph .wrapper .distance-wrapper .distance .personnage {
+  position: relative;
+  height: 93px;
+  width: 93px;
+}
+#graph .wrapper .distance-wrapper .distance .km {
+  position: relative;
+  margin-left: 28px;
+  font-family: Lexend;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#graph .wrapper .distance-wrapper .distance:nth-child(1) {
+  margin-bottom: 15px;
+}
+#graph.devi .wrapper .button-wrapper .button {
+  color: #A54F00;
+  border: 2px solid #A54F00;
+}
+#graph.devi .wrapper .button-wrapper .button .image.Temps {
+  background: url("../img/timeGraph-devi.svg") center/cover no-repeat;
+}
+#graph.devi .wrapper .button-wrapper .button .image.Distance {
+  background: url("../img/distanceGraph-devi.svg") center/cover no-repeat;
+}
+#graph.devi .wrapper .button-wrapper .button.active {
+  background: #A54F00;
+  color: white;
+}
+#graph.devi .wrapper .button-wrapper .button.active .image.Temps {
+  background: url("../img/timeGraph-white.svg") center/cover no-repeat;
+}
+#graph.devi .wrapper .button-wrapper .button.active .image.Distance {
+  background: url("../img/distanceGraph-white.svg") center/cover no-repeat;
+}
+#graph.frigg .wrapper .button-wrapper .button {
+  color: #5A8777;
+  border: 2px solid #5A8777;
+}
+#graph.frigg .wrapper .button-wrapper .button .image.Temps {
+  background: url("../img/timeGraph-frigg.svg") center/cover no-repeat;
+}
+#graph.frigg .wrapper .button-wrapper .button .image.Distance {
+  background: url("../img/distanceGraph-frigg.svg") center/cover no-repeat;
+}
+#graph.frigg .wrapper .button-wrapper .button.active {
+  background: #5A8777;
+  color: white;
+}
+#graph.frigg .wrapper .button-wrapper .button.active .image.Temps {
+  background: url("../img/timeGraph-white.svg") center/cover no-repeat;
+}
+#graph.frigg .wrapper .button-wrapper .button.active .image.Distance {
+  background: url("../img/distanceGraph-white.svg") center/cover no-repeat;
+}
+#graph.carlos .wrapper .button-wrapper .button {
+  color: #1E4EA6;
+  border: 2px solid #1E4EA6;
+}
+#graph.carlos .wrapper .button-wrapper .button .image.Temps {
+  background: url("../img/timeGraph-carlos.svg") center/cover no-repeat;
+}
+#graph.carlos .wrapper .button-wrapper .button .image.Distance {
+  background: url("../img/distanceGraph-carlos.svg") center/cover no-repeat;
+}
+#graph.carlos .wrapper .button-wrapper .button.active {
+  background: #5683C4;
+  color: white;
+  border: 2px solid #5683C4;
+}
+#graph.carlos .wrapper .button-wrapper .button.active .image.Temps {
+  background: url("../img/timeGraph-white.svg") center/cover no-repeat;
+}
+#graph.carlos .wrapper .button-wrapper .button.active .image.Distance {
+  background: url("../img/distanceGraph-white.svg") center/cover no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */

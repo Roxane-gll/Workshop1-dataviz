@@ -5,7 +5,7 @@
     "country": "Mali",
     "age": 9,
     "gender": "male",
-    "distance": "5km",
+    "distance": "5 km",
     "time": "1h30",
     "transport": "bike",
     "content": {
@@ -62,13 +62,18 @@
       "country": "mali.svg",
       "firstAssetStoryOne": "pen.svg",
       "secondAssetStoryOne": "water.svg",
+      "clock": "clock-olivier.svg",
       "colors": {
         "hey": "#CAB385",
         "presentation": "#EDE7D2",
         "background": "#ECE7D4",
         "goHome": "#D8BE85",
         "arrow": "#CAB385",
-        "text": "#4F4634"
+        "text": "#4F4634",
+        "hr": "#D8BE85",
+        "km": "#CB8F00",
+        "time": "#FE3D00",
+        "textTime": "#C5953B"
       }
     }
  },
@@ -79,8 +84,8 @@
     "country": "Inde",
     "age": 13,
     "gender": "female",
-    "distance": "5km",
-    "time": "2h30",
+    "distance": "5 km",
+    "time": "1h30",
     "transport": "foot",
     "content": {
       "presentation": {
@@ -123,13 +128,18 @@
       "country": "inde.svg",
       "firstAssetStoryOne": "foot.svg",
       "secondAssetStoryOne": "river.svg",
+      "clock": "clock-devi.svg",
       "colors": {
         "hey": "#F3E359",
         "presentation": "#A54F00",
         "background": "#FDFBEE",
         "goHome": "#A54F00",
         "arrow": "#A54F00",
-        "text": "#4F4634"
+        "text": "#4F4634",
+        "hr": "#A54F00",
+        "km": "#EDD500",
+        "time": "#EDD500",
+        "textTime": "#A54F00"
       }
     }
  },
@@ -140,8 +150,8 @@
     "country": "Islande",
     "age": 11,
     "gender": "female",
-    "distance": "1km",
-    "time": "10min",
+    "distance": "1 km",
+    "time": "10 min",
     "transport": "bus",
     "content": {
       "presentation": {
@@ -182,13 +192,18 @@
       "country": "islande.svg",
       "firstAssetStoryOne": "book.svg",
       "secondAssetStoryOne": "bus.svg",
+      "clock": "clock-frigg.svg",
       "colors": {
         "hey": "#5A8777",
         "presentation": "#EDE7D2",
         "background": "#FCF9EE",
         "goHome": "#EDE7D2",
         "arrow": "#5A8777",
-        "text": "#4F4634"
+        "text": "#4F4634",
+        "hr": "#5A8777",
+        "km": "#5A8777",
+        "time": "#5A8777",
+        "textTime": "#5A8777"
       }
     }
  },
@@ -199,7 +214,7 @@
     "country": "Argentine",
     "age": 11,
     "gender": "male",
-    "distance": "18km",
+    "distance": "18 km",
     "time": "1h30",
     "transport": "horse",
     "content": {
@@ -249,13 +264,18 @@
       "country": "argentine.svg",
       "firstAssetStoryOne": "mountain.svg",
       "secondAssetStoryOne": "ruban.svg",
+      "clock": "clock-carlos.svg",
       "colors": {
         "hey": "#5683C4",
         "presentation": "#C7E2F6",
         "background": "#EEF8FF",
         "goHome": "#5683C4",
         "arrow": "#5683C4",
-        "text": "#4F4634"
+        "text": "#4F4634",
+        "km": "#1E4EA6",
+        "hr": "#1E4EA6",
+        "time": "#1E4EA6",
+        "textTime": "#1E4EA6"
       }
     }
   }
