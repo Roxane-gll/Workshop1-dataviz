@@ -73,12 +73,6 @@
       <div v-if="currentGraph === 'distance'" class="distance-wrapper">
 
         <div class="distance">
-          <img :src="require(`@/assets/img/basicPerso/${startForm.personnage}`)" alt="personnage" class="personnage">
-          <p class="km" :style="{ color: story.style.colors.km }">{{startForm[currentGraph]}} km</p>
-
-        </div>
-
-        <div class="distance">
           <img :src="require(`@/assets/img/${story.style.iconChildren}`)" alt="personnage" class="personnage">
 
           <lottie-player class="lottieTwo" v-if="story.name === 'olivier'" autoplay mode="normal" src="https://assets9.lottiefiles.com/packages/lf20_TiDTPBoL6W.json"></lottie-player>
@@ -87,6 +81,19 @@
           <lottie-player class="lottieTwo" v-if="story.name === 'carlos'" autoplay mode="normal" src="https://assets6.lottiefiles.com/packages/lf20_JPb7TebJkI.json"></lottie-player>
 
           <p class="km" :style="{ color: story.style.colors.km }">{{story[currentGraph]}}</p>
+
+        </div>
+
+        <div class="distance">
+          <img :src="require(`@/assets/img/basicPerso/${startForm.personnage}`)" alt="personnage" class="personnage">
+
+          <lottie-player class="lottie" v-if="story.name === 'olivier'" autoplay mode="normal" src="https://assets10.lottiefiles.com/packages/lf20_x8sj9dGuxw.json"></lottie-player>
+          <lottie-player class="lottie" v-if="story.name === 'devi'" autoplay mode="normal" src="https://assets2.lottiefiles.com/packages/lf20_16jiNKbN1h.json"></lottie-player>
+          <lottie-player class="lottie" v-if="story.name === 'frigg'" autoplay mode="normal" src="https://assets3.lottiefiles.com/packages/lf20_37uqNsAka2.json"></lottie-player>
+          <lottie-player class="lottie" v-if="story.name === 'carlos' " autoplay mode="normal" src="https://assets3.lottiefiles.com/packages/lf20_mD1e5k2g5n.json"></lottie-player>
+
+
+          <p class="km" :style="{ color: story.style.colors.km }">{{startForm[currentGraph]}} km</p>
 
         </div>
 
