@@ -3,7 +3,7 @@
     <Header :current-story="story" :story="getCurrentStory" @newStory="changeStory" @home="sendHome"></Header>
     <component :story="getCurrentStory" :startForm="startForm" :is="getCurrentPage"></component>
     <Footer :story="getCurrentStory" :currentPage="currentPage" :nbPages="Object.keys(pages).length" @newPage="changePage"></Footer>
-    <!--<audio :src="require(`@/assets/sounds/${getCurrentStory.sounds.background}`)" autoplay></audio>-->
+    <audio :src="require(`@/assets/sounds/${getAudio}`)" autoplay></audio>
   </div>
 </template>
 
@@ -46,6 +46,9 @@ export default {
     },
     getCurrentStory() {
       return this.allStories.find((story) => story.id === this.story)
+    },
+    getAudio() {
+      return this.getCurrentStory.sounds.presentation
     }
   },
   methods: {
