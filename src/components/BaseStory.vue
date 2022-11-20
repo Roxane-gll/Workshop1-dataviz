@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <Header :current-story="story" :story="getCurrentStory" @newStory="changeStory" @home="sendHome"></Header>
-    <component :story="getCurrentStory" :startForm="startForm" :is="getCurrentPage"></component>
+
+    <Transition mode="out-in">
+        <component :story="getCurrentStory" :startForm="startForm" :is="getCurrentPage"></component>
+    </Transition>
+
     <Footer :story="getCurrentStory" :currentPage="currentPage" :nbPages="Object.keys(pages).length" @newPage="changePage"></Footer>
     <audio :src="require(`@/assets/sounds/${getAudio}`)" autoplay></audio>
   </div>
@@ -48,7 +52,7 @@ export default {
       return this.allStories.find((story) => story.id === this.story)
     },
     getAudio() {
-      return this.getCurrentStory.sounds.presentation
+      return this.getCurrentStory.sounds.background
     }
   },
   methods: {
@@ -70,5 +74,18 @@ export default {
 </script>
 
 <style scoped>
-
+.v-enter-active {
+  animation: bounce-in 0.5s;
+}
+.v-leave-active {
+  animation: bounce-in 0.5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 </style>

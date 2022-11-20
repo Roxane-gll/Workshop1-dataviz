@@ -1,6 +1,8 @@
 <template>
   <div>
-    <component :story="currentStory" :is="getCurrentComponent" :startForm="startForm" @newStory="changeStory" @startForm="saveForm" @home="homePage" @restart="restart" @intro="intro"></component>
+    <Transition mode="out-in">
+      <component :story="currentStory" :is="getCurrentComponent" :startForm="startForm" @newStory="changeStory" @startForm="saveForm" @home="homePage" @restart="restart" @intro="intro"></component>
+    </Transition>
   </div>
 </template>
 
@@ -62,5 +64,18 @@ export default {
 <style lang="css">
 
 @import './assets/scss/style.css';
-
+.v-enter-active {
+  animation: bounce-in 0.5s;
+}
+.v-leave-active {
+  animation: bounce-in 0.5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 </style>
