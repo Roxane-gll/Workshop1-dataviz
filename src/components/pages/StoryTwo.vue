@@ -16,14 +16,14 @@
 
           <p class="additionalPhrase" v-if="story.id === 2">Clique sur les jeunes filles pour<br>découvrir qui se rend à l’école ! </p>
 
-          <p class="additionalPhrase" v-if="story.id === 1">Au Mali, en 2017,<br>817 écoles ont été fermées.</p>
+          <p class="additionalPhrase" v-if="story.id === 1" v-html="additionalPhraseOlivier"></p>
 
         </div>
 
       </div>
 
       <div class="graph-wrapper">
-        <GraphStoryOlivier v-if="story.id === 1" :story="story"></GraphStoryOlivier>
+        <GraphStoryOlivier v-if="story.id === 1" :story="story" @phrase="phrase"></GraphStoryOlivier>
         <GraphStoryDevi v-else-if="story.id === 2" :story="story"></GraphStoryDevi>
         <GraphStoryFigg v-else-if="story.id === 3" :story="story"></GraphStoryFigg>
         <GraphStoryCarlos v-else-if="story.id === 4" :story="story"></GraphStoryCarlos>
@@ -31,7 +31,7 @@
 
     </section>
 
-    <!--<audio :src="require(`@/assets/sounds/${story.sounds.two}`)" autoplay></audio>-->
+    <audio :src="require(`@/assets/sounds/${story.sounds.two}`)" autoplay></audio>
 
   </div>
 
@@ -49,6 +49,16 @@ export default {
   props: {
     story:{
       type: Object
+    }
+  },
+  data() {
+    return {
+      additionalPhraseOlivier: null
+    }
+  },
+  methods: {
+    phrase(phrase) {
+      this.additionalPhraseOlivier = phrase
     }
   }
 }
