@@ -80,6 +80,7 @@
 
         <div class="distance">
           <img :src="require(`@/assets/img/${story.style.iconChildren}`)" alt="personnage" class="personnage">
+          <lottie-player src="./assets/lottie/Olivier.json"  speed="1"  style="width: 300px; height: 300px;" autoplay></lottie-player>
           <p class="km" :style="{ color: story.style.colors.km }">{{story[currentGraph]}}</p>
         </div>
 

@@ -66,10 +66,10 @@
       }
     },
     "sounds": {
-      "background": "carlos-music.mp3",
-      "presentation": "carlos-presentation.mp3",
-      "one": "carlos-one.mp3",
-      "two": "carlos-two.mp3"
+      "background": "olivier-music.mp3",
+      "presentation": "olivier-presentation.mp3",
+      "one": "olivier-one.mp3",
+      "two": "olivier-two.mp3"
     },
     "style": {
       "home": "homeWhite.svg",
@@ -132,10 +132,10 @@
       "g1Phrase": "1 jeune fille sur 3 a été marié avant ses 18 ans en Inde."
     },
     "sounds": {
-      "background": "carlos-music.mp3",
-      "presentation": "carlos-presentation.mp3",
-      "one": "carlos-one.mp3",
-      "two": "carlos-two.mp3"
+      "background": "devi-music.mp3",
+      "presentation": "devi-presentation.mp3",
+      "one": "devi-one.mp3",
+      "two": "devi-two.mp3"
     },
     "style": {
       "home": "homeWhite.svg",
@@ -196,10 +196,10 @@
       }
     },
     "sounds": {
-      "background": "carlos-music.mp3",
-      "presentation": "carlos-presentation.mp3",
-      "one": "carlos-one.mp3",
-      "two": "carlos-two.mp3"
+      "background": "frigg-music.mp3",
+      "presentation": "frigg-presentation.mp3",
+      "one": "frigg-one.mp3",
+      "two": "frigg-two.mp3"
     },
     "style": {
       "home": "homeGreen.svg",
