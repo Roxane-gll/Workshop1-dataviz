@@ -43,7 +43,7 @@
 
     </section>
 
-    <audio :src="require(`@/assets/sounds/${story.sounds.presentation}`)" autoplay></audio>
+    <audio :src="require(`@/assets/sounds/${getAudio}`)" autoplay></audio>
 
   </div>
 
@@ -56,8 +56,12 @@ export default {
     story:{
       type: Object
     }
+  },
+  computed: {
+    getAudio() {
+      return this.story.sounds.background
+    }
   }
-
 }
 </script>
 
