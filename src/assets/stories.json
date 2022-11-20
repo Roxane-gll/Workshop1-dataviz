@@ -77,7 +77,8 @@
       "iconChildren": "iconOlivier.svg",
       "arrowChildren": "arrowOlivier.svg",
       "country": "mali.svg",
-      "assetStoryOne": "water.svg",
+      "firstAssetStoryOne": "pen.svg",
+      "secondAssetStoryOne": "water.svg",
       "colors": {
         "hey": "#CAB385",
         "presentation": "#EDE7D2",
@@ -137,7 +138,8 @@
       "iconChildren": "iconDevi.svg",
       "arrowChildren": "arrowDevi.svg",
       "country": "inde.svg",
-      "assetStoryOne": "water.svg",
+      "firstAssetStoryOne": "foot.svg",
+      "secondAssetStoryOne": "river.svg",
       "colors": {
         "hey": "#F3E359",
         "presentation": "#A54F00",
@@ -195,7 +197,8 @@
       "iconChildren": "iconFigg.svg",
       "arrowChildren": "arrowFrigg.svg",
       "country": "islande.svg",
-      "assetStoryOne": "water.svg",
+      "firstAssetStoryOne": "book.svg",
+      "secondAssetStoryOne": "bus.svg",
       "colors": {
         "hey": "#5A8777",
         "presentation": "#EDE7D2",
@@ -261,7 +264,8 @@
       "iconChildren": "iconCarlos.svg",
       "arrowChildren": "arrowCarlos.svg",
       "country": "argentine.svg",
-      "assetStoryOne": "water.svg",
+      "firstAssetStoryOne": "mountain.svg",
+      "secondAssetStoryOne": "ruban.svg",
       "colors": {
         "hey": "#5683C4",
         "presentation": "#C7E2F6",

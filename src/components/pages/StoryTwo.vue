@@ -65,7 +65,4 @@ export default {
 </script>
 
 <style scoped>
-.imgSchool {
-  width: 20px;
-}
 </style>

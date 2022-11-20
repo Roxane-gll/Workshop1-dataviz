@@ -715,7 +715,18 @@ footer .arrow.next:after {
   letter-spacing: 0em;
   text-align: left;
 }
-#storyOne .asset {
+#storyOne.olivier {
+  padding: 110px 165px 130px 95px;
+}
+#storyOne.olivier .assetOne {
+  position: absolute;
+  height: 190px;
+  width: 59px;
+  bottom: -3%;
+  left: 12%;
+  transform: translateY(-50%);
+}
+#storyOne.olivier .assetTwo {
   position: absolute;
   height: 170px;
   width: 210px;
@@ -723,17 +734,27 @@ footer .arrow.next:after {
   right: 6%;
   transform: translateY(-50%);
 }
-#storyOne.olivier {
-  padding: 110px 165px 130px 95px;
-}
 #storyOne.devi {
   padding: 130px 165px 120px 95px;
 }
 #storyOne.devi .top-part p {
   max-width: 790px;
 }
-#storyOne.devi .asset {
-  display: none;
+#storyOne.devi .assetOne {
+  position: absolute;
+  height: 315px;
+  width: 120px;
+  bottom: -23%;
+  left: 9%;
+  transform: translateY(-50%);
+}
+#storyOne.devi .assetTwo {
+  position: absolute;
+  height: 180px;
+  width: 185px;
+  top: 38%;
+  right: 6%;
+  transform: translateY(-50%);
 }
 #storyOne.frigg {
   padding: 130px 165px 130px 95px;
@@ -741,8 +762,21 @@ footer .arrow.next:after {
 #storyOne.frigg .bottom-part p {
   max-width: 720px;
 }
-#storyOne.frigg .asset {
-  display: none;
+#storyOne.frigg .assetOne {
+  position: absolute;
+  height: 136px;
+  width: 155px;
+  bottom: 7%;
+  left: 8%;
+  transform: translateY(-50%);
+}
+#storyOne.frigg .assetTwo {
+  position: absolute;
+  height: 145px;
+  width: 315px;
+  top: 40%;
+  right: 0;
+  transform: translateY(-50%);
 }
 #storyOne.carlos {
   padding: 130px 165px 115px 95px;
@@ -753,8 +787,21 @@ footer .arrow.next:after {
 #storyOne.carlos .bottom-part p {
   max-width: 670px;
 }
-#storyOne.carlos .asset {
-  display: none;
+#storyOne.carlos .assetOne {
+  position: absolute;
+  height: 85px;
+  width: 207px;
+  bottom: 18%;
+  left: 7%;
+  transform: translateY(-50%);
+}
+#storyOne.carlos .assetTwo {
+  position: absolute;
+  height: 150px;
+  width: 155px;
+  top: 38%;
+  right: 6%;
+  transform: translateY(-50%);
 }
 
 #storyTwo {
@@ -811,11 +858,14 @@ footer .arrow.next:after {
   text-align: left;
   text-transform: uppercase;
 }
+#storyTwo.olivier .wrapper .left-part .additionalPhrase {
+  color: #EB4E27;
+}
 #storyTwo.olivier .graph-wrapper {
   position: absolute;
   width: 425px;
   right: 50px;
-  top: 22%;
+  top: 19%;
   display: flex;
   flex-direction: column;
 }
