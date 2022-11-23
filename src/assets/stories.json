@@ -102,7 +102,7 @@
     "age": 13,
     "gender": "female",
     "distance": "5 km",
-    "time": "2h",
+    "time": "2h00",
     "transport": "foot",
     "content": {
       "presentation": {
